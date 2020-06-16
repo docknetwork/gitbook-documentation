@@ -1,8 +1,6 @@
 # Dock
 
-{% page-ref page="learn/governance/" %}
-
-{% page-ref page="learn/token-economics/" %}
+{% page-ref page="learn/" %}
 
 {% page-ref page="validators/" %}
 
