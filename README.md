@@ -15,7 +15,7 @@ To learn how to become a validator and the tooling around that, go to **Validato
 
 {% page-ref page="validators/" %}
 
-
+### 
 
 ### Follow us on social media
 
