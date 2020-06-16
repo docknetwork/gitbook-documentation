@@ -5,6 +5,8 @@
   * [Node](build/node.md)
   * [SDK](build/sdk.md)
 * [Learn](learn/README.md)
+  * [Ecosystem](learn/ecosystem.md)
+  * [Token usages](learn/token-usages.md)
   * [Consensus](learn/consensus.md)
   * [Governance](learn/governance/README.md)
     * [Responsibilities](learn/governance/responsibilities.md)
