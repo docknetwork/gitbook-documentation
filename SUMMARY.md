@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Dock](README.md)
+* [SDK](sdk.md)
 * [Learn](learn/README.md)
   * [Consensus](learn/consensus.md)
   * [Governance](learn/governance/README.md)
