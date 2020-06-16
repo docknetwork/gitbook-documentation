@@ -1,5 +1,7 @@
 # Dock
 
+{% page-ref page="build/" %}
+
 {% page-ref page="learn/" %}
 
 {% page-ref page="validators/" %}
