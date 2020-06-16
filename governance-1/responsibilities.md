@@ -20,7 +20,7 @@ As with configuration, features can be added or removed by transactions or propo
 
 ### Rewards and punishments
 
-The network rewards participation for different actions like block production, reporting bad behavior and punishes for bad behavior like a validator being offline, accepting invalid transactions, producing bad blocks or any kind of equivocation. The conditions and amounts of these rewards and penalties are defined by the governance. As an example, in the PoA phase, each validator is guaranteed a fixed amount of tokens every 10 days provided they remain fully functional, while in PoS phase, the network will emit at most a fixed amount of tokens each year and this amount decreases each year. For more details on the economics, refer the [token economics section]().
+The network rewards participation for different actions like block production, reporting bad behavior and punishes for bad behavior like a validator being offline, accepting invalid transactions, producing bad blocks or any kind of equivocation. The conditions and amounts of these rewards and penalties are defined by the governance. As an example, in the PoA phase, each validator is guaranteed a fixed amount of tokens every 10 days provided they remain fully functional, while in PoS phase, the network will emit at most a fixed amount of tokens each year and this amount decreases each year. For more details on the economics, refer the [token economics section](../token-economics-1/).
 
 ### Treasury management
 
