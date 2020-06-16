@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Intro to Dock](README.md)
+* [Dock](README.md)
 * [Governance](governance-1/README.md)
   * [Responsibilities](governance-1/responsibilities.md)
   * [Evolution](governance-1/evolution.md)
