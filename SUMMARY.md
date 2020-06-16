@@ -1,14 +1,11 @@
 # Table of contents
 
 * [Intro to Dock](README.md)
-
-## Governance
-
-* [Overview](governance/overview.md)
-* [Responsibilities](governance/responsibilities.md)
-* [Evolution](governance/evolution.md)
-* [Proof of Authority](governance/gov-poa.md)
-* [Proof of Stake](governance/gov-pos.md)
+* [Governance](governance-1/README.md)
+  * [Responsibilities](governance-1/responsibilities.md)
+  * [Evolution](governance-1/evolution.md)
+  * [Proof of Authority](governance-1/gov-poa.md)
+  * [Proof of Stake](governance-1/gov-pos.md)
 
 ## Token economics
 
