@@ -6,12 +6,9 @@
   * [Evolution](governance-1/evolution.md)
   * [Proof of Authority](governance-1/gov-poa.md)
   * [Proof of Stake](governance-1/gov-pos.md)
-
-## Token economics
-
-* [Overview](token-economics/overview.md)
-* [Proof of Authority](token-economics/gov-poa.md)
-* [Proof of Stake](token-economics/gov-pos.md)
+* [Token economics](token-economics-1/README.md)
+  * [Proof of Authority](token-economics-1/gov-poa.md)
+  * [Proof of Stake](token-economics-1/gov-pos.md)
 * [Validators](validators/README.md)
   * [PoA](validators/poa/README.md)
     * [Becoming a validator](validators/poa/becoming-a-validator.md)

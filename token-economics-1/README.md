@@ -1,4 +1,4 @@
-# Overview
+# Token economics
 
 Dock has a total supply of 1B tokens which exist as ERC-20 tokens the Ethereum smart contract with address `0xe5dada80aa6477e85d09747f2842f7993d0df71c` and can be seen [on etherscan](https://etherscan.io/token/0xe5dada80aa6477e85d09747f2842f7993d0df71c). Out of the 1B tokens, Dock owns 400M and has committed to giving away 200M in emission rewards which will be released overtime on the Dock mainnet which will be launched in 2 phases; the first phase is Proof of Authority \(PoA\) where Dock's governing council will select validators based on the validators testnet performance. The second is Proof of Stake \(PoS\) where validators will be selected on the basis of their staked tokens. For more detail on each phase please check the respective documents.
 
