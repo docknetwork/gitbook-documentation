@@ -10,7 +10,7 @@ Some useful references:
 4. [Schema](https://docknetwork.github.io/sdk/tutorials/concepts_blobs_schemas.html) and its [API](https://docknetwork.github.io/sdk/tutorials/tutorial_blobs_schemas.html)
 5. [Credential revocation](https://docknetwork.github.io/sdk/tutorials/tutorial_revocation.html).
 6. [Complete examples](https://github.com/docknetwork/sdk/tree/master/example) in SDK for various features 
-7. Another useful place are the [SDK tests](https://github.com/docknetwork/sdk/tree/master/tests)
+7. Another useful place is the [SDK tests](https://github.com/docknetwork/sdk/tree/master/tests)
 8. [API reference](https://docknetwork.github.io/sdk/reference/)
 
 
