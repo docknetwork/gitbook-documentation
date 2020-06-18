@@ -1,17 +1,17 @@
 # Dock
 
-Dock provides a range of tools incorporating blockchain technology that enables businesses and developers to create trusted applications[.  
+Dock provides a range of tools incorporating blockchain technology that enables businesses and developers to create verifiable credentials[.  
 ](https://www.dock.io/#Getting-started)
 
 To start building using the Dock's blockchain node and SDK, go to the **Build** section
 
 {% page-ref page="build/" %}
 
-To learn more about the Dock network like the players in the ecosystem, token economics, governance, etc, go to the **Learn** section
+To learn more about the Dock network, such as token economics, consensus and governance, visit the **Learn** section
 
 {% page-ref page="learn/" %}
 
-To learn how to become a validator and the tooling around that, go to **Validators** section
+To learn how to become a validator, the rewards and technical requirements go to **Validators** section
 
 {% page-ref page="validators/" %}
 
