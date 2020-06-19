@@ -9,7 +9,7 @@ The network will start with Proof of Authority \(PoA\) consensus but as it trans
 The governance framework manages the network by deciding the
 
 1. Actors in the network and their eligibility criteria and tenure.
-2. Configuration parameters
+2. Configuration parameters.
 3. Adding, removing or updating the network functionality.
 4. Rewards and punishments for different actors in the network.
 5. Allocation of financial reserves of the network .i.e. the treasury.
