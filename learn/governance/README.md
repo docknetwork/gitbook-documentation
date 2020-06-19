@@ -12,7 +12,7 @@ The governance framework manages the network by deciding the
 2. Configuration parameters.
 3. Adding, removing or updating the network functionality.
 4. Rewards and punishments for different actors in the network.
-5. Allocation of financial reserves of the network .i.e. the treasury.
+5. Allocation of financial reserves of the network, i.e., the treasury.
 
 
 
