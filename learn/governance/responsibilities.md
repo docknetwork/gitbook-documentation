@@ -12,7 +12,7 @@ The governance framework describes what different actors can and cannot do. Ther
 
 ### Network configuration
 
-Due to the nature of Dock chain \(built on Substrate\), the chain's configuration can be changed by either sending transactions from privileged accounts as is done in the early days of the network or by raising proposals that are voted on by the council or by the token holder when the Proof of Stake network launches. These configuration parameters include the core operational parameters like maximum block size, maximum block weight, block time, minimum transaction fee, etc, or economic parameters like block rewards, penalties for misbehavior, share for Treasury, etc, and application-level configuration like revocation policy, etc.
+Due to the nature of Dock chain \(built on Substrate\), the chain's configuration can be changed by either sending transactions from privileged accounts as is done in the early days of the network or by raising proposals that are voted on by the council or by the token holder when the Proof of Stake network launches. These configuration parameters include the core operational parameters like maximum block size, maximum block weight, block time, minimum transaction fee, etc, or economic parameters like block rewards, penalties for misbehavior, share for Treasury, etc., and application-level configuration like revocation policy, etc.
 
 ### Features
 
