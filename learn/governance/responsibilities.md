@@ -25,5 +25,5 @@ The network rewards participation for different actions like block production, r
 ### Treasury management
 
 The network will periodically emit tokens for about 25 years with a decreasing amount each year to incentivize early participation and for the participant to build other revenue streams. These tokens are called emission rewards are distributed among the validators and the Treasury. A certain fraction of the emission rewards and the penalties applied on bad actors go to the Treasury. The Treasury is supposed to fund the ongoing development and maintenance of the network. It also rewards efforts to increase network adoption like building apps, writing tutorials, implementing the client SDK in other languages etc.   
-In the beginning, the Treasury is unilaterally controlled by Dock and can be withdrawn from. After some time, the Council will vote before any funds can be withdrawn from the Treasury. In the PoS phase, all token holders will get a chance to vote for Treasury withdrawls.
+In the beginning, the Treasury is unilaterally controlled by Dock and can be withdrawn from. After some time, the Council will vote before any funds can be withdrawn from the Treasury. In the PoS phase, all token holders will get a chance to vote for Treasury withdrawals.
 
