@@ -16,7 +16,7 @@ Due to the nature of Dock chain \(built on Substrate\), the chain's configuratio
 
 ### Features
 
-As with configuration, features can be added or removed by transactions or proposals depending on the stage of the network. Some example features are consensus, which will be changed from PoA \(Aura\) to PoS \(NPoS with BABE\), removal of Master role, change of storage layer, disabling of token migration module post-migration etc. Application level features like DID authorization, more flexible revocation policies, etc, will be proposed through governance as well.
+As with configuration, features can be added or removed by transactions or proposals depending on the stage of the network. Some example features are consensus, which will be changed from PoA \(Aura\) to PoS \(NPoS with BABE\), removal of Master role, change of storage layer, disabling of token migration module post-migration, etc. Application-level features like DID authorization, more flexible revocation policies, etc., will be proposed through governance as well.
 
 ### Rewards and punishments
 
