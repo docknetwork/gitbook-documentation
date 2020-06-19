@@ -1,10 +1,10 @@
 # Ecosystem
 
-The following are the players in the Dock ecosystem.
+The following are Dock ecosystem stakeholders.
 
 ### Identity owners
 
-Entities who have an on-chain [DID](https://www.w3.org/TR/did-core/). The DID has an associated public key that can be used to authenticate the DID or verify assertions from the DID, either on-chain or off-chain.
+Entities who have an on-chain [DID](https://www.w3.org/TR/did-core/). The DID \(Decentralized Identity\) has an associated public key that can be used to authenticate the DID or verify assertions from the DID, either on or off-chain.
 
 ### Issuers
 
@@ -24,11 +24,11 @@ Entities who verify the received presentations from the holder. These are genera
 
 ### Validators
 
-Entities who run a full node and are in charge of producing blocks and finalizing them. As the network will have a proof of authority consensus model in the initial stage, the validators will not stake any tokens and will be selected by the Governing Council.
+Entities who run a full node and are in charge of producing blocks and finalizing them. As the network will have a proof of authority consensus model in the initial stage, the validators will not stake any tokens and will be selected based on their testnet performance by the Governing Council.
 
 ### Governing Council
 
-Entities who decide the rules of the Dock network like \(base\) fees for different operations, how are block rewards distributed, etc by controlling what \(source code\) upgrades are allowed on the network.
+A group of individuals who are part of the Dock Association, a Swiss non-profit whose remit is to govern the network and manage its ongoing development while driving adoption. The council set the rules of the Dock network such as; determining base fees for operations or block reward distribution by controlling what \(source code\) upgrades are allowed on the network.
 
 
 
