@@ -4,7 +4,7 @@
 
 The governance framework describes what different actors can and cannot do. There are a few kinds of actors in the network.
 
-* **Validators** process transactions, produce blocks \(by putting transactions in blocks\), and finalize them; they also validate blocks produced by other validators. The maximum number of validators and the process to become one changes over time. In the beginning, they will be added by Dock and a small selected group but with Proof of Stake launch, they can be selected by any token holders.
+* **Validators** process transactions, produce blocks \(by putting transactions in blocks\), and finalize them; they also validate blocks produced by other validators. The maximum number of validators and the process to become one change over time. In the beginning, they will be added by Dock and a small selected group but with Proof of Stake launch, they can be selected by any token holders.
 * **Nominators** decide who can be a validator and for how long.
 * The **Technical Committee** will provide technical guidance to the network and also fast-track any urgent technical proposals.
 * The **Governing Council** is responsible for ensuring the optimal performance of the network. It does so by proposing source code upgrades, enforcing and upgrading the governance framework, selecting the Technical Committee, rewarding good actors and punishing bad actors, and allocating the treasury. In the early life of the network, the Governing Council will also act as Nominator, meaning it will decide who can be a validator.
