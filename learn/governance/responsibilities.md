@@ -8,7 +8,7 @@ The governance framework describes what different actors can and cannot do. Ther
 * **Nominators** decide who can be a validator and for how long.
 * The **Technical Committee** will provide technical guidance to the network and also fast-track any urgent technical proposals.
 * The **Governing Council** is responsible for ensuring the optimal performance of the network. It does so by proposing source code upgrades, enforcing and upgrading the governance framework, selecting the Technical Committee, rewarding good actors and punishing bad actors, and allocating the treasury. In the early life of the network, the Governing Council will also act as Nominator, meaning it will decide who can be a validator.
-* The **Master** is the all-powerful actor who will only exist only for the first 2-3 months of the network and have "sudo" \(superuser\) rights who can add or remove validators, council members, do source code upgrades, control treasury funds and configure other parameters as well. The Master will be a multi-signature account and will be controlled by Dock Corp.'s executives.
+* The **Master** is the all-powerful actor who will exist only for the first 2-3 months of the network and have "sudo" \(superuser\) rights who can add or remove validators, council members, do source code upgrades, control treasury funds and configure other parameters as well. The Master will be a multi-signature account and will be controlled by Dock Corp.'s executives.
 
 ### Network configuration
 
