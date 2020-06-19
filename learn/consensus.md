@@ -6,7 +6,7 @@ Dock will start with a Proof of Authority \(PoA\) network and therefore the bloc
 
 When Dock transitions into utilizing PoS, the block production algorithm changes from Aura to BABE \(**B**lind **A**ssignment for **B**lockchain **E**xtension protocol\) which selects a validator for each _slot_ \(interval of time\) randomly using a VRF \(Verifiable Random Function\). BABE is similar to IOHK's [Ouroboros Praos](https://eprint.iacr.org/2017/573.pdf). More on this be seen on the Web3 Foundation's [research page](https://research.web3.foundation/en/latest/polkadot/BABE/Babe.html). It is implemented in Substrate in [this pallet](https://github.com/paritytech/substrate/tree/master/client/consensus/babe).
 
-For development purposes, we will bundle [instant-seal](https://github.com/paritytech/substrate/tree/master/client/consensus/manual-seal) consensus which produces a block as soon as the transaction reaches the node rather than wait for blocks to be produced at a fixed interval. This is helpful when running SDK against a local node during development.
+For development purposes, we will bundle [instant-seal](https://github.com/paritytech/substrate/tree/master/client/consensus/manual-seal) consensus which produces a block as soon as the transaction reaches the node rather than wait for blocks to be produced at a fixed interval. This is helpful when running the SDK against a local node during development.
 
 
 
