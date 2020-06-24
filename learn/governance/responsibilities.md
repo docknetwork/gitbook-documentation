@@ -4,8 +4,8 @@
 
 The governance framework describes what different actors can and cannot do. There are a few kinds of actors in the network.
 
-* **Validators** process transactions, produce blocks \(by putting transactions in blocks\), and finalize them; they also validate blocks produced by other validators. The maximum number of validators and the process to become one change over time. In the beginning, they will be added by Dock and a small selected group but with Proof of Stake launch, they can be selected by any token holders.
-* **Nominators** decide who can be a validator and for how long.
+* **Validators** process transactions, produce blocks \(by putting transactions in blocks\), and finalize them; they also validate blocks produced by other validators. The maximum number of validators and the process to become one will change over time. In the beginning with the PoA networks, they will be added by Dock in a small selected group, but with Proof of Stake networks they can be selected by any token holders.
+* **Nominators** select validators they would like to process transactions, produce blocks and validate transactions on Dock. They do so by staking Dock tokens \(you can read more about this in Proof of Stake section\). 
 * The **Technical Committee** will provide technical guidance to the network and also fast-track any urgent technical proposals.
 * The **Governing Council** is responsible for ensuring the optimal performance of the network. It does so by proposing source code upgrades, enforcing and upgrading the governance framework, selecting the Technical Committee, rewarding good actors and punishing bad actors, and allocating the treasury. In the early life of the network, the Governing Council will also act as Nominator, meaning it will decide who can be a validator.
 * The **Master** is the all-powerful actor who will exist only for the first 2-3 months of the network and have "sudo" \(superuser\) rights who can add or remove validators, council members, do source code upgrades, control treasury funds and configure other parameters as well. The Master will be a multi-signature account and will be controlled by Dock Corp.'s executives.
