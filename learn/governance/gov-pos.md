@@ -1,6 +1,6 @@
 # Proof of Stake
 
-In this phase, estimated for Q2 2021, the network changes to [Nominated Proof of Stake \(NPoS\)](https://research.web3.foundation/en/latest/polkadot/NPoS/index.html) designed by Web3 Foundation where becoming a validator requires you to stake \(lockup\) tokens. Candidate validators can stake their own tokens or other token holders can nominate candidates by locking tokens on their behalf. The locked tokens can only be withdrawn after 2 epochs, i.e. 20 days, this time period is called an unbonding period. 
+In this phase, estimated for Q2 2021, the network changes to [Nominated Proof of Stake \(NPoS\)](https://research.web3.foundation/en/latest/polkadot/NPoS/index.html) designed by Web3 Foundation where becoming a validator requires you to stake \(lock up\) tokens. Candidate validators can stake their own tokens or other token holders can nominate candidates by locking tokens on their behalf. The locked tokens can only be withdrawn after 2 epochs, i.e., 20 days. This time period is called an unbonding period. 
 
 The candidates with the most stake behind them become validators and earn rewards every epoch; there can be at most 50 validators at any given instant. Regards malicious behavior; the validators and their nominators are penalized proportionately via a mechanism called slashing. Slashing is an event where the validator and/or nominator forfeits a defined proportion of staked tokens, which are then redistributed to the Treasury.  
   
