@@ -4,9 +4,9 @@ In this phase, validators are selected by the Dock Association via the associati
 
 In each _epoch_, the same amount of emission rewards are reserved every validator and the validator gets them in proportion to their performance in the epoch. 50% of the validator's emission rewards are locked till the PoS phase when they are gradually emitted. For the total emission rewards \(locked + unlocked\) earned by all the validators in an epoch, 60% extra tokens are emitted for the Treasury. Each validator takes 100% of the block rewards for the blocks it authors and these are unlocked. For more details on this, refer to the [PoA token-economics section](../../token-economics/econ-poa.md). 
 
-In the beginning of the PoA network \(1 month\), there will be no emission reward as the tokens need to be migrated from Ethereum. Once the initial migration is done, the emission rewards will be enabled, all account balances \(except the migrator's\) are reset and the network start normal operation. 
+In the beginning of the PoA mainnet network \(1 to 2 months\), there will be no emission reward as Dock tokens are migrated from Ethereum. Once the initial migration is done, the emission rewards will be enabled and all account balances \(except the migrators\) are reset and the network commences normal operations. 
 
-The PoA phase is subdivided into 2 phases, PoA-1 and then PoA-2. PoA-1 will run for about 2-4 months and has no democracy. PoA-2 has democracy and changes in the network are done by voting between the council members. PoA-2 will last until the PoS network launches.
+The PoA phase is subdivided into 2 phases, PoA-1 and then PoA-2. PoA-1 will run for about 2-4 months and has no democracy. PoA-2 has democracy and changes in the network are carried out through voting between council members. PoA-2 will last until the PoS network launches.
 
 {% page-ref page="poa-1.md" %}
 
