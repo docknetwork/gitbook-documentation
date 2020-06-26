@@ -1,6 +1,6 @@
 # Validators
 
-There are different requirements to become validators in PoA network vs the PoS network. More information is available in the following sections:
+There are different requirements to become validators in PoA network vs PoS network. The tooling will become more sophisticated for PoS.
 
 {% page-ref page="poa/" %}
 
