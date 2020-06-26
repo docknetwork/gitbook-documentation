@@ -2,6 +2,7 @@
 
 * [Dock](README.md)
 * [Build](build/README.md)
+  * [Faucet](build/faucet.md)
   * [Node](build/node.md)
   * [SDK](build/sdk.md)
 * [Learn](learn/README.md)
