@@ -1,6 +1,6 @@
 # Deployment
 
-Docker images are provided for the testnet and mainnet for various versions. But the scripts `run_poa_test_node` and `run_poa_main_node` run the latest version of the testnet and mainnet respectively. The scripts must be run on the machine on which the node is supposed to be hosted either by logging into the machine or remote execution.
+Docker images are provided for the testnet and mainnet for various versions. But the scripts `run_poa_test_node` and `run_poa_main_node` run the latest version of the testnet and mainnet respectively. The scripts must be run on the machine on which the node is supposed to be hosted either by logging into the machine or via remote execution.
 
 The provided Docker images can be used to run 1 or more of the following:
 
@@ -11,7 +11,11 @@ The provided Docker images can be used to run 1 or more of the following:
 5. A full node serving RPC traffic from clients
 6. A JSON-RPC proxy
 
-A **full node** is a node running Dock's core software. A full node can control who is allowed to connect to it and what its allowed to do. Validators, sentry nodes and bootstrap nodes are full nodes. A **validator node** processes transactions, produces and finalizes blocks and earns rewards. Its public keys must be shared with the network so that its produced and finalized blocks can be verified by other nodes. Since the validator's availability impacts the rewards, its advised to protect it from DoS attacks. One step towards that is using 1 or more sentry nodes to communicate with other validators. A **sentry node** is a full node connected to the validator and filtering duplicate messages. A validator can have 1 or more sentry nodes and it only connects to those sentry nodes. The sentry nodes then connect to other validators and relay messages to the validator after filtering duplicate messages. A **A bootstrap node** lets full nodes discover other nodes in the network. A full should know the libp2p addresses of all discoverable nodes in the network. Any node can become a bootstrap node by connecting to all nodes and keeping allowing connections from anyone. A sentry node can act as a bootstrap node. A full node might decide to serve RPC traffic from clients. This full node might at the same time function as bootstrap node or sentry or validator. A "JSON-RPC proxy" is not a full node but serves a filter for client RPC traffic allowing only certain methods to be called. It is advised to run this when serving clients and have it behind an Nginx server.
+A **full node** is a node running Dock's core software. A full node can control who is allowed to connect to it and what it's allowed to do. Validators, sentry nodes and bootstrap nodes are full nodes. A **validator node** processes transactions, produces and finalizes blocks and earns rewards. Its public keys must be shared with the network so that its produced and finalized blocks can be verified by other nodes. 
+
+Since the validator's availability impacts the rewards, it's advised to protect it from DoS attacks. One step towards that is using 1 or more sentry nodes to communicate with other validators. A **sentry node** is a full node connected to the validator and filtering duplicate messages. A validator can have 1 or more sentry nodes and it only connects to those sentry nodes. The sentry nodes then connect to other validators and relay messages to the validator after filtering duplicate messages. 
+
+**A bootstrap node** lets full nodes discover other nodes in the network as a full node will know the libp2p addresses of all discoverable nodes in the network. Any node can become a bootstrap node by connecting to all nodes while enabling and maintaining connections from any other node. A sentry node can act as a bootstrap node. A full node might decide to serve RPC traffic from clients. This full node might at the same time function as bootstrap node or sentry or validator. A "JSON-RPC proxy" is not a full node but serves a filter for client RPC traffic allowing only certain methods to be called. It is advised to run this when serving clients and have it behind an Nginx server.
 
 ### Scripts
 
