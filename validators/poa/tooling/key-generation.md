@@ -16,7 +16,7 @@ It generates the following:
 5. An Aura private key.
 6. The corresponding Aura public key.
 7. A GRANDPA private key.
-8. The corresponding Grandpa public key.
+8. The corresponding GRANDPA public key.
 9. The libp2p peer id.
 10. The path of the file containing the libp2p secret key.
 
