@@ -1,0 +1,9 @@
+{
+    "plugins": ["page-footer"],
+    "pluginsConfig": {
+        "page-footer": {
+            "copyright": "Copyright &#169; Dock.io",
+            "style": "normal"
+        }
+    }
+}
