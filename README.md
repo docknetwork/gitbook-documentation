@@ -11,7 +11,7 @@ To learn more about the Dock network, such as token economics, consensus and gov
 
 {% page-ref page="learn/" %}
 
-To learn how to become a validator, the rewards and technical requirements go to **Validators** section
+To learn how to become a validator, the rewards and technical requirements go to the **Validators** section
 
 {% page-ref page="validators/" %}
 
