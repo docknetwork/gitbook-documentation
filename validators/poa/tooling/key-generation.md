@@ -51,5 +51,5 @@ _Note: The scripts mentioned below are not written yet and will be made availabl
 
 Clear your bash history and console buffer once you have noted the above information elsewhere.
 
-In case the validator wants to change his account or keys, he should run the above script again and submit the new account and/or the validator keys.
+Should the validator wish to change their account or keys, they should run the above script again and submit the new account and/or the validator keys.
 
