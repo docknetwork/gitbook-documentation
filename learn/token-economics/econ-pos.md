@@ -12,16 +12,16 @@ In this testnet, Dock allows anyone to participate and be a validator given that
 * Dock uses Nominated Proof of Stake \(NPoS\) developed by the Web3 Foundation.
 * Anyone can register on-chain to be a validator by declaring their stake and commission levels.
 * The validators are then selected based on the stake behind them but their rewards depend on their performance in the network \(similar to PoA network\). These rewards are then distributed to the delegates proportionally.
-* The emission rate is kept such that it incentivizes 50% of the circulating supply liquid as NPoS increases the emission per epoch linearly \(next epoch will have more emission\) until the 50% level \(Chi\_ideal in NPoS doc\) is reached. Otherwise, emission rates per epoch decrease exponentially.
-* Should malicious behavior be detected, the validators and their nominators will be slashed, i.e. lose a fraction of their stake. The fraction depends on the severity of the malicious behavior:
+* The emission rate is kept such that it incentivizes 50% of the circulating supply liquid as NPoS increases the emission per epoch linearly \(next epoch will have more emission\) until the 50% level \(Chi\_ideal in NPoS doc\) is reached. Otherwise emission rates per epoch decrease exponentially.
+* Should malicious behavior be detected, the validators and their nominators will be slashed, i.e., lose a fraction of their stake. The fraction depends on the severity of the malicious behavior:
   * Remaining unavailable \(not producing blocks and sending heartbeats\) - this has milder penalties.
-  * Producing a block out of turn comes with harsher penalties.
+  * Producing a block out of turn comes, with harsher penalties.
   * Equivocation, either producing 2 blocks at the same height or finalizing 2 blocks at the same height, results in even more severe penalties.
   * In general, malicious activities carried out by multiple validators are punished more severely since that is seen as a coordinated attack.
 * The slashed stake goes to the treasury and it may go to the validators as well, depending on the malicious behavior. However, Dock's governing council can reverse any slashes should the slashing be found to be unfair.
 * Tokens staked can be used for governance as well.
 
-**The token rewards and punishments in the PoS testnet are the same as those in the PoS mainnet with the only difference being that the testnet tokens don't have any real-world value.**
+**The token rewards and punishments in the testnet are the same as those in the mainnet with the only difference being that the testnet tokens don't have any real-world value.**
 
 | Year | Tokens released | Tokens remaining to be released | Circulating supply |
 | :--- | :--- | :--- | :--- |
@@ -49,7 +49,7 @@ The tokens released each year as emission rewards are fewer than the previous ye
 
 If the staked tokens are less than 50% of the circulating supply, then the network increases the emission rate for each epoch until the staked tokens reach 50%. This is done so that there is enough security in the network. The rewards for each epoch consist of the transaction fees collected in the epoch and the emission in the epoch.
 
-The rewards are distributed among the treasury and the validators. The treasury gets 60% of the rewards and the validators get 40%. Among the validators, the rewards are distributed based on their performance in that epoch. The network keeps track of the contributions of each validator in the epoch. For each validator, the network gives rewards proportional to their stake and commission and then gives the rest of the rewards to the nominators. For instance, if a validator is expected to receive 100 tokens in an epoch where their stake is 10%, their commission is 5%, and has 3 nominators with 35%, 30%, and 20% stake each, the network would emit 15 tokens \(10+5\) to the validator and provide 35, 30 and 20 tokens to the nominators.
+The rewards are distributed among the treasury and the validators. The treasury gets 60% of the rewards and the validators get 40%. Among the validators, the rewards are distributed based on their performance in that epoch. The network keeps track of the contributions of each validator in the epoch. For each validator, the network gives rewards proportional to their stake and commission, and then gives the rest of the rewards to the nominators. For instance, if a validator is expected to receive 100 tokens in an epoch where their stake is 10%, their commission is 5%, and has 3 nominators with 35%, 30%, and 20% stake each, the network would emit 15 tokens \(10+5\) to the validator and provide 35, 30 and 20 tokens to the nominators.
 
 ### Mainnet
 
