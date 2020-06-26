@@ -19,5 +19,3 @@ The remaining 200M owned by Dock Association \(Swiss non-profit\) will fund the 
 
 \*_The circulating supply of 600M is as shown on Coinmarketcap and is a measure of tokens being held by the general public._
 
-Here is a [spreadsheet](https://docs.google.com/spreadsheets/d/1kkdoF-LbbF6DtVCYJz4MwoVj5Glny8PDrDauLKSkx_g) showing token distribution for [PoA](https://docs.google.com/spreadsheets/d/1kkdoF-LbbF6DtVCYJz4MwoVj5Glny8PDrDauLKSkx_g/edit#gid=0) and [PoS](https://docs.google.com/spreadsheets/d/1kkdoF-LbbF6DtVCYJz4MwoVj5Glny8PDrDauLKSkx_g/edit#gid=611686546) mainnets in their respective sheets. 
-
