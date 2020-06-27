@@ -1,4 +1,4 @@
-# Token usages
+# Token Utility
 
 ### Writes to the Dock Blockchain
 
@@ -6,11 +6,11 @@ Any write operation completed on-chain requires tokens. The amount of tokens var
 
 #### DIDs \(Decentralized Identities\)
 
-* Creating them uses tokens.
+* Creating DIDs requires tokens.
 * Adding keys to DIDs requires tokens. There are different kinds of keys including those for different variations of anonymous credentials and also keys utilizing different schemas.
 * Updating keys of DID requires tokens.
 
-#### Revocation registries
+#### Revocation Registries
 
 * Creating a new revocation registry requires tokens. The number of
 
@@ -21,9 +21,9 @@ Any write operation completed on-chain requires tokens. The amount of tokens var
 
 #### Schema
 
-* Creating schema requires tokens with the number depending on the schema size. Schemas describe the structure of credentials, e.g., a driver's license credential should have 10 fields including the licensee's name and address. Schemas are shareable among issuers as they do not contain any cryptographic material and thus are created less frequently.
+* Creating schema requires tokens with the amount depending on the schema size. Schemas describe the structure of credentials, e.g., a driver's license credential should have 10 fields including the licensee's name and address. Schemas are shareable among issuers as they do not contain any cryptographic material and thus are created less frequently.
 
-### PoS validator
+### PoS Validator
 
 To become a validator in the PoS network, the candidate needs to lock tokens \("stake"\). The candidate can also invite others to lock tokens on its behalf. The network selects validators based on the stake behind them.
 
