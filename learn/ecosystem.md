@@ -20,7 +20,7 @@ Entities who receive credentials from issuers. The holders can verify the authen
 
 ### Verifiers
 
-Entities who verify the received presentations from the holder. These are generally service providers who are willing to provide services to the holder when the holder verifiably satisfies certain conditions. The verifiability comes from the credentials used in the presentation. They don't need to have an on-chain identity.
+Entities who verify the received presentations from the holder. These are generally organizations that require verification of certain conditions to be satisfied by the holder in order to engage, transact, or provide services to holders. The verifiability comes from the credentials used in the presentation. They don't need to have an on-chain identity.
 
 ### Validators
 
