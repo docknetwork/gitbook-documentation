@@ -1,17 +1,17 @@
 # Dock
 
-Dock provides a range of tools incorporating blockchain technology that enable businesses and developers to create verifiable credentials[.  
+Dock provides a range of tools incorporating blockchain technology that enables businesses and developers to create verifiable credentials[.  
 ](https://www.dock.io/#Getting-started)
 
 To start building using the Dock's blockchain node and SDK, go to the **Build** section:
 
 {% page-ref page="build/" %}
 
-To learn more about the Dock network, such as token economics, consensus and governance, visit the **Learn** section:
+To learn more about the Dock network, such as token economics, consensus, and governance, visit the **Learn** section:
 
 {% page-ref page="learn/" %}
 
-To learn how to become a validator, rewards and technical requirements go to **Validators** section:
+To learn how to become a validator, rewards and technical requirements go to the **Validators** section:
 
 {% page-ref page="validators/" %}
 
@@ -19,10 +19,11 @@ To learn how to become a validator, rewards and technical requirements go to **V
 
 ### Follow us on social media
 
-1. Blog
-2. Twitter
-3. [Riot](https://riot.im/app/#/room/#!KpPIERdKQjLTTwsOkn:matrix.org)
-4. Youtube \(ADD LINK\)
+1. [Blog](https://blog.dock.io/)
+2. [Twitter](https://twitter.com/docknetwork)
+3. [Riot chat for the general public](https://riot.im/app/#/room/#!KpPIERdKQjLTTwsOkn:matrix.org)
+4. [Riot chat for potential validators](https://riot.im/app/#/room/!JJIgSJFKgMAuxFYkTs:matrix.org)
+5. Youtube \(ADD LINK\)
 
 ### Contributing to this documentation
 
