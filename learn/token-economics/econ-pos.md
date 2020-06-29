@@ -14,7 +14,7 @@ In this testnet, Dock allows anyone to participate and be a validator given that
 * The validators are then selected based on the stake behind them but their rewards depend on their performance in the network \(similar to PoA network\). These rewards are then distributed to the delegates proportionally.
 * The emission rate is kept such that it incentivizes 50% of the circulating supply liquid as NPoS increases the emission per epoch linearly \(next epoch will have more emission\) until the 50% level \(Chi\_ideal in NPoS doc\) is reached. Otherwise, emission rates per epoch decrease exponentially.
 * Should malicious behavior be detected, the validators and their nominators will be slashed, i.e. lose a fraction of their stake. The fraction depends on the severity of the malicious behavior:
-  * Remaining unavailable \(not producing blocks and sending heartbeats\) - this has milder penalties.
+  * Remaining unavailable \(not producing blocks or sending heartbeats\) - this has milder penalties.
   * Producing a block out of turn comes with harsher penalties.
   * Equivocation, either producing 2 blocks at the same height or finalizing 2 blocks at the same height, results in even more severe penalties.
   * In general, malicious activities carried out by multiple validators are punished more severely since that is seen as a coordinated attack.
