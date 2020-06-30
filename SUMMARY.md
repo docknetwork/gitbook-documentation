@@ -22,7 +22,7 @@
     * [Proof of Stake](learn/token-economics/econ-pos.md)
 * [Validators](validators/README.md)
   * [PoA](validators/poa/README.md)
-    * [Becoming a validator](validators/poa/becoming-a-validator.md)
+    * [Becoming a Validator](validators/poa/becoming-a-validator.md)
     * [Tooling](validators/poa/tooling/README.md)
       * [Key generation](validators/poa/tooling/key-generation.md)
       * [Monitoring](validators/poa/tooling/monitoring.md)

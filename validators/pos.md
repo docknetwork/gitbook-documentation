@@ -1,4 +1,4 @@
 # PoS
 
-_The details for PoS will be added before the PoS testnet launch. The deployment process might change and more sophisticated tools like_ [_Gantree_](https://github.com/flex-dapps/gantree-core) _might be used as the validators will have more at stake_
+_The details for PoS will be added before the PoS testnet launch. The deployment process might change and more sophisticated tools like_ [_Gantree_](https://github.com/flex-dapps/gantree-core) _might be used as validators will have more at stake_
 
