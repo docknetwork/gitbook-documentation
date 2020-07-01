@@ -17,7 +17,7 @@ To learn how to become a validator, rewards and technical requirements go to the
 
 ### 
 
-### Follow us on social media
+### Connect with us
 
 1. [Blog](https://blog.dock.io/)
 2. [Twitter](https://twitter.com/docknetwork)
