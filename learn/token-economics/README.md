@@ -6,7 +6,7 @@ Dock has a total supply of 1 billion ERC-20 tokens via the Ethereum smart contra
 
 {% page-ref page="econ-pos.md" %}
 
-The remaining 200M owned by Dock Association \(Swiss non-profit\) will fund the ongoing development, governance, management and marketing of the network.
+The remaining 200M owned by Dock Association \(Swiss non-profit\) will fund the ongoing development, governance, management, and marketing of the network.
 
 | Parameter | Value |
 | :--- | :---: |

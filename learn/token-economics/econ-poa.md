@@ -17,7 +17,7 @@ Dock will accept applications from validators to join the PoA testnet. The appli
 
 #### **Description**
 
-Applicants are invited to join the network by sharing their KYC details and public keys. Once the candidate validators have been selected, the network will designate each validator in a round-robin fashion to produce blocks so that each validator gets an equal opportunity to produce blocks in an epoch. However, the actual rewards received by a validator depends on the availability of the validator which, in turn, depends on the number of blocks they produce. The network is only guaranteeing equal opportunity to validators, but not guaranteeing equal rewards. 
+Applicants are invited to join the network by sharing their KYC details and public keys. Once the candidate validators have been selected, the network will designate each validator in a round-robin fashion to produce blocks so that each validator gets an equal opportunity to produce blocks in an epoch. However, the actual rewards received by a validator depend on the availability of the validator which, in turn, depends on the number of blocks they produce. The network is only guaranteeing equal opportunity to validators, but not guaranteeing equal rewards. 
 
 During each epoch, the network will offer 15K Dock tokens to each validator, thus the network \(with 10 validators\) will offer 150K Dock tokens in total to all validators. If a validator is fully available, i.e. it produces all the blocks that it can, it will get 15K tokens in the epoch which equates to 45K tokens per month. However, if the validator is unavailable for some time \(the node crashed, the network was down or some other reason\), they should expect a proportionate loss of rewards.
 
