@@ -23,7 +23,6 @@ To learn how to become a validator, rewards and technical requirements go to the
 2. [Twitter](https://twitter.com/docknetwork)
 3. [Riot chat for the general public](https://riot.im/app/#/room/#!KpPIERdKQjLTTwsOkn:matrix.org)
 4. [Riot chat for potential validators](https://riot.im/app/#/room/!JJIgSJFKgMAuxFYkTs:matrix.org)
-5. Youtube \(ADD LINK\)
 
 ### Contributing to this documentation
 
