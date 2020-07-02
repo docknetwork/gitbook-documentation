@@ -5,10 +5,10 @@
 The governance framework describes what different actors can and cannot do. There are a few kinds of actors in the network.
 
 * **Validators** process transactions, produce blocks \(by putting transactions in blocks\), and finalize them; they also validate blocks produced by other validators. The maximum number of validators and the process to become one will change over time. At the beginning with the PoA networks, they will be added by Dock in a small selected group, but with Proof of Stake networks they can be selected by any token holders.
-* **Nominators** select validators to process transactions, produce blocks and validate transactions. They do so by staking Dock tokens \(read more about this in [Proof of Stake](gov-pos.md) section\). 
+* **Nominators** select validators they would like to process transactions, produce blocks and validate transactions. They do so by staking Dock tokens \(you can read more about this in [Proof of Stake](gov-pos.md) section\). 
 * The **Technical Committee** will provide technical guidance to the network and also fast-track any urgent technical proposals.
-* The **Governing Council** is responsible for ensuring the optimal performance of the network. It does so by proposing source code upgrades, enforcing and upgrading the governance framework, selecting the Technical Committee, rewarding good actors, punishing bad actors, and allocating the treasury. In the early life of the network, the Governing Council will also act as a Nominator in the sense that it will decide who can be a validator.
-* The **Master** is a powerful actor who will exist only for the first 2-3 months of the network. Master will have "sudo" \(superuser\) rights to add or remove validators, perform source code upgrades, control treasury funds and configure other parameters. The Master will be a multi-signature account managed by the Dock Association.
+* The **Governing Council** is responsible for ensuring the optimal performance of the network. It does so by proposing source code upgrades, enforcing and upgrading the governance framework, selecting the Technical Committee, rewarding good actors and punishing bad actors, and allocating the Treasury. In the early life of the network, the Governing Council will also act as Nominator in the sense that it will decide who can be a validator.
+* The **Master** is a powerful actor who will exist only for the first 2-3 months of the network. Master will have "sudo" \(superuser\) rights who can add or remove validators, perform source code upgrades, control Treasury funds and configure other parameters. The Master will be a multi-signature account managed by the Dock Association.
 
 ### Network Configuration
 
@@ -24,5 +24,6 @@ The network rewards participation for actions such as block production and repor
 
 ### Treasury Management
 
-The network will periodically emit tokens for about 25 years with a decreasing amount each year to incentivize early participation. These tokens are called emission rewards and are distributed among the validators and the treasury. Sixty percent of the emission rewards and all of the penalties applied to bad actors will go to the Treasury. The Treasury will fund the ongoing development and maintenance of the network. It also rewards efforts to increase network adoption such as building apps using the Dock SDK, writing tutorials, implementing the client SDK in other languages, etc. In the beginning, the treasury is controlled by the Dock Association Council who will vote before any funds can be withdrawn. 
+The network will periodically emit tokens for about 25 years with a decreasing number each year to incentivize early participation. These tokens are called emission rewards are distributed among the validators and the Treasury. Sixty percent of the emission rewards and the penalties applied to bad actors will go to the Treasury. The Treasury will fund the ongoing development and maintenance of the network. It also rewards efforts to increase network adoption such as; building apps using the Dock SDK, writing tutorials, implementing the client SDK in other languages, etc.   
+In the beginning, the Treasury is controlled by the Dock Association Council who will vote before any funds can be withdrawn. 
 

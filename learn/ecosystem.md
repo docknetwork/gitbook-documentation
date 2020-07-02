@@ -28,7 +28,7 @@ Entities who run a full node and are in charge of producing blocks and finalizin
 
 ### Governing Council
 
-A group of individuals and/or organizations who are part of the Dock Association, a Swiss non-profit whose remit is to govern the network and manage its ongoing development while driving adoption. The council sets the rules of the Dock network including determining base fees for operations and block reward distribution by controlling what \(source code\) upgrades are allowed on the network.
+A group of individuals who are part of the Dock Association, a Swiss non-profit whose remit is to govern the network and manage its ongoing development while driving adoption. The council sets the rules of the Dock network such as determining base fees for operations or block reward distribution by controlling what \(source code\) upgrades are allowed on the network.
 
 
 

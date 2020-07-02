@@ -1,6 +1,6 @@
 # SDK
 
-The Dock SDK is an open-source Javascript package hosted on [Github](https://github.com/docknetwork/sdk) and [npm](https://www.npmjs.com/package/@docknetwork/sdk) that lets developers do CRUD operations for W3C [DIDs](https://www.w3.org/TR/did-core/) and revocation registries, create credential Schemas, issue [W3C compliant verifiable credentials](https://www.w3.org/TR/vc-data-model/) and verify them. To start using the SDK check here. The SDK documentation is broadly divided into [conceptual documentation](https://docknetwork.github.io/sdk/tutorials/concepts.html) and [tutorials](https://docknetwork.github.io/sdk/tutorials/tutorials.html) for getting hands on.
+The Dock SDK is an open-source Javascript package hosted on [Github](https://github.com/docknetwork/sdk) and [npm](https://www.npmjs.com/package/@docknetwork/sdk) that lets developers do CRUD operations for W3C [DIDs](https://www.w3.org/TR/did-core/) and revocation registries, create credential Schemas, issue [W3C compliant verifiable credentials](https://www.w3.org/TR/vc-data-model/) and verify them. To start using the SDK check [here](https://docknetwork.github.io/sdk/tutorials/introduction.html). The SDK documentation is broadly divided into [conceptual documentation](https://docknetwork.github.io/sdk/tutorials/concepts.html) and [tutorials](https://docknetwork.github.io/sdk/tutorials/tutorials.html) for getting hands-on.
 
 Some useful references:
 

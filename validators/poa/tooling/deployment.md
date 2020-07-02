@@ -19,11 +19,11 @@ Since the validator's availability impacts the rewards, it's advised to protect 
 
 ### Scripts
 
-**Deploy nodes on the validator** 
-
 The scripts will accept the hostname and access credentials of the machine and deploy a full node on the machine and by running a Docker container. The node data is stored in a Docker volume. [Ansible](https://www.ansible.com/) [playbooks](https://docs.ansible.com/ansible/latest/user_guide/playbooks.html) are used to run the services.
 
-Deploy validator The validator is deployed by downloading the latest Docker image on the remote machine, creating a docker volume if not present, and using the volume for keeping chain state.  
+**Deploy validator** 
+
+The validator is deployed by downloading the latest Docker image on the remote machine, creating a docker volume if not present, and using the volume for keeping chain state.  
   
 _Note: The scripts mentioned below are not written yet and will be made available once we launch the testnet._
 
@@ -47,7 +47,9 @@ _Note: The scripts mentioned below are not written yet and will be made availabl
 
 Similarly, `poa-mainnet-validator.yml` can be used for mainnet
 
-Deploy sentry A sentry node is deployed similar to the validator but does not need the aura and grandpa keys as it's not producing or finalizing blocks.
+**Deploy sentry** 
+
+A sentry node is deployed similar to the validator but does not need the aura and grandpa keys as it's not producing or finalizing blocks.
 
 1. The following will deploy a sentry with name `MySentry`, the libp2p key `0x8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f` for the validator running at `/ip4/44.231.55.99/tcp/30333/p2p/QmaAARGgiUyGfqi87ZscaDRKknyw9jX9jJqsBwFi9jocYg`. The sentry node, however, allows connections from all nodes
 
@@ -65,7 +67,9 @@ Deploy sentry A sentry node is deployed similar to the validator but does not ne
 
 Similarly, `poa-mainnet-sentry.yml` can be used for mainnet
 
-Deploy bootstrap node A bootstrap node is deployed similar to the sentry node but it allows connections from all.
+**Deploy bootstrap node** 
+
+A bootstrap node is deployed similar to the sentry node but it allows connections from all.
 
 1. The following will deploy a sentry with name `MySentry`, the libp2p key `0x8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f` for the validator running at `/ip4/44.231.55.99/tcp/30333/p2p/QmaAARGgiUyGfqi87ZscaDRKknyw9jX9jJqsBwFi9jocYg`. The sentry node, however, allows connections from all nodes
 
@@ -75,7 +79,9 @@ Deploy bootstrap node A bootstrap node is deployed similar to the sentry node bu
 
 2. Similar to the validator and sentry, the bootstrap node can use the flag `allowRPCExt` to allow RPC connections from outside. Also, the flag `allowPrometheusExt` allows any Prometheus server to pull data from the node and setting `allowTelemetry` to false disables the telemetry endpoint.
 
-JSON-proxy To allow only specific RPC calls, run the JSON-proxy server below. The run below will make the server listed to all hosts and at port 9949. It expects the full node at 9944.
+**JSON-proxy** 
+
+To allow only specific RPC calls, run the JSON-proxy server below. The run below will make the server listed to all hosts and at port 9949. It expects the full node at 9944.
 
 ```text
 ansible-playbook -s json-proxy.yml --extra-vars "listen='0.0.0.0:9949' full-node=127.0.0.1:9944"
