@@ -2,7 +2,7 @@
 
 ### Overview
 
-To become a validator in the PoA testnet, the candidate must submit a short expression of interest form, available [here](https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSc_jjdscJCF9l8hyYnsIa45_EDQ22zk9jiVQiTZI7THb8ozWw/viewform?pli%3D1&followup=https://docs.google.com/forms/d/e/1FAIpQLSc_jjdscJCF9l8hyYnsIa45_EDQ22zk9jiVQiTZI7THb8ozWw/viewform?pli%3D1&ltmpl=forms). Dock will contact the applicant and decide whether to accept the application. If the application is accepted, the candidate will submit another form with their blockchain address and validator keys. If the application is rejected, it will be communicated to the candidate. 
+To become a validator in the PoA testnet, the candidate must submit a short expression of interest form. Dock will contact the applicant and decide whether to accept the application. If the application is accepted, the candidate will submit another form with their blockchain address and validator keys. If the application is rejected, it will be communicated to the candidate. 
 
 The validator can run a few different setups, such as having a single node as a validator. This single node can serve many purposes, including block production, serving client requests, acting as a bootstrap node, but it does not need to perform all of those functions. The validator can also run an additional sentry node for DoS protection which can be used for serving clients or a separate node for serving clients. We advise that running two machines, one for validator and one for sentry, is sufficient for the current state of the network. The sentry can optionally be used as a bootstrap node or serve client requests.
 
