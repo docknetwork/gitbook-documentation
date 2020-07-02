@@ -26,8 +26,5 @@ To learn how to become a validator, rewards and technical requirements go to the
 
 ### Contributing to this documentation
 
-This documentation syncs with this [Github repo](https://github.com/docknetwork/gitbook-documentation). To contribute to this documentation, submit a pull request [here](https://github.com/docknetwork/gitbook-documentation/pulls) for the master branch. To report any errors or ask clarifications, raise an [issue](https://github.com/docknetwork/gitbook-documentation/issues).  
-TODO: The repo is private, it should be made public.
-
-
+This documentation syncs with this [Github repo](https://github.com/docknetwork/gitbook-documentation). To contribute to this documentation, submit a pull request [here](https://github.com/docknetwork/gitbook-documentation/pulls) for the master branch. To report any errors or ask clarifications, raise an [issue](https://github.com/docknetwork/gitbook-documentation/issues).
 
