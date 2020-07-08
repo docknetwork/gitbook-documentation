@@ -1,6 +1,6 @@
 # Key generation
 
-The script `gen_keys_poa_validator` is present in the Substrate node's`scripts`directory. It requires 4 arguments: account type, account password, session password, and network type.
+The script `gen_keys_poa_validator` is present in the Substrate node's`scripts`directory. It requires 4 arguments: account type, an account password, session password, and network type.
 
 * The account type can have one of the three values: `ed25519`, `sr25519` and `secp256k1` to generate the type of account private key.
 * The account password is used to protect the account secret phrase.
