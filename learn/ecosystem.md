@@ -24,7 +24,7 @@ Entities who verify the received presentations from the holder. These are genera
 
 ### Validators
 
-Entities who run a full node and are in charge of producing blocks and finalizing them. As the network will have a proof of authority consensus model in the initial stage, the validators will not stake any tokens and will be selected based on their testnet performance by the Governing Council.
+Entities who run a full node and are in charge of producing blocks and finalizing them. As the network will have a proof of authority consensus model in the initial stage, the validators will not stake any tokens and will be selected based on their testnet performance by the Governing Council. In the next stage, any token holder can become a validator by staking tokens.
 
 ### Governing Council
 
