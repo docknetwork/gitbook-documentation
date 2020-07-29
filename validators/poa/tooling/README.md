@@ -4,9 +4,13 @@ The following tools are available to validators which will continue to be develo
 
 {% page-ref page="key-generation.md" %}
 
+{% page-ref page="deployment.md" %}
+
 {% page-ref page="monitoring.md" %}
 
-{% page-ref page="deployment.md" %}
+
+
+
 
 
 
