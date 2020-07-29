@@ -23,7 +23,7 @@
     * [Becoming a Validator](validators/poa/becoming-a-validator.md)
     * [Tooling](validators/poa/tooling/README.md)
       * [Key generation](validators/poa/tooling/key-generation.md)
-      * [Monitoring](validators/poa/tooling/monitoring.md)
       * [Deployment](validators/poa/tooling/deployment.md)
+      * [Monitoring](validators/poa/tooling/monitoring.md)
   * [PoS](validators/pos.md)
 
