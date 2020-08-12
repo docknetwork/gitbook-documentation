@@ -1,45 +1,55 @@
 # Key generation
 
-There are two scripts provided, one to generate account \(and associated keypair\) and libp2p keypair and the other to rotate the session key of a running node and return the new key. A candidate validator is expected to generate his account and libp2p keypair with the first script and then run his node with the libp2p key and then run the second script to rotate his session key and then share the account address and session key with Dock before his node can be made a validator.
-
-The script [gen\_keys\_poa\_validator](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/gen_keys_poa_validator) is used to generate account and libp2p keypair and is present in the Substrate node's [scripts](https://github.com/docknetwork/dock-substrate/tree/poa-1/scripts) directory. This script internally uses [subkey](https://www.substrate.io/kb/integrate/subkey) and requires it to be installed. It requires 2 arguments: account type and an account password.
+The script `gen_keys_poa_validator` is present in the Substrate node's`scripts`directory. It requires 4 arguments: account type, an account password, session password, and network type.
 
 * The account type can have one of the three values: `ed25519`, `sr25519` and `secp256k1` to generate the type of account private key.
 * The account password is used to protect the account secret phrase.
+* The session password is used to protect the secret phrase used for generating Aura and GRANDPA keys.
+* The network type can be either `test` or `main` depending on which network the account is generated.
 
 It generates the following:
 
 1. An account address.
 2. The account's private key.
 3. The secret phrase for the account, this phrase is protected by the password.
-4. The libp2p public key.
-5. The libp2p secret key.
-6. The name of the file containing the libp2p secret key.
+4. The secret phrase used for generating Aura and GRANDPA keys, this phrase is protected by the password.
+5. An Aura private key.
+6. The corresponding Aura public key.
+7. A GRANDPA private key.
+8. The corresponding GRANDPA public key.
+9. The libp2p peer id.
+10. The path of the file containing the libp2p secret key.
 
-The script [rotate\_session\_key](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/rotate_session_key) is used to rotate the session key of a running node and return the newly generated and set session key.  It optionally accepts an argument of the node's RPC endpoint and if not given, assumes the node running at http://localhost:9933. 
+During the validator application, the information is shown in blue, i.e. the account address, the Aura public key, GRANDPA public key, and the libp2p public key must be submitted to Dock and the private information shown in red, i.e. the secret phrases and the private keys must be stored securely. Also, the passwords must be remembered if the keys are to be regenerated using the secret phrase. The file containing the libp2p secret key must be secured and is moved to the validator node. This script internally uses `subkey`.
 
-Some example runs and their outputs:
+Some example runs and their outputs:  
+_Note: The scripts mentioned below are not yet written and will be made available once we launch the testnet._
 
-1. Generate an ed25519 account with password `pass` to generate account and libp2p keys respectively. The secret information is displayed in red. In place of ed25519, sr25519 and secp256k1 can be used as well.
-
-   ```text
-   $ ./scripts/gen_keys_poa_validator ed25519 pass
-   The account address in ss58 format is 5EiCZUY3G6JhN2TTb6R6wEXvbhnp5ciww12rbxX3FJrZefob
-   The secret phrase for the account is file upper fever fog achieve side catalog flash age bright mirror split
-   The secret key for the account is 0x67826291fd8ce9941e19e2e0d97ad16cd467f40aee9c29898570f9b28645d7c2
-   The libp2p public key is QmbhFxGwMoEaK6gSwDR85KLbZt1nwRjktuQTouq1cacu4z
-   The libp2p secret key is 2195edf5175f4370051a06415f06b042048e2ed5db8106264ffd82d3a044e294
-   The libp2p secret key is also stored in the file lib-p2p-secret.key
-   ```
-
-2. Rotate the session key of a running node. The following run assumes the node is running at http://localhost:9933.
+1. Generate an ed25519 account with passwords `pass1` and `pass2` for account and validator keys respectively, for the testnet
 
    ```text
-    $ ./scripts/rotate_session_key
-    The session key is 0xd4a23d286b25aa8ee401acf2ac10232047b40905c327c3dd9ab5442cb9539663b1bb339873b201d3995c88bb1e8f6983878be18ae65abce4cc41ef0de01fa8ae
+    gen_keys_poa_validator ed25519 pass1 pass2 test
    ```
+
+   **COLORED OUTPUT WILL BE SHOWN**  
+
+2. Generate an sr25519 account with passwords `foo` and `bar` for account and validator keys respectively, for the mainnet
+
+   ```text
+    gen_keys_poa_validator sr25519 foo bar main
+   ```
+
+   **COLORED OUTPUT WILL BE SHOWN**
+
+3. Generate a secp256k1 account with passwords `foo` and `baz` for account and validator keys respectively, for the mainnet
+
+   ```text
+    gen_keys_poa_validator secp256k1 foo baz main
+   ```
+
+   **COLORED OUTPUT WILL BE SHOWN**
 
 Clear your bash history and console buffer once you have noted the above information elsewhere.
 
-If the validator wishes to change their account or session, they can run the above script again and submit the new account and/or the session keys.
+If the validator wishes to change their account or keys, they can run the above script again and submit the new account and/or the validator keys.
 
