@@ -1,7 +1,7 @@
 # Deployment
 
 The code for the testnet is located in the [poa-1 branch](https://github.com/docknetwork/dock-substrate/tree/poa-1) of the [node repo](https://github.com/docknetwork/dock-substrate). The chain spec file for the testnet is [poa\_testnet\_raw](https://github.com/docknetwork/dock-substrate/blob/poa-1/cspec/poa_testnet_raw.json) and should be passed to the `--chain` argument to the node while running the node.  
-Docker image is provided for running a node. Additionally, an [Ansible playbook](https://docs.ansible.com/ansible/latest/user_guide/playbooks.html) is provided to deploy node with different settings. _The playbook has only been tested with Ubuntu_. The playbook needs a machine provisioned and ssh access to it. It will set up Docker on that machine, download the node's image and run a container with the given settings.
+Docker image is provided for running a node. Additionally, an [Ansible playbook](https://docs.ansible.com/ansible/latest/user_guide/playbooks.html) is provided to deploy node with different settings. _The playbook has only been tested with Ubuntu_. The playbook needs a machine provisioned and ssh access to it. It will set up Docker on that machine, download the node's image and run a container with the given settings. The playbook is run on a local machine \(not the one that will be set up as node\).
 
 The playbook can be used to run 1 or more of the following:
 
