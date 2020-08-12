@@ -34,6 +34,8 @@ These arguments can be given from the command line or set in the hosts file. A [
 
 ### Examples using the playbook
 
+The sample hosts file assume password-less ssh access, but if you require an additional password, use the flag `-k` while running the playbook. If you are not using private key but only a password, use `ansible_ssh_pass`.
+
 **Deploy validator** 
 
 The validator is deployed assuming a host called `validator` defined in the `hosts` file with host variables similar to the ones in the sample hosts file
