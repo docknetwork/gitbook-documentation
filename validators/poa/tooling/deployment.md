@@ -1,5 +1,6 @@
 # Deployment
 
+The code for the testnet is located in the [poa-1 branch](https://github.com/docknetwork/dock-substrate/tree/poa-1) of the [node repo](https://github.com/docknetwork/dock-substrate). The chain spec file for the testnet is [poa\_testnet\_raw](https://github.com/docknetwork/dock-substrate/blob/poa-1/cspec/poa_testnet_raw.json) and should be passed to the `--chain` argument to the node while running the node.  
 Docker image is provided for running a node. Additionally, an [Ansible playbook](https://docs.ansible.com/ansible/latest/user_guide/playbooks.html) is provided to deploy node with different settings. _The playbook has only been tested with Ubuntu_. The playbook needs a machine provisioned and ssh access to it. It will set up Docker on that machine, download the node's image and run a container with the given settings.
 
 The playbook can be used to run 1 or more of the following:
@@ -31,7 +32,7 @@ The playbook [poa-1-testnet-node.yml](https://github.com/docknetwork/dock-substr
 
 These arguments can be given from the command line or set in the hosts file. A [sample hosts file](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/ansible/hosts.sample) is provided showing these variables for validator, sentry and a full node.
 
-### Examples
+### Examples using the playbook
 
 **Deploy validator** 
 
