@@ -30,7 +30,7 @@ The playbook [poa-1-testnet-node.yml](https://github.com/docknetwork/dock-substr
 9. what telemetry url it should use as `telemetry_url` , default to no telemetry
 10. if session key should be rotated, as `rotate_session_key`, defaults to false
 
-These arguments can be given from the command line or set in the hosts file. A [sample hosts file](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/ansible/hosts.sample) is provided showing these variables for validator, sentry and a full node. Note that the sample file has several placeholders enclosed in angle brackets, i.e. like `<validator node ip>` or `<path of private key file>` , these should be appropriately filled. 
+These arguments can be given from the command line or set in the hosts file. A [sample hosts file](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/ansible/hosts.sample) is provided showing these variables for validator, sentry and a full node. Note that the sample file has several placeholders enclosed in angle brackets, i.e. like `<validator node ip>` or `<path of private key file>` , all of these should be appropriately filled or removed else the hosts file won't be parsable. 
 
 ### Examples using the playbook
 
