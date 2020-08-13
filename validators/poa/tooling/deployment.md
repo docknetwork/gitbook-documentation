@@ -19,28 +19,29 @@ We recommend having a 3 tiered deployment where the 1st tier which is a validato
 
 The playbook [poa-1-testnet-node.yml](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/ansible/poa-1-testnet-node.yml) will accept the hostname and access credentials of the machine and deploy a full node on the machine and in a Docker container. The node data is stored in a Docker volume. The playbook accepts a few arguments like 
 
-1. node name as `node_name`
-2. libp2p secret key as `libp2p_key`, if not provided, the node will generate a random key
-3. whether to allow external RPC requests as  `allow_ext_rpc`, defaults to false
-4. whether the node is running as a validator or not as `is_validator`, defaults to false
-5. if a node is a sentry of a validator as `sentry_of` , if not provided then ignored
-6. whether will only connect to its reserved \(whitelisted nodes\) as `reserved_only`, defaults to false
-7. its reserved nodes as an array `reserved_nodes`, defaults to empty array
-8. if the node should use bootnodes or not as an array `bootnodes`, defaults to empty array
-9. what telemetry url it should use as `telemetry_url` , default to no telemetry
-10. if session key should be rotated, as `rotate_session_key`, defaults to false
+1. path to python interpreter on remote `ansible_python_interpreter`
+2. node name as `node_name`
+3. libp2p secret key as `libp2p_key`, if not provided, the node will generate a random key
+4. whether to allow external RPC requests as  `allow_ext_rpc`, defaults to false
+5. whether the node is running as a validator or not as `is_validator`, defaults to false
+6. if a node is a sentry of a validator as `sentry_of` , if not provided then ignored
+7. whether will only connect to its reserved \(whitelisted nodes\) as `reserved_only`, defaults to false
+8. its reserved nodes as an array `reserved_nodes`, defaults to empty array
+9. if the node should use bootnodes or not as an array `bootnodes`, defaults to empty array
+10. what telemetry url it should use as `telemetry_url` , default to no telemetry
+11. if session key should be rotated, as `rotate_session_key`, defaults to false
 
 These arguments can be given from the command line or set in the hosts file. A [sample hosts file](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/ansible/hosts.sample) is provided showing these variables for validator, sentry and a full node. Note that the sample file has several placeholders enclosed in angle brackets, i.e. like `<validator node ip>` or `<path of private key file>` , all of these should be appropriately filled or removed else the hosts file won't be parsable. 
 
 ### Examples using the playbook
 
-The sample hosts file assume password-less ssh access, but if you require an additional password, use the flag `-k` while running the playbook. If you are not using private key but only a password, use `ansible_ssh_pass`.
+The sample hosts file assumes password-less ssh access, but if you require an additional password, use the flag `-k` while running the playbook. If you are not using a private key but only a password, use `ansible_ssh_pass`.
 
 **Deploy validator** 
 
 The validator is deployed assuming a host called `validator` defined in the `hosts` file with host variables similar to the ones in the sample hosts file
 
-1. The following will deploy a validator with name `MyValidator`, overide the libp2p key to be `0x2c0ac6d8f3eb6b51af3e67f851f8d72875f3c6a0612ce67fe1cfa6f0e46deb6b` , rotate the session key and will allow connections from any node. The session key will be stored in a file called `session_key.txt`. The `rotate_session_key` flag must be used the first time the node is being set up.
+1. The following will deploy a validator with name `MyValidator`, overide the libp2p key to be `0x2c0ac6d8f3eb6b51af3e67f851f8d72875f3c6a0612ce67fe1cfa6f0e46deb6b` , rotate the session key and will allow connections from any node. The session key will be stored in a file called `session_key.txt` on the host. The `rotate_session_key` flag must be used the first time the node is being set up.
 
    ```text
     ansible-playbook -i hosts poa-1-testnet-node.yml --extra-vars "host=validator node_name=MyValidator libp2p_key=0x2c0ac6d8f3eb6b51af3e67f851f8d72875f3c6a0612ce67fe1cfa6f0e46deb6b rotate_session_key=true reserved_only=false"
