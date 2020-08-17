@@ -17,7 +17,7 @@ Any node can act as a boot node lets nodes discover other nodes in the network a
 
 We recommend having a 3 tiered deployment where the 1st tier which is a validator only talks to its sentry. The sentry node is the second tier and talks to the validator its responsible for and other whitelisted \(reserved\) nodes which might be sentries of other validators or other validators or some other full nodes serving clients or bootnodes. The nodes serving clients or acting as full nodes are the 3rd tier. The objective is to allow only whitelisted traffic \(P2P or RPC\) to tier 1 and 2 and only tier 3 allows client RPC traffic.  A sentry most likely will have one full node dedicated to the serving RPC traffic from clients.   
 
-The playbook [poa-1-testnet-node.yml](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/ansible/poa-1-testnet-node.yml) has been tested with Ansible version 2.9.6 with python 3.8 and we recommend at least that version. The playbook will accept the hostname and access credentials of the machine and deploy a full node on the machine and in a Docker container. The node data is stored in a Docker volume. The playbook accepts a few arguments like 
+The playbook [poa-1-testnet-node.yml](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/ansible/poa-1-testnet-node.yml) has been tested on hosts Ubuntu 18.04 and RHEL 8.2 with Ansible version 2.9.6 with python 3.8 and we recommend at least that version. It requires python3 to be installed on the host \(where node will run\) as well and sudo access to the host. The playbook will accept the hostname and access credentials of the machine and deploy a full node on the machine and in a Docker container. The node data is stored in a Docker volume. The playbook accepts a few arguments like 
 
 1. path to python interpreter on remote `ansible_python_interpreter`
 2. node name as `node_name`
@@ -44,13 +44,13 @@ The validator is deployed assuming a host called `validator` defined in the `hos
 1. The following will deploy a validator with name `MyValidator`, overide the libp2p key to be `0x2c0ac6d8f3eb6b51af3e67f851f8d72875f3c6a0612ce67fe1cfa6f0e46deb6b` , rotate the session key and will allow connections from any node. The session key will be stored in a file called `session_key.txt` on the host. The `rotate_session_key` flag must be used the first time the node is being set up.
 
    ```text
-    ansible-playbook -i hosts poa-1-testnet-node.yml --extra-vars "host=validator node_name=MyValidator libp2p_key=0x2c0ac6d8f3eb6b51af3e67f851f8d72875f3c6a0612ce67fe1cfa6f0e46deb6b rotate_session_key=true reserved_only=false"
+    ansible-playbook -i hosts poa-1-testnet-node.yml --extra-vars "host=validator node_name=MyValidator libp2p_key=2c0ac6d8f3eb6b51af3e67f851f8d72875f3c6a0612ce67fe1cfa6f0e46deb6b rotate_session_key=true reserved_only=false"
    ```
 
 2. The following will deploy a validator similar to above but will only allow connections from libp2p node `/ip4/35.155.248.216/tcp/30333/p2p/QmawgZD3BANiKR72ZXsSEEAMpz9iQkCy4r2RDyihQysuRm`. In practice, this will be the sentry. But note that value of `reserved_nodes` is an array so it can have any number of values, i.e. libp2p peer ids.
 
    ```text
-    ansible-playbook -s poa-1-testnet-validator.yml --extra-vars "host=validator name=MyValidator libp2p_key=0x2c0ac6d8f3eb6b51af3e67f851f8d72875f3c6a0612ce67fe1cfa6f0e46deb6b reserved_nodes=['/ip4/35.155.248.216/tcp/30333/p2p/QmawgZD3BANiKR72ZXsSEEAMpz9iQkCy4r2RDyihQysuRm']"
+    ansible-playbook -s poa-1-testnet-validator.yml --extra-vars "host=validator name=MyValidator libp2p_key=2c0ac6d8f3eb6b51af3e67f851f8d72875f3c6a0612ce67fe1cfa6f0e46deb6b reserved_nodes=['/ip4/35.155.248.216/tcp/30333/p2p/QmawgZD3BANiKR72ZXsSEEAMpz9iQkCy4r2RDyihQysuRm']"
    ```
 
 **Deploy sentry** 
@@ -60,13 +60,13 @@ The sentry is deployed assuming a host called `sentry` defined in the `hosts` fi
 1. The following will deploy a sentry with name `MySentry`, the libp2p key `0x8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f` for the validator running at `/ip4/44.231.55.99/tcp/30333/p2p/QmaAARGgiUyGfqi87ZscaDRKknyw9jX9jJqsBwFi9jocYg`. The sentry node, however, allows connections from all nodes
 
    ```text
-    ansible-playbook -s poa-1-testnet-sentry.yml --extra-vars "host=sentry name=MySentry libp2p_key=0x8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f sentry_of=/ip4/44.231.55.99/tcp/30333/p2p/QmaAARGgiUyGfqi87ZscaDRKknyw9jX9jJqsBwFi9jocYg"
+    ansible-playbook -s poa-1-testnet-sentry.yml --extra-vars "host=sentry name=MySentry libp2p_key=8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f sentry_of=/ip4/44.231.55.99/tcp/30333/p2p/QmaAARGgiUyGfqi87ZscaDRKknyw9jX9jJqsBwFi9jocYg"
    ```
 
 2. The following will deploy a sentry similar to above but the sentry will only allow connection from 2 nodes, `/ip4/35.155.248.216/tcp/30333/p2p/QmawgZD3BANiKR72ZXsSEEAMpz9iQkCy4r2RDyihQysuRm` and `/ip4/54.218.195.100/tcp/30333/p2p/QmaWVer8pXKR8AM6u2B8r9gXivTW9vTitb6gjLM6FYQcXS`
 
    ```text
-    ansible-playbook -s poa-1-testnet-sentry.yml --extra-vars "host=sentry name=MySentry libp2p_key=0x8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f sentry_of=/ip4/44.231.55.99/tcp/30333/p2p/QmaAARGgiUyGfqi87ZscaDRKknyw9jX9jJqsBwFi9jocYg reserved_nodes=['/ip4/35.155.248.216/tcp/30333/p2p/QmawgZD3BANiKR72ZXsSEEAMpz9iQkCy4r2RDyihQysuRm', '/ip4/54.218.195.100/tcp/30333/p2p/QmaWVer8pXKR8AM6u2B8r9gXivTW9vTitb6gjLM6FYQcXS']"
+    ansible-playbook -s poa-1-testnet-sentry.yml --extra-vars "host=sentry name=MySentry libp2p_key=8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f sentry_of=/ip4/44.231.55.99/tcp/30333/p2p/QmaAARGgiUyGfqi87ZscaDRKknyw9jX9jJqsBwFi9jocYg reserved_nodes=['/ip4/35.155.248.216/tcp/30333/p2p/QmawgZD3BANiKR72ZXsSEEAMpz9iQkCy4r2RDyihQysuRm', '/ip4/54.218.195.100/tcp/30333/p2p/QmaWVer8pXKR8AM6u2B8r9gXivTW9vTitb6gjLM6FYQcXS']"
    ```
 
 3. Similar to the validator, the sentry node can use the flag `allow_ext_rpc` to allow/disallow RPC connections from outside.
@@ -78,7 +78,7 @@ A full node is deployed similar to the sentry node but it allows connections fro
 1. The following will deploy a full node with name `MyFullNode`, the libp2p key `0x8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f` . The full node, however, allows connections from all nodes
 
    ```text
-    ansible-playbook -s poa-1-testnet-bootstrap.yml --extra-vars "host=fullnode name=MyFullnode libp2p-key=0x8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f"
+    ansible-playbook -s poa-1-testnet-bootstrap.yml --extra-vars "host=fullnode name=MyFullnode libp2p-key=8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f"
    ```
 
 2. Similar to the validator and sentry, the full node can use the flag `allow_ext_rpc` to allow/disallow RPC connections from outside. 
