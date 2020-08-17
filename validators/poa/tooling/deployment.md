@@ -53,12 +53,6 @@ The validator is deployed assuming a host called `validator` defined in the `hos
     ansible-playbook -s poa-1-testnet-validator.yml --extra-vars "host=validator name=MyValidator libp2p_key=0x2c0ac6d8f3eb6b51af3e67f851f8d72875f3c6a0612ce67fe1cfa6f0e46deb6b reserved_nodes=['/ip4/35.155.248.216/tcp/30333/p2p/QmawgZD3BANiKR72ZXsSEEAMpz9iQkCy4r2RDyihQysuRm']"
    ```
 
-3. The following will deploy a validator but allow RPC traffic from everyone
-
-   ```text
-    ansible-playbook -s poa-1-testnet-validator.yml --extra-vars "host=validator name=MyValidator libp2p_key=0x2c0ac6d8f3eb6b51af3e67f851f8d72875f3c6a0612ce67fe1cfa6f0e46deb6b allow_ext_rpc=true" 
-   ```
-
 **Deploy sentry** 
 
 The sentry is deployed assuming a host called `sentry` defined in the `hosts` file with host variables similar to the ones in the sample hosts file
