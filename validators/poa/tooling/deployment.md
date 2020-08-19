@@ -1,11 +1,7 @@
 # Deployment
 
 The code for the testnet is located in the [poa-1 branch](https://github.com/docknetwork/dock-substrate/tree/poa-1) of the [node repo](https://github.com/docknetwork/dock-substrate). The chain spec file for the testnet is [poa\_testnet\_raw](https://github.com/docknetwork/dock-substrate/blob/poa-1/cspec/poa_testnet_raw.json) and should be passed to the `--chain` argument to the node while running the node.  
-There are 3 ways of deploying a node: 
-
-1. Building from source by cloning the Github repo's branch [poa-1](https://github.com/docknetwork/dock-substrate/tree/poa-1) and using cargo to build. Run the node by specifying the chain spec [cspec/poa\_testnet\_raw.json](https://github.com/docknetwork/dock-substrate/blob/poa-1/cspec/poa_testnet_raw.json) as `--chain=<path to souce>/cspec/poa_testnet_raw.json`
-2.  Downloading the Docker image `docknetwork/dock-substrate:rpoa-test` from Dockerhub using command `docker pull docknetwork/dock-substrate:rpoa-test`. The image will accept all arguments as the node binary does. Specify the [cspec/poa\_testnet\_raw.json](https://github.com/docknetwork/dock-substrate/blob/poa-1/cspec/poa_testnet_raw.json) spec as `./cspec/poa_testnet_raw.json` 
-3. Using the Ansible playbook as described below. The playbook will download the appropriate Docker image, use appropriate chain spec and some other reasonable defaults described below. _The playbook has only been tested with Ubuntu 18.04 and RHEL 8.2_. The playbook needs a machine provisioned and ssh access to it. It will set up Docker on that machine, download the node's image, and run a container with the given settings. It will use the appropriate chain spec. The playbook is run on a local machine \(not the one that will be set up as node\).
+The Docker image for the node has the `rpoa-test` tag at [these Dockerhub images](https://hub.docker.com/r/docknetwork/dock-substrate/tags), use command `docker pull docknetwork/dock-substrate:rpoa-test` to pull the image. Additionally, an [Ansible playbook](https://docs.ansible.com/ansible/latest/user_guide/playbooks.html) is provided to deploy node with different settings. _The playbook has only been tested with Ubuntu 18.04 and RHEL 8.2_. The playbook needs a machine provisioned and ssh access to it. It will set up Docker on that machine, download the node's image, and run a container with the given settings. The playbook is run on a local machine \(not the one that will be set up as node\).
 
 The playbook can be used to run 1 or more of the following:
 
