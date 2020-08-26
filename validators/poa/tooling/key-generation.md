@@ -4,7 +4,7 @@ There are two scripts provided, one to generate account \(and associated keypair
 
 The script [gen\_keys\_poa\_validator](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/gen_keys_poa_validator) is used to generate account and libp2p keypair and is present in the Substrate node's [scripts](https://github.com/docknetwork/dock-substrate/tree/poa-1/scripts) directory. This script internally uses [subkey](https://www.substrate.io/kb/integrate/subkey) and requires it to be installed. It requires 2 arguments: account type and an account password.
 
-* The account type can have one of the three values: `ed25519`, `sr25519` and `secp256k1` to generate the type of account private key.
+* The account type can have one of the three values: `ed25519`, `sr25519` and `ecdsa` to generate the type of account private key.
 * The account password is used to protect the account secret phrase.
 
 It generates the following:
