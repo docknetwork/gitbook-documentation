@@ -1,13 +1,16 @@
 # Deployment
 
-The code for the testnet is located in the [poa-1 branch](https://github.com/docknetwork/dock-substrate/tree/poa-1) of the [node repo](https://github.com/docknetwork/dock-substrate). The chain spec file for the testnet is [poa\_testnet\_raw](https://github.com/docknetwork/dock-substrate/blob/poa-1/cspec/poa_testnet_raw.json) and should be passed to the `--chain` argument to the node while running the node.  
-The Docker image for the node has the `rpoa-test` tag at [these Dockerhub images](https://hub.docker.com/r/docknetwork/dock-substrate/tags), use command `docker pull docknetwork/dock-substrate:rpoa-test` to pull the image. Additionally, an [Ansible playbook](https://docs.ansible.com/ansible/latest/user_guide/playbooks.html) is provided to deploy node with different settings. _The playbook has only been tested with Ubuntu 18.04 and RHEL 8.2_. The playbook needs a machine provisioned and ssh access to it. It will set up Docker on that machine, download the node's image, and run a container with the given settings. The playbook is run on a local machine \(not the one that will be set up as node\).
+The code for the testnet is located in the [poa-1 branch](https://github.com/docknetwork/dock-substrate/tree/poa-1) of the [node repo](https://github.com/docknetwork/dock-substrate). The chain spec file for the testnet is [poa\_testnet\_raw](https://github.com/docknetwork/dock-substrate/blob/poa-1/cspec/poa_testnet_raw.json) and should be passed to the `--chain` argument to the node while running the node. The chain spec has a bootnode hardcoded and thus specifying a bootnode is not needed  
+There are 3 ways of deploying a node: 
 
-The playbook can be used to run 1 or more of the following:
+1. Building from source by cloning the Github repo's branch [poa-1](https://github.com/docknetwork/dock-substrate/tree/poa-1) and using cargo to build. Run the node by specifying the chain spec [cspec/poa\_testnet\_raw.json](https://github.com/docknetwork/dock-substrate/blob/poa-1/cspec/poa_testnet_raw.json) as `--chain=<path to souce>/cspec/poa_testnet_raw.json`
+2.  Downloading the Docker image `docknetwork/dock-substrate:rpoa-test` from Dockerhub using command `docker pull docknetwork/dock-substrate:rpoa-test`. The image will accept all arguments as the node binary does. Specify the [cspec/poa\_testnet\_raw.json](https://github.com/docknetwork/dock-substrate/blob/poa-1/cspec/poa_testnet_raw.json) spec as `./cspec/poa_testnet_raw.json` 
+3. Using the Ansible playbook as described below. The playbook will download the appropriate Docker image, use appropriate chain spec and some other reasonable defaults described below. _The playbook has only been tested with Ubuntu 18.04 and RHEL 8.2_. The playbook needs a machine provisioned and ssh access to it. It will set up Docker on that machine, download the node's image, and run a container with the given settings. It will use the appropriate chain spec. The playbook is run on a local machine \(not the one that will be set up as node\). The playbook can be used to run 1 or more of the following:
+   1. A full node, that can optionally serve RPC traffic from clients
+   2. A validator node
+   3. A sentry node
 
-1. A full node, that can optionally serve RPC traffic from clients
-2. A validator node
-3. A sentry node
+## Types of nodes 
 
 A **full node** is a node running Dock's core software. A full node can control who is allowed to connect to it and what it's allowed to do. Validators, sentry nodes, and bootstrap nodes are full nodes. A **validator node** processes transactions, produces and finalizes blocks, and earns rewards. Its public keys must be shared with the network so that its produced and finalized blocks can be verified by other nodes. 
 
@@ -15,7 +18,9 @@ Since the validator's availability impacts the rewards, it's advised to protect 
 
 Any node can act as a boot node lets nodes discover other nodes in the network as a full node will know the libp2p addresses of all discoverable nodes in the network. A node can become a boot node by connecting to all nodes while enabling and maintaining connections from any other node. A sentry node can act as a boot node. A full node might decide to serve RPC traffic from clients. This full node might at the same time function as full node or sentry or validator. It is advised to run Nginx when serving clients and proxy RPC connections through it.
 
-We recommend having a 3 tiered deployment where the 1st tier which is a validator only talks to its sentry. The sentry node is the second tier and talks to the validator its responsible for and other whitelisted \(reserved\) nodes which might be sentries of other validators or other validators or some other full nodes serving clients or bootnodes. The nodes serving clients or acting as full nodes are the 3rd tier. The objective is to allow only whitelisted traffic \(P2P or RPC\) to tier 1 and 2 and only tier 3 allows client RPC traffic.  A sentry most likely will have one full node dedicated to the serving RPC traffic from clients.   
+We _recommend_ having a 3 tiered deployment where the 1st tier which is a validator only talks to its sentry. The sentry node is the second tier and talks to the validator its responsible for and other whitelisted \(reserved\) nodes which might be sentries of other validators or other validators or some other full nodes serving clients or bootnodes. The nodes serving clients or acting as full nodes are the 3rd tier. The objective is to allow only whitelisted traffic \(P2P or RPC\) to tier 1 and 2 and only tier 3 allows client RPC traffic.  A sentry most likely will have one full node dedicated to the serving RPC traffic from clients.   
+
+## Using the Ansible playbook to deploy a node
 
 The playbook [poa-1-testnet-node.yml](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/ansible/poa-1-testnet-node.yml) has been tested on remotes running Ubuntu 18.04 and RHEL 8.2 with Ansible version 2.9.6 with python 3.8 and we recommend at least that version. It requires python3 to be installed on the host \(where node will run\) as well and sudo access to the remote. The playbook will accept the hostname and access credentials of the machine and deploy a full node on the machine and in a Docker container. The node data is stored in a Docker volume. The playbook accepts a few arguments like 
 
@@ -84,5 +89,19 @@ A full node is deployed similar to the sentry node but it allows connections fro
 
 2. Similar to the validator and sentry, the full node can use the flag `allow_ext_rpc` to allow/disallow RPC connections from outside. 
 
+## Logs
 
+Once a node has become a validator, it will periodically see logs like `Starting consensus session on top of parent...` , `Prepared block for proposing at ...` and `Pre-sealed block for proposal at`  . These logs indicate that a node produced a block
+
+![Validator logs](../../../.gitbook/assets/logs.png)
+
+If running using ansible, use command `sudo docker logs poa-1-node -f --tail 100` to see logs. Here  `poa-1-node` is the name of the docker container Ansible creates and flag `-f` will keep on showing new logs as they are produced.
+
+## Validator running with backup nodes
+
+As validator rewards are proportional to their availability, it is important that validators maximize their node's uptime and thus maximize block production. But occasionally, a validator may have to taken down in case of necessary hardware or software upgrades or other reasons. Thus it is advised to run multiple nodes that are capable of becoming validators but only one running as a validator at an instant such tht .when an actual validator falls, another node can take over in its place. 
+
+This is achieved by running those nodes with the same session key but **only one** node is running with the `--validator` flag . Note that it is important that only 1 node is a validator else the validator will be penalized. To have several nodes running with the same session key, follow the instructions in [this section](key-generation.md#inserting-session-keys) in the Key generation section for each backup node \(including current validator\). Then either set the session key yourself by making an extrinsic or share with us. We repeat, only one node should be running as a validator, i.e. with the `--validator` flag, rest should be running without that. 
+
+Once the nodes are running and the current validator has to be taken down, stop the validator node and restart one of the backup nodes with the `--validator` flag.
 
