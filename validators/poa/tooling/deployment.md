@@ -33,7 +33,7 @@ The playbook [poa-1-testnet-node.yml](https://github.com/docknetwork/dock-substr
 7. whether will only connect to its reserved \(whitelisted nodes\) as `reserved_only`, defaults to false
 8. its reserved nodes as an array `reserved_nodes`, defaults to empty array
 9. if the node should use bootnodes or not as an array `bootnodes`, defaults to empty array
-10. what telemetry url it should use as `telemetry_url` , default to no telemetry
+10. what telemetry url it should use as `telemetry_url` , default to no telemetry. To use Polkadot's telemetry, set it as `'wss://telemetry.polkadot.io/submit/ 0'`
 11. if session key should be rotated, as `rotate_session_key`, defaults to false
 12. pruning mode for the node, as `pruning`, this can be either `archive` or a positive integer.
 
