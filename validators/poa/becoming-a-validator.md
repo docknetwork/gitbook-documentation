@@ -6,6 +6,8 @@ To become a validator in the PoA testnet, the candidate must submit a short expr
 
 The validator can run a few different setups, such as having a single node as a validator. This single node can serve many purposes, including block production, serving client requests, acting as a bootstrap node, but it does not need to perform all of those functions. The validator can also run an additional sentry node for DoS protection which can be used for serving clients or a separate node for serving clients. We advise that running two machines, one for validator and one for sentry, is sufficient for the current state of the network. The sentry can optionally be used as a bootstrap node or serve client requests.
 
+Once you have become a validator, you can see either your account address or your name \(that you permitted us to use\) in the [explorer here](https://fe.dock.io/#/explorer) producing blocks.
+
 ### Application
 
 To become a PoA validator, the validator will submit this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSc_jjdscJCF9l8hyYnsIa45_EDQ22zk9jiVQiTZI7THb8ozWw/viewform?pli=1) specifying their details for KYV \(Know Your Validator\) once the Dock Association has approved the expression of interest. This includes providing their name, email, location, at least one social profile, and an ID which will vary depending on the location.
