@@ -47,7 +47,7 @@ The browser UI can be used to restore the account generated with the script abov
 
 ### Using script
 
-The script [rotate\_session\_key](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/rotate_session_key) is used to rotate the session key of a running node and return the newly generated and set session key.  It optionally accepts an argument of the node's RPC endpoint and if not given, assumes the node running at http://localhost:9933. 
+The script [rotate\_session\_key](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/rotate_session_key) is used to generate a new session key, which is a pair of public keys, of a running node, insert the corresponding private keys in the node's keystore, and return the session key.  It optionally accepts an argument of the node's RPC endpoint and if not given, assumes the node running at http://localhost:9933. 
 
 **Example run of the script**
 
