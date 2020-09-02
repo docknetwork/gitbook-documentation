@@ -22,7 +22,9 @@ We _recommend_ having a 3 tiered deployment where the 1st tier which is a valida
 
 ## Using the Ansible playbook to deploy a node
 
-The playbook [poa-1-testnet-node.yml](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/ansible/poa-1-testnet-node.yml) has been tested on remotes running Ubuntu 18.04 and RHEL 8.2 with Ansible version 2.9.6 with python 3.8 and we recommend at least that version. It requires python3 to be installed on the host \(where node will run\) as well and sudo access to the remote. The playbook will accept the hostname and access credentials of the machine and deploy a full node on the machine and in a Docker container. The node data is stored in a Docker volume. The playbook accepts a few arguments like 
+The playbook [poa-1-testnet-node.yml](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/ansible/poa-1-testnet-node.yml) has been tested on remotes running Ubuntu 18.04 and RHEL 8.2 with Ansible version 2.9.6 with python 3.8 and we recommend at least that version. It requires python3 to be installed on the host \(where node will run\) as well and sudo access to the remote. The playbook will accept the hostname and access credentials of the machine and deploy a full node on the machine and in a Docker container with the node data in a docker volume called `chain-data`.  
+The node listens at Substrate's default ports for various kinds of traffic, i.e. for libp2p traffic, port 30333, RPC through TCP at port 9933 and RPC through Websockets at port 9944 and these ports of the container are bound to the host at the same port numbers so make sure that at least port 30333 is open. Whether the node allows RPC traffic from external traffic, depends on the value of the playbook flag `allow_ext_rpc`.  
+The playbook accepts a few arguments like 
 
 1. path to python interpreter on remote `ansible_python_interpreter`
 2. node name as `node_name`
@@ -104,4 +106,82 @@ As validator rewards are proportional to their availability, it is important tha
 This is achieved by running those nodes with the same session key but **only one** node is running with the `--validator` flag . Note that it is important that only 1 node is a validator else the validator will be penalized. To have several nodes running with the same session key, follow the instructions in [this section](key-generation.md#inserting-session-keys) in the Key generation section for each backup node \(including current validator\). Then either set the session key yourself by making an extrinsic or share with us. We repeat, only one node should be running as a validator, i.e. with the `--validator` flag, rest should be running without that. 
 
 Once the nodes are running and the current validator has to be taken down, stop the validator node and restart one of the backup nodes with the `--validator` flag.
+
+## Serving RPC traffic
+
+It is advised to serve RPC traffic through a proxy like Nginx so that rate-limiting and similar protections can be used. As we anticipate that most nodes will be exposing Websocket RPC, some sample configuration for Nginx is specified. However, the following are not sufficient and a node runner should have firewall and other layers of protection as well.
+
+### Proxying websocket connections through Nginx
+
+Assuming the node is exposing websocket RPC at port 9944 and you want to listen for websocket connections at `/` \(root\) location, put the following inside the `server` section of Nginx config
+
+```text
+server {
+    ...
+    .....
+    ........
+    location / {
+        # Node's websocket RPC server is running at 9944
+		    proxy_pass http://127.0.0.1:9944;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+    }
+}
+```
+
+On RedHat/Centos machines, you might have trouble making Nginx communicate with Node's WS RPC server due to which you will see Nginx sending HTTP 502 to clients or Nginx error logs like `connect() to 127.0.0.1:9944 failed (13: Permission denied) while connecting to upstream`. You need to make SELinux allow that communication by turning on this switch `httpd_can_network_connect` as `sudo setsebool -P httpd_can_network_connect 1`
+
+### Limiting connections per IP
+
+To limit the number of websocket connections that can be made from an IP, Nginx's `limit_conn` directive can be used as below.  The example below restricts an IP to have only 5 connections at a time, any more connections will be rejected. Note that the connection zone `addr` is declared outside of a `server` block. Also note that this alone is not sufficient to stop a DoS attack as an attacker can get lots of machines \(or NICs\) or compromise other devices.
+
+```text
+# Declare a connection zone "addr" and specify 20 megs of memory will be to store IPs
+limit_conn_zone $binary_remote_addr zone=addr:20m;
+
+...
+...
+
+server {
+    .....
+    .....
+    
+    # Allow only 5 connections from an IP
+    limit_conn addr 5;
+    
+    location / {
+        # Node's websocket RPC server is running at 9944
+		    proxy_pass http://127.0.0.1:9944;
+		    ......
+		    .......
+		}
+}
+```
+
+### Limiting bandwidth per connection
+
+To limit bandwidth per connection, you can use the `limit_rate` and optionally the `limit_rate_after` directive as well. The example config below shows that for each connection, after serving 10 kilobytes, its bandwidth is limited to 5 kilobytes/second.
+
+```text
+server {
+    .....
+    .....
+    
+    # Allow only ....
+    limit_conn .....;
+    
+    location / {
+        # Node's websocket RPC server is running at 9944
+		    proxy_pass http://127.0.0.1:9944;
+		    ......
+		    .......
+		    
+		    # Serve first 10 KB without any limit. After that limit to 5 KB/s
+		    limit_rate_after 10k;
+        limit_rate       5k;
+		}
+}
+```
 
