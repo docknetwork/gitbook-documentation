@@ -1,10 +1,10 @@
 # Deployment
 
-The code for the testnet is located in the [poa-1 branch](https://github.com/docknetwork/dock-substrate/tree/poa-1) of the [node repo](https://github.com/docknetwork/dock-substrate). The chain spec file for the testnet is [danforth\_raw](https://github.com/docknetwork/dock-substrate/blob/poa-1/cspec/danforth_raw.json) and should be passed to the `--chain` argument to the node while running the node. The chain spec has a bootnode hardcoded and thus specifying a bootnode is not needed  
+The code for the testnet is located in the master branch of the [node repo](https://github.com/docknetwork/dock-substrate). The chain spec file for the testnet is [danforth\_raw](https://github.com/docknetwork/dock-substrate/blob/master/cspec/danforth_raw.json) and should be passed to the `--chain` argument to the node while running the node. The chain spec has a bootnode hardcoded and thus specifying a bootnode is not needed  
 There are 3 ways of deploying a node: 
 
-1. Building from source by cloning the Github repo's branch [poa-1](https://github.com/docknetwork/dock-substrate/tree/poa-1) and using cargo to build. Run the node by specifying the chain spec [cspec/danforth\_raw.json](https://github.com/docknetwork/dock-substrate/blob/poa-1/cspec/danforth_raw.json) as `--chain=<path to souce>/cspec/danforth_raw.json`
-2.  Downloading the Docker image `docknetwork/dock-substrate:rpoa-test` from Dockerhub using command `docker pull docknetwork/dock-substrate:rpoa-test`. The image will accept all arguments as the node binary does. Specify the [cspec/danforth\_raw.json](https://github.com/docknetwork/dock-substrate/blob/poa-1/cspec/danforth_raw.json) spec as `./cspec/danfrth_raw.json` 
+1. Building from source by cloning the Github repo and using cargo to build. Run the node by specifying the chain spec [cspec/danforth\_raw.json](https://github.com/docknetwork/dock-substrate/blob/master/cspec/danforth_raw.json) as `--chain=<path to souce>/cspec/danforth_raw.json`
+2.  Downloading the Docker image `docknetwork/dock-substrate:latest` from Dockerhub using command `docker pull docknetwork/dock-substrate:latest`. The image will accept all arguments as the node binary does. Specify the [cspec/danforth\_raw.json](https://github.com/docknetwork/dock-substrate/blob/master/cspec/danforth_raw.json) spec as `./cspec/danfrth_raw.json` 
 3. Using the Ansible playbook as described below. The playbook will download the appropriate Docker image, use appropriate chain spec and some other reasonable defaults described below. _The playbook has only been tested with Ubuntu 18.04 and RHEL 8.2_. The playbook needs a machine provisioned and ssh access to it. It will set up Docker on that machine, download the node's image, and run a container with the given settings. It will use the appropriate chain spec. The playbook is run on a local machine \(not the one that will be set up as node\). The playbook can be used to run 1 or more of the following:
    1. A full node, that can optionally serve RPC traffic from clients
    2. A validator node
@@ -22,7 +22,7 @@ We _recommend_ having a 3 tiered deployment where the 1st tier which is a valida
 
 ## Using the Ansible playbook to deploy a node
 
-The playbook [poa-1-testnet-node.yml](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/ansible/poa-1-testnet-node.yml) has been tested on remotes running Ubuntu 18.04 and RHEL 8.2 with Ansible version 2.9.6 with python 3.8 and we recommend at least that version. It requires python3 to be installed on the host \(where node will run\) as well and sudo access to the remote. The playbook will accept the hostname and access credentials of the machine and deploy a full node on the machine and in a Docker container with the node data in a docker volume called `chain-data`.  
+The playbook [poa-1-testnet-node.yml](https://github.com/docknetwork/dock-substrate/blob/master/scripts/ansible/poa-1-testnet-node.yml) has been tested on remotes running Ubuntu 18.04 and RHEL 8.2 with Ansible version 2.9.6 with python 3.8 and we recommend at least that version. It requires python3 to be installed on the host \(where node will run\) as well and sudo access to the remote. The playbook will accept the hostname and access credentials of the machine and deploy a full node on the machine and in a Docker container with the node data in a docker volume called `chain-data`.  
 The node listens at Substrate's default ports for various kinds of traffic, i.e. for libp2p traffic, port 30333, RPC through TCP at port 9933 and RPC through Websockets at port 9944 and these ports of the container are bound to the host at the same port numbers so make sure that at least port 30333 is open. Whether the node allows RPC traffic from external traffic, depends on the value of the playbook flag `allow_ext_rpc`.  
 The playbook accepts a few arguments like 
 
@@ -39,7 +39,7 @@ The playbook accepts a few arguments like
 11. if session key should be rotated, as `rotate_session_key`, defaults to false
 12. pruning mode for the node, as `pruning`, this can be either `archive` or a positive integer.
 
-These arguments can be given from the command line or set in the hosts file. A [sample hosts file](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/ansible/hosts.sample) is provided showing these variables for validator, sentry and a full node. Note that the sample file has several placeholders enclosed in angle brackets, i.e. like `<validator node ip>` or `<path of private key file>` , all of these should be appropriately filled or removed else the hosts file won't be parsable. 
+These arguments can be given from the command line or set in the hosts file. A [sample hosts file](https://github.com/docknetwork/dock-substrate/blob/master/scripts/ansible/hosts.sample) is provided showing these variables for validator, sentry and a full node. Note that the sample file has several placeholders enclosed in angle brackets, i.e. like `<validator node ip>` or `<path of private key file>` , all of these should be appropriately filled or removed else the hosts file won't be parsable. 
 
 ### Examples using the playbook
 
