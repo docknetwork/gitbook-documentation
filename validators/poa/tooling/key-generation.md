@@ -3,13 +3,11 @@
 There are two scripts provided, one to generate account \(and associated keypair\) and libp2p keypair and the other to rotate the session key of a running node and return the new key. A candidate validator is expected to generate his account and _optionally_ a libp2p keypair with the first script and then run his node _optionally_ with the libp2p key and then run the second script to rotate his session key and then share the account address and session key with Dock before his node can be made a validator.   
 Generating the libp2p key is optional and only needed when the node needs to be whitelisted and the peer id needs to be communicated to other nodes using the _reserved_ \(`--reserved-only` or `--reserved-nodes`\) feature. Even then the running node can be inspected for its libp2p key but that's a bit of work. We ask for libp2p peer IDs of validators as we might run our validators with the reserved flags.
 
-The [session key](https://www.substrate.io/kb/learn-substrate/session-keys) represents a pair of public keys, its the concatenation of Aura and Grandpa public keys \(as we are a proof of Authority for now\). You can generate new session keys with the script or the UI and that results in the creation of 2 new keypairs, inserting the corresponding private keys in the node's keystore and returning the concatenated public keys as the session key.
-
 ## Generating account and libp2p key
 
 ### Using script
 
-The script [gen\_keys\_poa\_validator](https://github.com/docknetwork/dock-substrate/blob/master/scripts/gen_keys_poa_validator) is used to generate account and libp2p keypair and is present in the Substrate node's [scripts](https://github.com/docknetwork/dock-substrate/tree/poa-1/scripts) directory. This script internally uses [subkey](https://www.substrate.io/kb/integrate/subkey) and requires it to be installed. It requires 2 arguments: account type and an account password.
+The script [gen\_keys\_poa\_validator](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/gen_keys_poa_validator) is used to generate account and libp2p keypair and is present in the Substrate node's [scripts](https://github.com/docknetwork/dock-substrate/tree/poa-1/scripts) directory. This script internally uses [subkey](https://www.substrate.io/kb/integrate/subkey) and requires it to be installed. It requires 2 arguments: account type and an account password.
 
 * The account type can have one of the three values: `ed25519`, `sr25519` and `ecdsa` to generate the type of account private key.
 * The account password is used to protect the account secret phrase.
@@ -49,7 +47,7 @@ The browser UI can be used to restore the account generated with the script abov
 
 ### Using script
 
-The script [rotate\_session\_key](https://github.com/docknetwork/dock-substrate/blob/master/scripts/rotate_session_key) is used to generate a new session key, which is a pair of public keys, of a running node, insert the corresponding private keys in the node's keystore, and return the session key.  It optionally accepts an argument of the node's RPC endpoint and if not given, assumes the node running at http://localhost:9933. 
+The script [rotate\_session\_key](https://github.com/docknetwork/dock-substrate/blob/poa-1/scripts/rotate_session_key) is used to rotate the session key of a running node and return the newly generated and set session key.  It optionally accepts an argument of the node's RPC endpoint and if not given, assumes the node running at http://localhost:9933. 
 
 **Example run of the script**
 
