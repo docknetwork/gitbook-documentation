@@ -7,7 +7,7 @@ The nodes currently running in the PoA testnet can be seen at the [Polkadot tele
 Our fork of Polkadot-js apps showing block explorer and other tools is [here](https://fe.dock.io/). You can notice the validators producing blocks in a round-robin fashion in the [explorer](https://fe.dock.io/#/explorer). Some things to keep in mind: 
 
 * To query the balance of an account, use the `system` module and not the `balances` module.
-* The decimal places and token symbol are not part of the testnet chain spec and that makes the transaction fees event \(`TxnFeesGiven`\) show a fees of 0. This will be fixed in the mainnet.
+* The decimal places and token symbol are not part of the testnet chain spec and that makes the transaction fees event \(`TxnFeesGiven`\) show a fees of 0. This will be fixed in the mainnet but for the time being SDK can be used to query the events with correct values.
 
 
 
