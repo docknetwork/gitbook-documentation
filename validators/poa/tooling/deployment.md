@@ -1,10 +1,10 @@
 # Deployment
 
-The code for the testnet is located in the master branch of the [node repo](https://github.com/docknetwork/dock-substrate). The chain spec file for the testnet is [danforth\_raw](https://github.com/docknetwork/dock-substrate/blob/master/cspec/danforth_raw.json) and should be passed to the `--chain` argument to the node while running the node. The chain spec has a bootnode hardcoded and thus specifying a bootnode is not needed  
+The code for the testnet is located in the master branch of the [node repo](https://github.com/docknetwork/dock-substrate). The chain spec file for the testnet is [danforth\_raw](https://github.com/docknetwork/dock-substrate/blob/master/cspec/danforth_raw.json) and for the mainnet is [vulcan\_raw](https://github.com/docknetwork/dock-substrate/blob/master/cspec/vulcan_raw.json). It should be passed to the `--chain` argument to the node while running the node. The chain spec has a bootnode hardcoded and thus specifying a bootnode is not needed  
 There are 3 ways of deploying a node: 
 
-1. Building from source by cloning the Github repo and using cargo to build. Run the node by specifying the chain spec [cspec/danforth\_raw.json](https://github.com/docknetwork/dock-substrate/blob/master/cspec/danforth_raw.json) as `--chain=<path to souce>/cspec/danforth_raw.json`
-2.  Downloading the Docker image `docknetwork/dock-substrate:latest` from Dockerhub using command `docker pull docknetwork/dock-substrate:latest`. The image will accept all arguments as the node binary does. Specify the [cspec/danforth\_raw.json](https://github.com/docknetwork/dock-substrate/blob/master/cspec/danforth_raw.json) spec as `./cspec/danforth_raw.json` 
+1. Building from source by cloning the Github repo and using cargo to build. Run the node by specifying the chain spec `danforth_raw.json` or `vulcan_raw.json` as `--chain=<path to souce>/cspec/danforth_raw.json` or `--chain=<path to souce>/cspec/vulcan_raw.json`.
+2.  Downloading the Docker image `docknetwork/dock-substrate:latest` from Dockerhub using command `docker pull docknetwork/dock-substrate:latest`. The image will accept all arguments as the node binary does. Specify the spec as `./cspec/danforth_raw.json` or `./cspec/vulcan_raw.json` depending on whether running testnet or mainnet. 
 3. Using the Ansible playbook as described below. The playbook will download the appropriate Docker image, use appropriate chain spec and some other reasonable defaults described below. _The playbook has only been tested with Ubuntu 18.04 and RHEL 8.2_. The playbook needs a machine provisioned and ssh access to it. It will set up Docker on that machine, download the node's image, and run a container with the given settings. It will use the appropriate chain spec. The playbook is run on a local machine \(not the one that will be set up as node\). The playbook can be used to run 1 or more of the following:
    1. A full node, that can optionally serve RPC traffic from clients
    2. A validator node
@@ -22,7 +22,7 @@ We _recommend_ having a 3 tiered deployment where the 1st tier which is a valida
 
 ## Using the Ansible playbook to deploy a node
 
-The playbook [poa-1-testnet-node.yml](https://github.com/docknetwork/dock-substrate/blob/master/scripts/ansible/poa-1-testnet-node.yml) has been tested on remotes running Ubuntu 18.04 and RHEL 8.2 with Ansible version 2.9.6 with python 3.8 and we recommend at least that version. It requires python3 to be installed on the host \(where node will run\) as well and sudo access to the remote. The playbook will accept the hostname and access credentials of the machine and deploy a full node on the machine and in a Docker container with the node data in a docker volume called `chain-data`.  
+The playbook [poa-1-node.yml](https://github.com/docknetwork/dock-substrate/blob/master/scripts/ansible/poa-1-node.yml) has been tested on remotes running Ubuntu 18.04 and RHEL 8.2 with Ansible version 2.9.6 with python 3.8 and we recommend at least that version. It requires python3 to be installed on the host \(where node will run\) as well and sudo access to the remote. The playbook will accept the hostname and access credentials of the machine and deploy a full node on the machine and in a Docker container with the node data in a docker volume called `chain-data`.  
 The node listens at Substrate's default ports for various kinds of traffic, i.e. for libp2p traffic, port 30333, RPC through TCP at port 9933 and RPC through Websockets at port 9944 and these ports of the container are bound to the host at the same port numbers so make sure that at least port 30333 is open. Whether the node allows RPC traffic from external traffic, depends on the value of the playbook flag `allow_ext_rpc`.  
 The playbook accepts a few arguments like 
 
@@ -52,13 +52,13 @@ The validator is deployed assuming a host called `validator` defined in the `hos
 1. The following will deploy a validator with name `MyValidator`, overide the libp2p key to be `0x2c0ac6d8f3eb6b51af3e67f851f8d72875f3c6a0612ce67fe1cfa6f0e46deb6b` , rotate the session key and will allow connections from any node. The session key will be stored in a file called `session_key.txt` on the host. The `rotate_session_key` flag must be used the first time the node is being set up.
 
    ```text
-    ansible-playbook -i hosts poa-1-testnet-node.yml --extra-vars "host=validator node_name=MyValidator libp2p_key=2c0ac6d8f3eb6b51af3e67f851f8d72875f3c6a0612ce67fe1cfa6f0e46deb6b rotate_session_key=true reserved_only=false"
+    ansible-playbook -i hosts poa-1-node.yml --extra-vars "host=validator node_name=MyValidator libp2p_key=2c0ac6d8f3eb6b51af3e67f851f8d72875f3c6a0612ce67fe1cfa6f0e46deb6b rotate_session_key=true reserved_only=false"
    ```
 
 2. The following will deploy a validator similar to above but will only allow connections from libp2p node `/ip4/35.155.248.216/tcp/30333/p2p/QmawgZD3BANiKR72ZXsSEEAMpz9iQkCy4r2RDyihQysuRm`. In practice, this will be the sentry. But note that value of `reserved_nodes` is an array so it can have any number of values, i.e. libp2p peer ids.
 
    ```text
-    ansible-playbook -s poa-1-testnet-validator.yml --extra-vars "host=validator node_name=MyValidator libp2p_key=2c0ac6d8f3eb6b51af3e67f851f8d72875f3c6a0612ce67fe1cfa6f0e46deb6b reserved_nodes=['/ip4/35.155.248.216/tcp/30333/p2p/QmawgZD3BANiKR72ZXsSEEAMpz9iQkCy4r2RDyihQysuRm']"
+    ansible-playbook -s poa-1-node.yml --extra-vars "host=validator node_name=MyValidator libp2p_key=2c0ac6d8f3eb6b51af3e67f851f8d72875f3c6a0612ce67fe1cfa6f0e46deb6b reserved_nodes=['/ip4/35.155.248.216/tcp/30333/p2p/QmawgZD3BANiKR72ZXsSEEAMpz9iQkCy4r2RDyihQysuRm']"
    ```
 
 **Deploy sentry** 
@@ -68,13 +68,13 @@ The sentry is deployed assuming a host called `sentry` defined in the `hosts` fi
 1. The following will deploy a sentry with name `MySentry`, the libp2p key `0x8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f` for the validator running at `/ip4/44.231.55.99/tcp/30333/p2p/QmaAARGgiUyGfqi87ZscaDRKknyw9jX9jJqsBwFi9jocYg`. The sentry node, however, allows connections from all nodes
 
    ```text
-    ansible-playbook -s poa-1-testnet-sentry.yml --extra-vars "host=sentry node_name=MySentry libp2p_key=8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f sentry_of=/ip4/44.231.55.99/tcp/30333/p2p/QmaAARGgiUyGfqi87ZscaDRKknyw9jX9jJqsBwFi9jocYg"
+    ansible-playbook -s poa-1-node.yml --extra-vars "host=sentry node_name=MySentry libp2p_key=8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f sentry_of=/ip4/44.231.55.99/tcp/30333/p2p/QmaAARGgiUyGfqi87ZscaDRKknyw9jX9jJqsBwFi9jocYg"
    ```
 
 2. The following will deploy a sentry similar to above but the sentry will only allow connection from 2 nodes, `/ip4/35.155.248.216/tcp/30333/p2p/QmawgZD3BANiKR72ZXsSEEAMpz9iQkCy4r2RDyihQysuRm` and `/ip4/54.218.195.100/tcp/30333/p2p/QmaWVer8pXKR8AM6u2B8r9gXivTW9vTitb6gjLM6FYQcXS`
 
    ```text
-    ansible-playbook -s poa-1-testnet-sentry.yml --extra-vars "host=sentry node_name=MySentry libp2p_key=8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f sentry_of=/ip4/44.231.55.99/tcp/30333/p2p/QmaAARGgiUyGfqi87ZscaDRKknyw9jX9jJqsBwFi9jocYg reserved_nodes=['/ip4/35.155.248.216/tcp/30333/p2p/QmawgZD3BANiKR72ZXsSEEAMpz9iQkCy4r2RDyihQysuRm', '/ip4/54.218.195.100/tcp/30333/p2p/QmaWVer8pXKR8AM6u2B8r9gXivTW9vTitb6gjLM6FYQcXS']"
+    ansible-playbook -s poa-1-node.yml --extra-vars "host=sentry node_name=MySentry libp2p_key=8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f sentry_of=/ip4/44.231.55.99/tcp/30333/p2p/QmaAARGgiUyGfqi87ZscaDRKknyw9jX9jJqsBwFi9jocYg reserved_nodes=['/ip4/35.155.248.216/tcp/30333/p2p/QmawgZD3BANiKR72ZXsSEEAMpz9iQkCy4r2RDyihQysuRm', '/ip4/54.218.195.100/tcp/30333/p2p/QmaWVer8pXKR8AM6u2B8r9gXivTW9vTitb6gjLM6FYQcXS']"
    ```
 
 3. Similar to the validator, the sentry node can use the flag `allow_ext_rpc` to allow/disallow RPC connections from outside.
@@ -86,7 +86,7 @@ A full node is deployed similar to the sentry node but it allows connections fro
 1. The following will deploy a full node with name `MyFullNode`, the libp2p key `0x8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f` . The full node, however, allows connections from all nodes
 
    ```text
-    ansible-playbook -s poa-1-testnet-bootstrap.yml --extra-vars "host=fullnode node_name=MyFullnode libp2p-key=8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f"
+    ansible-playbook -s poa-1-node.yml --extra-vars "host=fullnode node_name=MyFullnode libp2p-key=8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f"
    ```
 
 2. Similar to the validator and sentry, the full node can use the flag `allow_ext_rpc` to allow/disallow RPC connections from outside. 
@@ -97,7 +97,7 @@ Once a node has become a validator, it will periodically see logs like `Starting
 
 ![Validator logs](../../../.gitbook/assets/logs.png)
 
-If running using ansible, use command `sudo docker logs poa-1-node -f --tail 100` to see logs. Here  `poa-1-node` is the name of the docker container Ansible creates and flag `-f` will keep on showing new logs as they are produced.
+If running using ansible, use command `sudo docker logs dock-node -f --tail 100` to see logs. Here  `dock-node` is the name of the docker container Ansible creates and flag `-f` will keep on showing new logs as they are produced.
 
 ## Validator running with backup nodes
 
