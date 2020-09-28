@@ -29,7 +29,7 @@ It generates the following:
 Generate an `ed25519` account with password `pass` to generate account and libp2p keys respectively. The secret information is displayed in red. In place of `ed25519`, `sr25519` and `ecdsa` can be used as well.
 
 ```text
-$ ./scripts/gen_keys_poa_validator ed25519 pass main
+$ ./scripts/gen_keys_poa_validator ed25519 pass test
 The account address in ss58 format is 5EiCZUY3G6JhN2TTb6R6wEXvbhnp5ciww12rbxX3FJrZefob
 The secret phrase for the account is file upper fever fog achieve side catalog flash age bright mirror split
 The secret key for the account is 0x67826291fd8ce9941e19e2e0d97ad16cd467f40aee9c29898570f9b28645d7c2
@@ -37,6 +37,8 @@ The libp2p public key is 12D3KooWSYpVtTUNoFEgRTZHia4CZqb1GN4GdnL4ZfUEAkFdkhWa
 The libp2p secret key is d375c12537f31d419e09f419f6f8ccd8b72b0c3e8b82f0bc87f869a17c3ad1ec
 The libp2p secret key is also stored in the file lib-p2p-secret.key
 ```
+
+Clear your bash history and console buffer once you have noted the above information elsewhere.
 
 ### Using browser UI
 
@@ -60,8 +62,6 @@ Rotate the session key of a running node. The following run assumes the node is 
  $ ./scripts/rotate_session_key
  The session key is 0xd4a23d286b25aa8ee401acf2ac10232047b40905c327c3dd9ab5442cb9539663b1bb339873b201d3995c88bb1e8f6983878be18ae65abce4cc41ef0de01fa8ae
 ```
-
-Clear your bash history and console buffer once you have noted the above information elsewhere.
 
 If the validator wishes to change their account or session, they can run the above scripts again and submit the new account and/or the session keys.
 
