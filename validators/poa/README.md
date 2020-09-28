@@ -1,6 +1,6 @@
 # PoA
 
-The nodes currently running in the PoA testnet can be seen at the [Polkadot telemetry](https://telemetry.polkadot.io/#list/Poa%20Testnet). For the nodes in PoA mainnet, see telemetry [here](https://telemetry.polkadot.io/#list/Dock%20Mainnet).
+The nodes currently running in the PoA testnet can be seen at the [Polkadot telemetry](https://telemetry.polkadot.io/#list/Poa%20Testnet). 
 
 ![Nodes showing up in Telemetry](../../.gitbook/assets/telemetry.png)
 
