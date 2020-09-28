@@ -38,8 +38,6 @@ The libp2p secret key is d375c12537f31d419e09f419f6f8ccd8b72b0c3e8b82f0bc87f869a
 The libp2p secret key is also stored in the file lib-p2p-secret.key
 ```
 
-Clear your bash history and console buffer once you have noted the above information elsewhere.
-
 ### Using browser UI
 
 If you do not wish to generate the libp2p key and do not want to use the script, you can generate the account by going to our UI [here](https://fe.dock.io/#/accounts) and clicking on **Add Account**. Then share the address with us.
@@ -62,6 +60,8 @@ Rotate the session key of a running node. The following run assumes the node is 
  $ ./scripts/rotate_session_key
  The session key is 0xd4a23d286b25aa8ee401acf2ac10232047b40905c327c3dd9ab5442cb9539663b1bb339873b201d3995c88bb1e8f6983878be18ae65abce4cc41ef0de01fa8ae
 ```
+
+Clear your bash history and console buffer once you have noted the above information elsewhere.
 
 If the validator wishes to change their account or session, they can run the above scripts again and submit the new account and/or the session keys.
 
