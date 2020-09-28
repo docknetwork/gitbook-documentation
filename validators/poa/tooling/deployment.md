@@ -38,6 +38,9 @@ The playbook accepts a few arguments like
 10. what telemetry url it should use as `telemetry_url` , default to no telemetry. To use Polkadot's telemetry, set it as `'wss://telemetry.polkadot.io/submit/ 0'`
 11. if session key should be rotated, as `rotate_session_key`, defaults to false
 12. pruning mode for the node, as `pruning`, this can be either `archive` or a positive integer.
+13. `docker_image_tag` for the docker image tag to use, defaults to `latest`
+14. `docker_container_name` for the docker container name, defaults to `dock-node` 
+15. `mount_container_at` for the mount point of the docker container's volume, defaults at `/docknode`
 
 These arguments can be given from the command line or set in the hosts file. A [sample hosts file](https://github.com/docknetwork/dock-substrate/blob/master/scripts/ansible/hosts.sample) is provided showing these variables for validator, sentry and a full node. Note that the sample file has several placeholders enclosed in angle brackets, i.e. like `<validator node ip>` or `<path of private key file>` , all of these should be appropriately filled or removed else the hosts file won't be parsable. 
 
