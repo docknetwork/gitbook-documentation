@@ -9,9 +9,8 @@ Some useful references:
 3. [Verifiable credentials](https://docknetwork.github.io/sdk/tutorials/concepts_vcdm.html) and its [API](https://docknetwork.github.io/sdk/tutorials/tutorial_ipv.html)
 4. [Schema](https://docknetwork.github.io/sdk/tutorials/concepts_blobs_schemas.html) and its [API](https://docknetwork.github.io/sdk/tutorials/tutorial_blobs_schemas.html)
 5. [Credential revocation](https://docknetwork.github.io/sdk/tutorials/tutorial_revocation.html)
+1. [Claim Deduction](https://docknetwork.github.io/sdk/tutorials/concepts_claim_deduction.html) and its [API](https://docknetwork.github.io/sdk/tutorials/tutorial_claim_deduction.html)
+1. [PoE anchoring](https://docknetwork.github.io/sdk/tutorials/concepts_poe_anchors.html) and its [API](https://docknetwork.github.io/sdk/tutorials/tutorial_poe_anchors.html)
 6. [Complete examples](https://github.com/docknetwork/sdk/tree/master/example) in SDK for various features 
 7. Another useful place is the [SDK tests](https://github.com/docknetwork/sdk/tree/master/tests)
 8. [API reference](https://docknetwork.github.io/sdk/reference/)
-
-
-
