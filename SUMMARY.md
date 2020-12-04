@@ -27,3 +27,10 @@
       * [Monitoring](validators/poa/tooling/monitoring.md)
   * [PoS](validators/pos.md)
 
+## Token Migration
+
+* [Token Migration Support](token-migration/migration-tutorial/README.md)
+  * [Token Migration Tutorial](token-migration/migration-tutorial/migration-tutorial.md)
+  * [Wallets and Account Creation](token-migration/migration-tutorial/wallets-and-account-creation.md)
+  * [Migration Terms and Conditions](token-migration/migration-tutorial/migration-terms-and-conditions.md)
+
