@@ -1,7 +1,7 @@
 ---
 description: >-
   Dock’s new mainnet token will be supported by several wallets listed below.
-  The new token will not be supported by ERC-20 wallets. Please follow the
+  The new token will not be supported by ERC20 wallets. Please follow the
   directions for setting up these wallets carefully.
 ---
 
@@ -36,7 +36,7 @@ A browser extension that manages accounts and allows signing of transactions, it
 
 ![](../../.gitbook/assets/8.png)
 
-3. Once setup is complete, you will be able to view your account in the browser extension app.
+3. Once setup is complete, you will be able to view your account address in the browser extension app.
 
 ![](../../.gitbook/assets/9.png)
 

@@ -1,6 +1,6 @@
 # Migration Terms and Conditions
 
-Last revised: December 2020
+_Last revised: December 2020_
 
 These Terms and Conditions of the Dock Token Migration Application \(hereinafter the "Terms of Use"\) shall serve as an agreement that sets forth the terms and conditions which will govern the use and participation in the Dock Token Migration Application \(hereinafter the "Migration Application"\).
 
