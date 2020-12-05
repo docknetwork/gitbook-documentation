@@ -1,6 +1,6 @@
 # Token Migration Support
 
-Dock’s token migration launches tomorrow, please use this blog post as a reference for key points and dates. All Dock token holders must participate in the migration to swap the old ERC20 Dock tokens for new tokens on Dock’s mainnet**.**
+Dock is migrating its tokens from the old ERC20 tokens to its new mainnet token. This affects all token holders who are holding Dock tokens in their own wallets. If you hold Dock tokens  on a participating exchange, then the exchange will migrate the tokens on your behalf. The migration begins on **December 8, 2020** and will end on **March 7, 2021.**
 
 Follow the steps in our tutorials to migrate your Dock tokens:
 
@@ -15,6 +15,7 @@ _**Stay safe -** be very careful when migrating your tokens to follow directions
 
 * [Wallets and account setup for new Dock tokens](https://docs.dock.io/token-migration/migration-tutorial/wallets-and-account-creation)
 * [Token bonus incentives](https://blog.dock.io/dock-token-migration-part-2-incentives/)
+* [FAQ](https://docs.dock.io/token-migration/migration-tutorial/faq)
 
 ### **Community Support**
 

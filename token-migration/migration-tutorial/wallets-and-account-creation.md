@@ -23,7 +23,7 @@ Dock has forked and customized the well-tested, browser-based wallet that is als
 
 3. To view your Dock token address, go to the Accounts page and click on the name of the account. Your token address will appear on the right side of the page.
 
-![](../../.gitbook/assets/3.png)
+![](../../.gitbook/assets/3%20%281%29.png)
 
 ## Polkadot Browser Extension
 
