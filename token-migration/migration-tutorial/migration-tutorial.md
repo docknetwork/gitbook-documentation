@@ -25,18 +25,27 @@ Save the transaction hash or use [etherscan](https://etherscan.io/) to find it b
 
 ### Step 3: Sign Ethereum transaction
 
-Go to {token swap url} and enter the ethereum transaction hash provided when sending your tokens. You will receive a code \(series of characters\) to use for signing the transaction. Go to [My Crypto](https://mycrypto.com/) and click on Sign & Verify Message. After unlocking the wallet, enter the code for signing into the Message box and click Sign Message.  
-
+Go to Dock's [token migration portal](https://fe.dock.io/) and click on Network, then Token Swap. This is where you will complete your token migration. First you will need to enter the Ethereum transaction hash provided when sending your tokens and click Next.
 
 ![](../../.gitbook/assets/1%20%281%29.png)
 
-### 
+Next you will need to select your destination address, which is the new Dock token account you created in Step 1, then click Next. 
 
 ![](../../.gitbook/assets/2%20%281%29.png)
+
+You will then receive a code \(series of characters\) to use for signing the transaction. Go to [My Crypto](https://mycrypto.com/) and click on Sign & Verify Message. After unlocking your Ethereum wallet, enter the code for signing into the Message box and click Sign Message.
+
+![](../../.gitbook/assets/5%20%281%29.png)
 
 ###  Step 4: Migrate your tokens
 
 Copy the signature \(value of “sig” field in the Signature Box\) and go back to the token swap page. Paste this under Signature and click Submit. If successful, you will see a message in green that the migration is being processed.
 
 ![](../../.gitbook/assets/3.png)
+
+### 
+
+### Community Support
+
+Our team is available to help throughout the token migration and can be contacted at [support@dock.io](mailto:support@dock.io) or on our [Telegram channel](https://t.me/dockio).
 
