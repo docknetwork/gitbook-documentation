@@ -39,10 +39,10 @@ More information about the supporting exchanges can be found [here](https://blog
 
 #### Which wallets support the new DOCK tokens?
 
-ERC20 wallets will not support the new Dock token, instead holders will have a few options for their new Dock tokens:
+ERC20 wallets will not support the new Dock token, instead holders will have several options for their new Dock tokens:
 
-* [Parity signer](https://www.parity.io/signer/) can be used for key storage on a mobile device, for extra security the mobile device should be kept offline 
-* [Polkadot-JS app](https://fe.dock.io/#/accounts) is a well-used and tested browser-based wallet that the Dock team has forked and customized for the Dock network
+* [Polkadot-JS app](https://fe.dock.io/#/accounts) is a well-used and tested browser-based wallet that the Dock team has forked and customized for the Dock network. **This is the recommended wallet for most non-technical users.**
+* [Parity signer](https://www.parity.io/signer/) can be used for key storage on a mobile device, for extra security the mobile device should be kept offline. 
 * [Ledger Nano S](https://www.ledger.com/) is a hard wallet and will be supporting the new Dock token soon, the team is submitting a pull request to Ledger to enable new DOCK tokens to be stored on Ledger Nano S in the coming weeks.
 
 More information and instructions on using these wallets with DOCK tokens can be found here {INSERT LINK WHEN READY}.  
