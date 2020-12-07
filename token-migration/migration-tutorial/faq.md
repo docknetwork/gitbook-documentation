@@ -12,7 +12,7 @@ Dock’s original ERC20 contract address is 0xe5dada80aa6477e85d09747f2842f7993d
 
 #### What is the timeline for the token migration?
 
-The Dock token migration will begin on December 8, 2020, and will continue for three months until March 7, 2021. Dock is offering an incentive for everyone who migrates their tokens in the first four weeks, more information about the bonus incentives can be found [here](https://blog.dock.io/dock-token-migration-part-2-incentives/).   
+The Dock token migration will begin on December 8, 2020, and will continue for three months until March 2, 2021. Dock is offering an incentive for everyone who migrates their tokens in the first four weeks, more information about the bonus incentives can be found [here](https://blog.dock.io/dock-token-migration-part-2-incentives/).   
 
 
 #### What are the bonus rewards for the token migration?
