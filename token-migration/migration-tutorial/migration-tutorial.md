@@ -17,7 +17,11 @@ You will need to create a Dock account using an application or wallet that suppo
 
 ### Step 2: Send ERC20 tokens to Vault
 
-Use any ERC20 compatible wallet such as [metamask](https://metamask.io/) or [mycrypto](http://mycrypto.com/) to send your Dock tokens to the vault address. The vault address is posted on the Dock [website](https://www.dock.io/token-migration) and on our official [Twitter](https://twitter.com/docknetwork). _**Double-check you are sending to the correct address, if you send your tokens to another address then we will not be able to recover them.**_
+Use any ERC20 compatible wallet such as [metamask](https://metamask.io/) or [mycrypto](http://mycrypto.com/) to send your Dock tokens to the vault address: **0x0cf75F808479C9e7D61C78F65E997b605160B0AA**
+
+The vault address is also posted on the Dock [website](https://www.dock.io/token-migration) \(step 2\) and on our official [Twitter](https://twitter.com/docknetwork). _**Double-check you are sending to the correct address, if you send your tokens to another address then we will not be able to recover them.**_
+
+\*\*\*\*
 
 Save the transaction hash or use [etherscan](https://etherscan.io/) to find it by looking up your wallet address.
 
