@@ -35,7 +35,7 @@ Next you will need to select your destination address, which is the new Dock tok
 
 You will then receive a code \(series of characters\) to use for signing the transaction. Go to [My Crypto](https://mycrypto.com/) and click on Tools &gt; Sign & Verify Message. After unlocking your Ethereum wallet, enter the code for signing into the Message box and click Sign Message.
 
-![](../../.gitbook/assets/5%20%281%29.png)
+![](../../.gitbook/assets/mycrypto1.png)
 
 ###  Step 4: Migrate your tokens
 
