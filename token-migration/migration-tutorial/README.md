@@ -5,7 +5,7 @@ Dock is migrating its tokens from the old ERC20 tokens to its new mainnet token.
 Follow the steps in our tutorials to migrate your Dock tokens:
 
 * \*\*\*\*[**Step-by-step guide**](https://docs.dock.io/token-migration/migration-tutorial/migration-tutorial)\*\*\*\*
-* \*\*\*\*[**Video tutorial**](https://youtu.be/2eeRjaNGMt4) ****
+* \*\*\*\*[**Video tutorial**](https://www.dock.io/token-migration#Tutorial) ****
 
 {% hint style="warning" %}
 _**Stay safe -** be very careful when migrating your tokens to follow directions and check all addresses and website URLs to ensure you are migrating correctly.  Unfortunately, migration events are targets for scammers we will not be able to return tokens that are not migrated correctly._
