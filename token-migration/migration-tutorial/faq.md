@@ -43,13 +43,10 @@ ERC20 wallets will not support the new Dock token, instead holders will have sev
 
 * [Polkadot-JS app](https://fe.dock.io/#/accounts) is a well-used and tested browser-based wallet that the Dock team has forked and customized for the Dock network. **This is the recommended wallet for most non-technical users.**
 * [Parity signer](https://www.parity.io/signer/) can be used for key storage on a mobile device, for extra security the mobile device should be kept offline. 
-* [Ledger Nano S](https://www.ledger.com/) is a hard wallet and will be supporting the new Dock token soon, the team is submitting a pull request to Ledger to enable new DOCK tokens to be stored on Ledger Nano S in the coming weeks.
-
-More information and instructions on using these wallets with DOCK tokens can be found here {INSERT LINK WHEN READY}.  
-
+* [Ledger Nano S](https://www.ledger.com/) is a hard wallet and will be supporting the new Dock token soon, the team is submitting a pull request to Ledger to enable new DOCK tokens to be stored on Ledger Nano S in the coming weeks. 
 
 #### How can I check if the migration was successful?
 
-You can check the status of your migration by going to {insert link} and entering the ethereum address where you sent your ERC20 tokens from and the transaction hash. Once the migration is complete, your new Dock tokens will be available in your new Dock account.  
+You can check the status of your migration by going to {insert link} and entering the Ethereum address where you sent your ERC20 tokens from and the transaction hash. Once the migration is complete, your new Dock tokens will be available in your new Dock account.  
 
 
