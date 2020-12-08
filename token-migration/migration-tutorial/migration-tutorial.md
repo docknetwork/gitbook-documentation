@@ -29,7 +29,7 @@ Save the transaction hash or use [etherscan](https://etherscan.io/) to find it b
 
 ### Step 3: Sign Ethereum transaction
 
-Go to Dock's [token migration portal](https://fe.dock.io/) and click on Network, then Token Swap. This is where you will complete your token migration. First you will need to enter the Ethereum transaction hash provided when sending your tokens and click Next.
+Go to Dock's [token migration portal](https://fe.dock.io/) and click on Network, then Token Migration. This is where you will complete your token migration. First you will need to enter the Ethereum transaction hash provided when sending your tokens and click Next.
 
 ![](../../.gitbook/assets/swap-step1.png)
 
@@ -43,7 +43,7 @@ You will then receive a code \(series of characters\) to use for signing the tra
 
 ###  Step 4: Migrate your tokens
 
- Go back to the token swap page and paste the "sig" code under Signature, then click Submit. If successful, you will see a message in green that the migration is being processed.
+ Go back to the Token Migration page and paste the "sig" code under Signature, then click Submit. If successful, you will see a message in green that the migration is being processed.
 
 ![](../../.gitbook/assets/swap-step3.png)
 
