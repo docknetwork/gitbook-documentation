@@ -47,6 +47,10 @@ ERC20 wallets will not support the new Dock token, instead holders will have sev
 
 #### How can I check if the migration was successful?
 
-You can check the status of your migration by going to {insert link} and entering the Ethereum address where you sent your ERC20 tokens from and the transaction hash. Once the migration is complete, your new Dock tokens will be available in your new Dock account.  
+You can check the status of your migration by going to {insert link} and entering the Ethereum address where you sent your ERC20 tokens from and the transaction hash. Once the migration is complete, your new Dock tokens will be available in your new Dock account.
+
+#### Can I use Trust Wallet for the migration?
+
+You can use [Trust Wallet](https://trustwallet.com/) to send your ERC20 Dock tokens to the vault address, but you will need to use another application like MyCrypto in order to sign the transaction. This can be done by accessing the wallet using the private key or mnemonic phrase. We recommend doing this offline with MyCrypto's [desktop application](https://download.mycrypto.com/).  
 
 
