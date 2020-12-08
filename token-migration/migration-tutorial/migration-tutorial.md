@@ -29,7 +29,7 @@ Save the transaction hash or use [etherscan](https://etherscan.io/) to find it b
 
 ### Step 3: Sign Ethereum transaction
 
-Go to Dock's [Token Migration portal](https://fe.dock.io/#/token-migration). This is where you will complete the migration. First you will need to select the destination address, which is the new Dock token account you created in Step 1, then click Next.
+Go to Dock's [Token Migration portal](https://fe.dock.io/#/token-migration) to complete the migration. First you will need to select the destination address, which is the new Dock token account you created in Step 1, then click Next.
 
 ![](../../.gitbook/assets/step1.png)
 
