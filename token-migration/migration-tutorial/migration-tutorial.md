@@ -37,13 +37,13 @@ Next you will need to select your destination address, which is the new Dock tok
 
 ![](../../.gitbook/assets/2%20%281%29.png)
 
-You will then receive a code \(series of characters\) to use for signing the transaction. Go to [My Crypto](https://mycrypto.com/) and click on Tools &gt; Sign & Verify Message. After unlocking your Ethereum wallet, enter the code for signing into the Message box and click Sign Message.
+You will then receive a code \(series of characters\) to use for signing the transaction. Go to [My Crypto](https://mycrypto.com/) and click on Tools &gt; Sign & Verify Message. After unlocking your Ethereum wallet, enter the code for signing into the Message box and click Sign Message. Then copy the “sig” value from the Signature box, this is what you will need for the next step.
 
-![](../../.gitbook/assets/mycrypto1.png)
+![](../../.gitbook/assets/mycrypto1%20%282%29.png)
 
 ###  Step 4: Migrate your tokens
 
-Copy the signature \(value of “sig” field in the Signature Box\) and go back to the token swap page. Paste this under Signature and click Submit. If successful, you will see a message in green that the migration is being processed.
+ Go back to the token swap page and paste the "sig" code under Signature, then click Submit. If successful, you will see a message in green that the migration is being processed.
 
 ![](../../.gitbook/assets/3.png)
 
