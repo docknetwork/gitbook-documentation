@@ -51,3 +51,5 @@ You will then receive a code \(series of characters\) to use for signing the tra
 
 Our team is available to help throughout the token migration and can be contacted at [support@dock.io](mailto:support@dock.io) or on our [Telegram channel](https://t.me/dockio).
 
+{% page-ref page="token-migration-status.md" %}
+
