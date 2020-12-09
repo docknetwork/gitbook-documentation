@@ -36,9 +36,13 @@ A browser extension that manages accounts and allows signing of transactions, it
 
 ![](../../.gitbook/assets/8.png)
 
-3. Once setup is complete, you will be able to view your account address in the browser extension app.
+3. Next click on the three dots next to your account and select Dock Mainnet in the dropdown.
 
-![](../../.gitbook/assets/9.png)
+![](../../.gitbook/assets/extension.png)
+
+4. Once setup is complete, you will be able to view your account address in the browser extension app.
+
+![](../../.gitbook/assets/extension-1.png)
 
 ## Parity Signer
 
