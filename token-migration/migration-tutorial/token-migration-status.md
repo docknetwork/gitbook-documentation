@@ -8,9 +8,9 @@ If you have migrated, then you can check the status of your request [here](https
 
 ![Check migration request status](../../.gitbook/assets/empty-status.png)
 
-Once you submit the form, you will see the status information on the same page. 
+Once you submit the form, you will see the status information on the same page. Request processing takes time and it can take from a few minutes to hours \(under extreme load\). 
 
-Request processing takes time and it can take from a few minutes to hours \(under extreme load\). Following are some of the statuses you can see.  We have used dummy data in the images below.
+Following are some of the statuses you can see.  We have used dummy data in the images below.
 
 **If you just submitted the request successfully but did not opt for bonus.**
 
