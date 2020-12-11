@@ -29,9 +29,11 @@ Save the transaction hash or use [etherscan](https://etherscan.io/) to find it b
 
 ### Step 3: Sign Ethereum transaction
 
-Go to Dock's [Token Migration portal](https://fe.dock.io/#/token-migration) to complete the migration. First you will need to select the destination address, which is the new Dock token account you created in Step 1, then click Next.
+Go to Dock's [Token Migration portal](https://fe.dock.io/#/token-migration) to complete the migration. First you will need to select the destination address, which is the new Dock token account you created in Step 1.
 
-![](../../.gitbook/assets/step1.png)
+By migrating during the first four week of the migration, you will automatically receive a swap bonus and will have the option to opt-in to the vesting bonus. You can learn more about the bonuses [here](https://share.getcloudapp.com/YEuQRrO2).
+
+![](../../.gitbook/assets/step-1.png)
 
 Then enter the Ethereum transaction hash provided when sending your tokens in Step 2 and click Next.
 
