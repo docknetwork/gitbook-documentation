@@ -25,15 +25,15 @@ In this testnet, anyone can participate and be a validator given that they have 
 
 | Year | Tokens released | Tokens remaining to be released | Circulating supply |
 | :--- | :--- | :--- | :--- |
-| 1 | 50,072,651 | 150,217,953 | 849,782,047 |
-| 2 | 37,554,488 | 112,663,465 | 887,336,535 |
-| 3 | 28,165,866 | 84,497,599 | 915,502,401 |
-| 4 | 21,124,400 | 63,373,199 | 936,626,801 |
-| 5 | 15,843,300 | 47,529,899 | 952,470,101 |
-| 10 | 3,759,689 | 11,279,068 | 988,720,932 |
-| 15 | 892,192 | 2,676,576 | 997,323,424 |
-| 20 | 211,721 | 635,164 | 999,364,836 |
-| 25 | 50,242 | 150,727 | 999,849,273 |
+| 1 | 37,500,000 | 112,500,000 | 849,782,047 |
+| 2 | 28,125,000 | 84,375,000 | 915,625,000 |
+| 3 | 21,093,750 | 63,281,250 | 936,718,750 |
+| 4 | 15,820,313 | 47,460,938 | 952,539,062 |
+| 5 | 11,865,234 | 35,595,703 | 964,404,297 |
+| 10 | 2,815,676 | 8,447,027 | 991,552,973 |
+| 15 | 668,173 | 2,004,519 | 997,995,481 |
+| 20 | 158,561 | 475,682 | 999,524,318 |
+| 25 | 37,627 | 112,882 | 999,887,118 |
 
 #### **Description** 
 
@@ -49,7 +49,7 @@ The tokens released each year as emission rewards are fewer than the previous ye
 
 If the staked tokens are less than 50% of the circulating supply, then the network increases the emission rate for each epoch until the staked tokens reach 50%. This is done so that there is enough security in the network. The rewards for each epoch consist of the transaction fees collected in the epoch and the emission in the epoch.
 
-The rewards are distributed among the Treasury and the validators. The Treasury gets 60% of the rewards and the validators get 40%. Among the validators, the rewards are distributed based on their performance in that epoch. The network keeps track of the contributions of each validator in the epoch. For each validator, the network gives rewards proportional to their stake and commission and then gives the rest of the rewards to the nominators. For instance, if a validator is expected to receive 100 tokens in an epoch where their stake is 10%, their commission is 5%, and has 3 nominators with 35%, 30%, and 20% stake each, the network would emit 15 tokens \(10+5\) to the validator and provide 35, 30 and 20 tokens to the nominators.
+The rewards are distributed among the Treasury and the validators. The Treasury receives 60% of the rewards and the validators get 40%. Among the validators, the rewards are distributed based on their performance in that epoch. The network keeps track of the contributions of each validator in the epoch. For each validator, the network gives rewards proportional to their stake and commission and then gives the rest of the rewards to the nominators. For instance, if a validator is expected to receive 100 tokens in an epoch where their stake is 10%, their commission is 5%, and has 3 nominators with 35%, 30%, and 20% stake each, the network would emit 15 tokens \(10+5\) to the validator and provide 35, 30 and 20 tokens to the nominators.
 
 ### Mainnet
 
