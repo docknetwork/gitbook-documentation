@@ -6,7 +6,7 @@ The Dock Governance Framework describes the combination of off-chain and on-chai
 
 In the beginning, and in order to ensure the ongoing health of the network, the Dock Association may make changes to the network without inviting any proposals from token holders. As the network matures, token holders will be able to propose changes and vote on these proposals. The framework itself will evolve over time in a direction chosen by the Association and the token holders.
 
-The network will start with Proof of Authority \(PoA\) consensus but as it transitions to Proof of Stake \(expected during 2021\) consensus a different governance mechanism will be used. Both PoA and PoS governance will first be launched on a testnet before migrating to a mainnet. The Dock development team aspires to minimize protocol changes between testnet and mainnet and the only significant difference should be the enhancement of tooling between the two networks.
+The network is currently using a Proof of Authority \(PoA\) consensus but as it transitions to Proof of Stake \(during 2021\) consensus a different governance mechanism will be used. Both PoA and PoS governance will first be launched on a testnet before migrating to a mainnet. The Dock development team aspires to minimize protocol changes between testnet and mainnet with the only significant difference being the enhancement of tooling between the two networks.
 
 When fully implemented the governance framework will manage:
 
