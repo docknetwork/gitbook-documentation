@@ -27,7 +27,7 @@ Save the transaction hash or use [etherscan](https://etherscan.io/) to find it b
 
 ![](../../.gitbook/assets/4%20%281%29.png)
 
-### Step 3: Sign Ethereum transaction
+### Step 3: Sign message with Ethereum address
 
 Go to Dock's [Token Migration portal](https://fe.dock.io/#/token-migration) to complete the migration. First you will need to select the destination address, which is the new Dock token account you created in Step 1.
 
@@ -39,11 +39,15 @@ Then enter the Ethereum transaction hash provided when sending your tokens in St
 
 ![](../../.gitbook/assets/swap-step2.png)
 
-You will then receive a code \(series of characters\) to use for signing the transaction. Go to [My Crypto](https://mycrypto.com/) and click on Tools &gt; Sign & Verify Message. After unlocking your Ethereum wallet, enter the code for signing into the Message box and click Sign Message. Then copy the “sig” value from the Signature box, this is what you will need for the next step.
+You will then receive a code \(series of characters\) to use for signing. Go to [My Crypto](https://mycrypto.com/) and click on Tools &gt; Sign & Verify Message. After unlocking your Ethereum wallet, enter the code for signing into the Message box and click Sign Message. Then copy the “sig” value from the Signature box, this is what you will need for the next step.
 
-![](../../.gitbook/assets/mycrypto1%20%282%29.png)
+![Message signing with MyCrypto](../../.gitbook/assets/mycrypto1%20%282%29.png)
 
-###  Step 4: Migrate your tokens
+You can also use [MyEtherWallet](https://www.myetherwallet.com/) \(MEW\) to sign the code. After connecting your wallet like Ledger, Metamask, etc, go to the [sign message page](https://www.myetherwallet.com/interface/sign-message) and paste the code in the "Message" box as shown below
+
+![](../../.gitbook/assets/mew-sign.png)
+
+### Step 4: Migrate your tokens
 
  Go back to the Token Migration page and paste the "sig" code under Signature, then click Submit. If successful, you will see a message in green that the migration is being processed.
 
