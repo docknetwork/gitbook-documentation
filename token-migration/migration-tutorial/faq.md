@@ -19,7 +19,7 @@ The Dock token migration will begin on December 8, 2020, and will continue for t
 
 Dock has two bonus pools with 20 million Dock tokens being allocated to the Swap Pool and 30 million to the Vesting Pool.
 
-* The Swap Pool incentivizes migrating early and will be shared amongst holders that migrate within the first four weeks.
+* The Swap Pool incentivizes migrating early and will be shared amongst holders that migrate within the first five weeks.
 * The Vesting Pool will reward holders who choose to lock 50% of their tokens. These tokens vest at a rate of 33% of lockup every 2 months, so that all of the tokens will vest within 6 months. Participation in this pool is optional for holders migrating in the first four weeks.
 
 More details about the token migration incentives can be found [here](https://blog.dock.io/dock-token-migration-part-2-incentives/).  
