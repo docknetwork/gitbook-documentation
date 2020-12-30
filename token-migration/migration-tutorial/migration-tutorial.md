@@ -31,7 +31,7 @@ Save the transaction hash or use [etherscan](https://etherscan.io/) to find it b
 
 Go to Dock's [Token Migration portal](https://fe.dock.io/#/token-migration) to complete the migration. First you will need to select the destination address, which is the new Dock token account you created in Step 1.
 
-By migrating during the first four weeks, you will automatically receive a swap bonus and will have the option to opt-in to the vesting bonus. You can learn more about the bonuses [here](https://blog.dock.io/dock-token-migration-part-2-incentives/).
+By migrating during the first five weeks, you will automatically receive a swap bonus and will have the option to opt-in to the vesting bonus. You can learn more about the bonuses [here](https://blog.dock.io/dock-token-migration-part-2-incentives/).
 
 ![](../../.gitbook/assets/step-1.png)
 
