@@ -12,7 +12,7 @@ The PoA phase is subdivided into 2 phases, PoA-1 and then PoA-2. PoA-1 will run 
 
 {% page-ref page="poa-1.md" %}
 
-{% page-ref page="poa-2.md" %}
+{% page-ref page="poa-2/" %}
 
 
 
