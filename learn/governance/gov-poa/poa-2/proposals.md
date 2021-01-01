@@ -18,7 +18,7 @@ Now go to [https://fe.dock.io/\#/democracy](https://fe.dock.io/#/democracy) and 
 
 ![](../../../../.gitbook/assets/public-proposal.png)
 
-Once submitted, the proposal will be shown under "proposed by public" with the hash. The image below shows an example.
+Once submitted, the proposal will be shown under "proposed by public" with the hash. The image below shows an example. ****The "0"  before the `preimage 0x67....h` is the proposal index and uniquely identifies the proposal.
 
 ![](../../../../.gitbook/assets/public-prop-list.png)
 
@@ -57,6 +57,14 @@ Once &gt;50% of council members i.e. 2 out of 3 have approved the referendum, th
 Once the voting period has passed, the accepted referendum moves to the dispatch queue where it will be executed after some time. You can see the time remaining to execute under enact. Here also, the "0" specifies the referendum index.
 
 ![](../../../../.gitbook/assets/dispatch-1.png)
+
+###  Canceling a proposal
+
+Any Council member can cancel a proposal unilaterally thus slashing the locked deposit of the proposer and any others who have seconded that proposal. Council members are supposed to act responsibly and only cancel proposals that are definitely spam and meant to only waste one "launch period". A council member can submit such the `cancelProposal` by specifying the proposal index from here [https://fe.dock.io/\#/extrinsics](https://fe.dock.io/#/extrinsics). The example below shows council member "TEST1" canceling the proposal with index 0.
+
+![](../../../../.gitbook/assets/cancel_prop.png)
+
+
 
 **Note:** The time to launch referendum, do voting, enact passed referendum, etc have been shown in minutes and seconds according to the example images but in practice, these will be on the order of days. For the exact values, refer to the main PoA-2 governance docs.
 
