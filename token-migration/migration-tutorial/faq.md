@@ -34,6 +34,7 @@ If your Dock tokens are held on any of the following exchanges, there is no acti
 * AAX
 * BKEX
 * Big One
+* Gate.io
 
 More information about the supporting exchanges can be found [here](https://blog.dock.io/token-migration-part-3/). If you have questions about migrating with an exchange, please contact the exchange directly. If you hold Dock tokens on an exchange that is not listed here, then you will need to migrate your tokens directly with Dock as described [here](https://docs.dock.io/token-migration/migration-tutorial/migration-tutorial). 
 
