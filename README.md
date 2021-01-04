@@ -21,8 +21,8 @@ To learn how to become a validator, rewards and technical requirements go to the
 
 1. [Blog](https://blog.dock.io/)
 2. [Twitter](https://twitter.com/docknetwork)
-3. [Riot chat for the general public](https://riot.im/app/#/room/#!KpPIERdKQjLTTwsOkn:matrix.org)
-4. [Riot chat for potential validators](https://riot.im/app/#/room/!JJIgSJFKgMAuxFYkTs:matrix.org)
+3. [Element chat for the general public](https://riot.im/app/#/room/#!KpPIERdKQjLTTwsOkn:matrix.org)
+4. [Element chat for potential validators](https://riot.im/app/#/room/!JJIgSJFKgMAuxFYkTs:matrix.org)
 
 ### Contributing to this documentation
 
