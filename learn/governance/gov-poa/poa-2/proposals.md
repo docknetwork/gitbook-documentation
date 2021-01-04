@@ -4,7 +4,7 @@ description: This describes proposals submitted by general public.
 
 # Proposals
 
-Token holders can propose changes by locking tokens above 10,000. However token holders cannot vote on them, only Council members can. Unless the proposal is canceled \(not rejected\), the holders get their locked tokens back. Other holders can also lock their tokens for a particular user's proposal.
+Token holders can propose changes by locking tokens above 10,000. However token holders cannot vote on them \(they can vote during PoS\), only Council members can. Unless the proposal is canceled \(not rejected\), the holders get their locked tokens back. Other holders can also lock their tokens for a particular user's proposal.
 
 ### Preparing a proposal
 
