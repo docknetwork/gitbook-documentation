@@ -4,5 +4,5 @@ The most significant change in this phase is the introduction of democracy. Chan
 
 There is only one proposal queue in PoA-2 \(this increases to two in the PoS phase\), and every 20 days a proposal is considered and the Council will vote on the proposal. The voting lasts for 15 days and the members can vote aye \(yes\), nay \(no\) or abstain from voting. All votes carry equal weighting. If a proposal is accepted, it is _enacted_, meaning it takes effect in 2 days. However, the technical committee can fast-track the enactment in urgent cases. In addition, the Master can cancel any accepted proposal and can unilaterally make changes to the network like in PoA-1 but the association will limit this as much as possible as the democratic process is clearly the favored approach. 
 
-Current proposals will be publicly [here](https://fe.dock.io/#/democracy) and any Dock token holder will be able to make a new proposal.
+Current proposals will be publicly [here](https://fe.dock.io/#/democracy) and any Dock token holder will be able to make a new proposal from that page, more on that [here](proposals.md).
 
