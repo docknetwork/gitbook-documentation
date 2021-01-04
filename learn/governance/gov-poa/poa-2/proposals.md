@@ -14,7 +14,7 @@ To create a proposal, we need to know its hash. For that navigate to [https://fe
 
 ### Submitting a proposal
 
-Now go to [https://fe.dock.io/\#/democracy](https://fe.dock.io/#/democracy) and click on **Submit proposal**. In the dialog box that appears enters the proposal hash in the "preimage hash" field and enter a lockup amount greater than or equal to 10,000 tokens. The image below shows Ferdie using the previously generated proposal hash to make a proposal.
+Now go to [https://fe.dock.io/\#/democracy](https://fe.dock.io/#/democracy) and click on **Submit proposal**. In the dialog box that appears, enter the proposal hash in the "preimage hash" field and enter a lockup amount greater than or equal to 10,000 tokens. The image below shows Ferdie using the previously generated proposal hash to make a proposal.
 
 ![](../../../../.gitbook/assets/public-proposal.png)
 
