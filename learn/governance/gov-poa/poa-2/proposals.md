@@ -58,12 +58,6 @@ Once the voting period has passed, the accepted referendum moves to the dispatch
 
 ![](../../../../.gitbook/assets/dispatch-1.png)
 
-###  Canceling a proposal
-
-Any Council member can cancel a proposal unilaterally thus slashing the locked deposit of the proposer and any others who have seconded that proposal. Council members are supposed to act responsibly and only cancel proposals that are definitely spam and meant to only waste one "launch period". A council member can submit such the `cancelProposal` by specifying the proposal index from here [https://fe.dock.io/\#/extrinsics](https://fe.dock.io/#/extrinsics). The example below shows council member "TEST1" canceling the proposal with index 0.
-
-![](../../../../.gitbook/assets/cancel_prop.png)
-
 
 
 **Note:** The time to launch referendum, do voting, enact passed referendum, etc have been shown in minutes and seconds according to the example images but in practice, these will be on the order of days. For the exact values, refer to the main PoA-2 governance docs.
