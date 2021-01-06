@@ -44,9 +44,9 @@ Clear your bash history and console buffer once you have noted the above informa
 
 If you do not wish to generate the libp2p key and do not want to use the script, you can generate the account by going to our UI [here](https://fe.dock.io/#/accounts) and clicking on **Add Account**. Then share the address with us.
 
-The browser UI can be used to restore the account generated with the script above by entering the secret phrase and password. Something that's not obvious is the password given to the script should go in the derivation path. Below is a video demonstrating that.
+The browser UI can be used to restore the account generated with the script above by entering the secret phrase and password. Something that's not obvious is the password given to the script should go in the derivation path. Below is a screenshot of how the secret phrase generated in the above script is restored
 
-{% file src="../../../.gitbook/assets/pass\_derivation \(1\).mp4" caption="Adding account with password" %}
+![](../../../.gitbook/assets/account-creation.png)
 
 ## Generating session key
 
