@@ -4,7 +4,7 @@ description: This describes proposals submitted by general public.
 
 # Proposals
 
-Token holders can propose changes by locking tokens above 10,000. However token holders cannot vote on them \(they can vote during PoS\), only Council members can. Unless the proposal is canceled \(not rejected\), the holders get their locked tokens back. Other holders can also lock their tokens for a particular user's proposal.
+Token holders can propose changes by locking tokens above 1,000. However token holders cannot vote on them \(they can vote during PoS\), only Council members can. Unless the proposal is canceled \(not rejected\), the holders get their locked tokens back. Other holders can also lock their tokens for a particular user's proposal.
 
 ### Preparing a proposal
 
@@ -60,5 +60,5 @@ Once the voting period has passed, the accepted referendum moves to the dispatch
 
 
 
-**Note:** The time to launch referendum, do voting, enact passed referendum, etc have been shown in minutes and seconds according to the example images but in practice, these will be on the order of days. For the exact values, refer to the main PoA-2 governance docs.
+**Note:** The time to launch referendum, do voting, enact passed referendum, etc have been shown in minutes and seconds according to the example images but in practice, these will be on the order of days. Similarly, for the minimum deposit, it is shown 10,000 but it can change over time. For the exact values, refer to the main PoA-2 governance docs.
 
