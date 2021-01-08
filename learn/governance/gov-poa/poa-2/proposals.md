@@ -60,5 +60,5 @@ Once the voting period has passed, the accepted referendum moves to the dispatch
 
 
 
-**Note:** The time to launch referendum, do voting, enact passed referendum, etc have been shown in minutes and seconds according to the example images but in practice, these will be on the order of days. Similarly, for the minimum deposit, it is shown 1,000 but it can change over time. For the exact values, refer to the main PoA-2 governance docs.
+**Note:** The time to launch referendum, do voting, enact passed referendum, etc have been shown in minutes and seconds according to the example images but in practice, these will be on the order of days. Similarly, for the minimum deposit, it is shown 10,000 but it can change over time. For the exact values, refer to the main PoA-2 governance docs.
 
