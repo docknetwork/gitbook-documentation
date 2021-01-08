@@ -14,7 +14,7 @@ To create a proposal, we need to know its hash. For that navigate to [https://fe
 
 ### Submitting a proposal
 
-Now go to [https://fe.dock.io/\#/democracy](https://fe.dock.io/#/democracy) and click on **Submit proposal**. In the dialog box that appears, enter the proposal hash in the "preimage hash" field and enter a lockup amount greater than or equal to 10,000 tokens. The image below shows Ferdie using the previously generated proposal hash to make a proposal.
+Now go to [https://fe.dock.io/\#/democracy](https://fe.dock.io/#/democracy) and click on **Submit proposal**. In the dialog box that appears, enter the proposal hash in the "preimage hash" field and enter a lockup amount greater than or equal to 1,000 tokens. The image below shows Ferdie using the previously generated proposal hash to make a proposal.
 
 ![](../../../../.gitbook/assets/public-proposal.png)
 
@@ -60,5 +60,5 @@ Once the voting period has passed, the accepted referendum moves to the dispatch
 
 
 
-**Note:** The time to launch referendum, do voting, enact passed referendum, etc have been shown in minutes and seconds according to the example images but in practice, these will be on the order of days. Similarly, for the minimum deposit, it is shown 10,000 but it can change over time. For the exact values, refer to the main PoA-2 governance docs.
+**Note:** The time to launch referendum, do voting, enact passed referendum, etc have been shown in minutes and seconds according to the example images but in practice, these will be on the order of days. Similarly, for the minimum deposit, it is shown 1,000 but it can change over time. For the exact values, refer to the main PoA-2 governance docs.
 
