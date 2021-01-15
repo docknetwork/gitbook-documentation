@@ -17,13 +17,12 @@ The Dock token migration will begin on December 8, 2020, and will continue for t
 
 #### What are the bonus rewards for the token migration?
 
-Dock has two bonus pools with 20 million Dock tokens being allocated to the Swap Pool and 30 million to the Vesting Pool.
+Dock has two bonus pools with 20 million Dock tokens being allocated to the Swap Pool and 5 million to the Vesting Pool.
 
-* The Swap Pool incentivizes migrating early and will be shared amongst holders that migrate within the first five weeks.
-* The Vesting Pool will reward holders who choose to lock 50% of their tokens. These tokens vest at a rate of 33% of lockup every 2 months, so that all of the tokens will vest within 6 months. Participation in this pool is optional for holders migrating in the first four weeks.
+* The Swap Pool incentivizes migrating early and was shared amongst holders that migrate within the first five weeks.
+* The Vesting Pool rewarded holders who choose to lock 50% of their tokens. the original vesting pool incentive \(which had been set to 30 million Dock tokens\) was reduced to 5 million tokens, with 25 million tokens being set aside for future community incentives. ****
 
-More details about the token migration incentives can be found [here](https://blog.dock.io/dock-token-migration-part-2-incentives/).  
-
+More details about the token migration incentives can be found [here](https://blog.dock.io/dock-token-migration-part-2-incentives/).
 
 #### How do I migrate my tokens if they are on an exchange?
 
@@ -31,9 +30,7 @@ If your Dock tokens are held on any of the following exchanges, there is no acti
 
 * Binance
 * Kucoin
-* AAX
 * BKEX
-* Big One
 * Gate.io
 
 More information about the supporting exchanges can be found [here](https://blog.dock.io/token-migration-part-3/). If you have questions about migrating with an exchange, please contact the exchange directly. If you hold Dock tokens on an exchange that is not listed here, then you will need to migrate your tokens directly with Dock as described [here](https://docs.dock.io/token-migration/migration-tutorial/migration-tutorial). 
@@ -48,7 +45,7 @@ ERC20 wallets will not support the new Dock token, instead holders will have sev
 
 #### How can I check if the migration was successful?
 
-You can check the status of your migration by going to {insert link} and entering the Ethereum address where you sent your ERC20 tokens from and the transaction hash. Once the migration is complete, your new Dock tokens will be available in your new Dock account.
+You can check the status of your migration by going to [https://fe.dock.io/\#/token-migration/status](https://fe.dock.io/#/token-migration/status) and entering the Ethereum address where you sent your ERC20 tokens from and the transaction hash. Once the migration is complete, your new Dock tokens will be available in your new Dock account.
 
 #### Can I use Trust Wallet for the migration?
 
