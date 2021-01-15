@@ -29,6 +29,7 @@ More details about the token migration incentives can be found [here](https://bl
 If your Dock tokens are held on any of the following exchanges, there is no action required and these exchanges will exchange your tokens on your behalf. Some of the exchanges may not be ready to migrate immediately. You can also choose to move your tokens off the exchange and migrate them on your own through Dock’s migration portal. This list is continuously updated, so we might add more exchanges later:
 
 * Binance
+* Huobi
 * Kucoin
 * BKEX
 * Gate.io
