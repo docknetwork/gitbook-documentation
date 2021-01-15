@@ -12,14 +12,14 @@ Dock’s original ERC20 contract address is 0xe5dada80aa6477e85d09747f2842f7993d
 
 #### What is the timeline for the token migration?
 
-The Dock token migration will begin on December 8, 2020, and will continue for three months until midnight \(GMT\) March 7, 2021. Dock is offering an incentive for everyone who migrates their tokens in the first five weeks, more information about the bonus incentives can be found [here](https://blog.dock.io/dock-token-migration-part-2-incentives/).   
+The Dock token migration will begin on December 8, 2020, and will continue for three months until midnight \(GMT\) March 7, 2021. Dock offered an incentive for everyone who migrates their tokens in the first five weeks, more information about the bonus incentives can be found [here](https://blog.dock.io/dock-token-migration-part-2-incentives/).   
 
 
 #### What are the bonus rewards for the token migration?
 
-Dock has two bonus pools with 20 million Dock tokens being allocated to the Swap Pool and 5 million to the Vesting Pool.
+Dock made two bonus pools available during the first 5 weeks of the migration with 20 million Dock tokens being allocated to the Swap Pool and 5 million to the Vesting Pool.
 
-* The Swap Pool incentivizes migrating early and was shared amongst holders that migrate within the first five weeks.
+* The Swap Pool incentivized migrating early and was shared amongst holders that migrate within the first five weeks.
 * The Vesting Pool rewarded holders who choose to lock 50% of their tokens. the original vesting pool incentive \(which had been set to 30 million Dock tokens\) was reduced to 5 million tokens, with 25 million tokens being set aside for future community incentives. ****
 
 More details about the token migration incentives can be found [here](https://blog.dock.io/dock-token-migration-part-2-incentives/).
