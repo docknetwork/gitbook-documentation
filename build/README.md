@@ -1,6 +1,6 @@
 # Build
 
-Dock provides a Substrate node and a Javascript SDK. Dock's mainnet provides support for:
+Dock provides a [Substrate node](https://github.com/docknetwork/dock-substrate) and a [Javascript SDK](https://github.com/docknetwork/sdk). Dock's mainnet provides support for:
 
 1. Decentralized Identity \(DID\) in compliance with W3C
 2. Verifiable Credentials in compliance with W3C
