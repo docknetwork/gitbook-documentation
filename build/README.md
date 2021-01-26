@@ -14,7 +14,7 @@ To use the SDK either run a node locally by cloning it from Github or connect to
 To connect to the mainnet, the Websocket RCP endpoint is [wss://mainnet-node.dock.io](wss://mainnet-node.dock.io).  
 The custom types for the chain can be found in the SDK repo [here](https://github.com/docknetwork/sdk/blob/master/src/types.json) or the node repo [here](https://github.com/docknetwork/dock-substrate/blob/master/types.json) and need to be provided if using polkadot-js directly. The SDK by default uses these types. Also when using polkadot-js directly, try to keep the version the same as the SDK, it can be seen in the `dependencies` in [package.json](https://github.com/docknetwork/sdk/blob/master/package.json#L76). 
 
- The block explorer can be seen [here](https://fe.dock.io/#/explorer). By default, it connects to the mainnet but you can switch the networks using the switcher from top left corner. 
+The block explorer can be seen [here](https://fe.dock.io/#/explorer). By default, it connects to the mainnet but you can switch the networks using the switcher from top left corner. The explorer can be used to look for transactions by transaction hash from the search box [here](https://fe.dock.io/#/explorer/extrinsics) and look for blocks by block hash or block number from the search box [here](https://fe.dock.io/#/explorer).
 
 {% page-ref page="node.md" %}
 
