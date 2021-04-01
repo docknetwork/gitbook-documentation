@@ -4,9 +4,13 @@ description: Instructions to check the status of your migration request
 
 # Token Migration Status
 
+{% hint style="info" %}
+Dock has officially completed the token migration as of **March 31, 2021**. Any questions can be sent to [support@dock.io](mailto:support@dock.io).
+{% endhint %}
+
 ## Checking the request status
 
-If you have migrated, then you can check the status of your request [here](https://fe.dock.io/#/token-migration/status). Enter the Ethereum address you used to send the ERC-20 transaction and sign the code and the ERC-20 transfer's transaction hash. 
+If you have migrated, then you can check the status of your request on our Token Migration portal. Enter the Ethereum address you used to send the ERC-20 transaction and sign the code and the ERC-20 transfer's transaction hash. 
 
 ![Check migration request status](../../.gitbook/assets/empty-status.png)
 

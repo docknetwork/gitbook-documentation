@@ -7,6 +7,10 @@ description: >-
 
 # Wallets and Account Creation
 
+{% hint style="info" %}
+Dock has officially completed the token migration as of **March 31, 2021**. Any questions can be sent to [support@dock.io](mailto:support@dock.io).
+{% endhint %}
+
 ## Dock Polkadot-JS App
 
 Dock has forked and customized the well-tested, browser-based wallet that is also used for Polkadot. This is a browser-based application, so it is not as secure as using an offline option.
@@ -73,6 +77,6 @@ Parity Signer is a secure way of storing your DOCK tokens on an offline device l
 
 Ledger’s hard wallet provides a very secure solution for storing your tokens. If you are purchasing the hardware wallet, make sure to purchase directly from the Ledger’s [website](https://shop.ledger.com/products/ledger-nano-s) or [amazon store](https://smile.amazon.com/Ledger-Nano-Hardware-Bitcoin-Ethereum/dp/B07FY5R77T/).
 
-_Dock is submitting a pull request to Ledger to enable new DOCK tokens to be stored on Ledger Nano S, we will provide updates for when this will be available._  
+_Dock has submitted a pull request to Ledger to enable new DOCK tokens to be stored on Ledger Nano S, we will provide updates for when this will be available._  
 ****
 

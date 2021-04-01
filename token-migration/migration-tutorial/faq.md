@@ -1,5 +1,9 @@
 # FAQ
 
+{% hint style="info" %}
+Dock has officially completed the token migration as of **March 31, 2021**. Any questions can be sent to [support@dock.io](mailto:support@dock.io).
+{% endhint %}
+
 #### Why is Dock migrating the token?
 
 Dock initially planned to build its protocol using Ethereum and issued the DOCK token using an ERC20 contract. After extensive R&D with Ethereum, the Dock team proposed to move to another network and the community voted to move to the Polkadot interchain ecosystem. Dock has since launched its own blockchain with a  mainnet supported by 11 independent validators. As a next step, the Dock token is being migrated from an ERC20 token to a native token on Dock’s blockchain in order to facilitate transactions, reward validators, governance, and eventually staking on the Dock Network.    
@@ -46,7 +50,7 @@ ERC20 wallets will not support the new Dock token, instead holders will have sev
 
 #### How can I check if the migration was successful?
 
-You can check the status of your migration by going to [https://fe.dock.io/\#/token-migration/status](https://fe.dock.io/#/token-migration/status) and entering the Ethereum address where you sent your ERC20 tokens from and the transaction hash. Once the migration is complete, your new Dock tokens will be available in your new Dock account.
+You can check the status of your migration by going to our Token Migration portal and entering the Ethereum address where you sent your ERC20 tokens from and the transaction hash. Once the migration is complete, your new Dock tokens will be available in your new Dock account.
 
 #### Can I use Trust Wallet for the migration?
 

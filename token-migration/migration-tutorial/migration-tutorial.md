@@ -7,6 +7,10 @@ description: >-
 
 # Token Migration Tutorial
 
+{% hint style="info" %}
+Dock has officially completed the token migration as of **March 31, 2021**. Any questions can be sent to [support@dock.io](mailto:support@dock.io).
+{% endhint %}
+
 {% hint style="warning" %}
 _**Stay safe -** be very careful when migrating your tokens to follow directions and check all addresses and website URLs to ensure you are migrating correctly.  Unfortunately, migration events are targets for scammers we will not be able to return tokens that are not migrated correctly._
 {% endhint %}
@@ -29,7 +33,7 @@ Save the transaction hash or use [etherscan](https://etherscan.io/) to find it b
 
 ### Step 3: Sign message with Ethereum address
 
-Go to Dock's [Token Migration portal](https://fe.dock.io/#/token-migration) to complete the migration. First you will need to select the destination address, which is the new Dock token account you created in Step 1.
+Go to Dock's Token Migration portal to complete the migration. First you will need to select the destination address, which is the new Dock token account you created in Step 1.
 
 By migrating during the first five weeks, you will automatically receive a swap bonus and will have the option to opt-in to the vesting bonus. You can learn more about the bonuses [here](https://blog.dock.io/dock-token-migration-part-2-incentives/).
 

@@ -1,5 +1,9 @@
 # Migration Terms and Conditions
 
+{% hint style="info" %}
+Dock has officially completed the token migration as of **March 31, 2021**. Any questions can be sent to [support@dock.io](mailto:support@dock.io).
+{% endhint %}
+
 _Last revised: December 2020_
 
 These Terms and Conditions of the Dock Token Migration Application \(hereinafter the "Terms of Use"\) shall serve as an agreement that sets forth the terms and conditions which will govern the use and participation in the Dock Token Migration Application \(hereinafter the "Migration Application"\).
