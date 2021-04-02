@@ -12,7 +12,7 @@ Dock has officially completed the token migration as of **March 31, 2021**. Any 
 {% endhint %}
 
 {% hint style="warning" %}
-_**Stay safe -** be very careful when migrating your tokens to follow directions and check all addresses and website URLs to ensure you are migrating correctly.  Unfortunately, migration events are targets for scammers we will not be able to return tokens that are not migrated correctly._
+_**Stay safe -** be very careful when migrating your tokens to follow directions and check all addresses and website URLs to ensure you are migrating correctly.  Unfortunately, migration events are targets for scammers we will not be able to return tokens that are not migrated correctly_
 {% endhint %}
 
 ### Step 1: Create new Dock account
