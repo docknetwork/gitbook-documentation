@@ -33,7 +33,7 @@
 
 ## Help Center <a id="token-migration"></a>
 
-* [Support Articles](token-migration/help-center/README.md)
+* [Help Center](token-migration/help-center/README.md)
   * [Wallets and Account Creation](token-migration/help-center/wallets-and-account-creation.md)
   * [Send Dock tokens from the mainnet portal](token-migration/help-center/send-dock-tokens-from-the-mainnet-portal.md)
   * [Token Migration Tutorial](token-migration/help-center/migration-tutorial.md)
