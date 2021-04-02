@@ -12,8 +12,6 @@ Dock has officially completed the token migration as of **March 31, 2021**. Any 
 * [Check token migration status](https://docs.dock.io/token-migration/migration-tutorial/token-migration-status)
 * [FAQ](https://docs.dock.io/token-migration/migration-tutorial/faq)
 
-### \*\*\*\*
-
 ### **Community Support**
 
 Our team is available to help throughout the token migration and can be contacted at [support@dock.io](mailto:support@dock.io) or on our [Telegram channel](https://t.me/dockio).
