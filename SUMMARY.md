@@ -31,13 +31,13 @@
       * [Monitoring](validators/poa/tooling/monitoring.md)
   * [PoS](validators/pos.md)
 
-## Support
+## Help Center
 
-* [Support Articles](support/help-center/README.md)
-  * [Wallets and Account Creation](support/help-center/wallets-and-account-creation.md)
-  * [Send Dock tokens from the mainnet portal](support/help-center/send-dock-tokens-from-the-mainnet-portal.md)
-  * [Token Migration Tutorial](support/help-center/migration-tutorial.md)
-  * [Check token migration status](support/help-center/token-migration-status.md)
-  * [FAQ](support/help-center/faq.md)
-  * [Migration Terms and Conditions](support/help-center/migration-terms-and-conditions.md)
+* [Help Center](help-center/help-center/README.md)
+  * [Wallets and Account Creation](help-center/help-center/wallets-and-account-creation.md)
+  * [Send Dock tokens from the mainnet portal](help-center/help-center/send-dock-tokens-from-the-mainnet-portal.md)
+  * [Token Migration Tutorial](help-center/help-center/migration-tutorial.md)
+  * [Check token migration status](help-center/help-center/token-migration-status.md)
+  * [FAQ](help-center/help-center/faq.md)
+  * [Migration Terms and Conditions](help-center/help-center/migration-terms-and-conditions.md)
 
