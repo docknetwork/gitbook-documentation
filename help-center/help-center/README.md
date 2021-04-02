@@ -7,6 +7,7 @@ Dock has officially completed the token migration as of **March 31, 2021**. Any 
 ### Support articles
 
 * [Wallets and account setup for new Dock tokens](https://docs.dock.io/token-migration/migration-tutorial/wallets-and-account-creation)
+* [Send Dock tokens from the mainnet portal](https://docs.dock.io/help-center/help-center/send-dock-tokens-from-the-mainnet-portal)
 * [Token migration step-by-step guide](https://docs.dock.io/token-migration/migration-tutorial/migration-tutorial)
 * [Check token migration status](https://docs.dock.io/token-migration/migration-tutorial/token-migration-status)
 * [FAQ](https://docs.dock.io/token-migration/migration-tutorial/faq)
