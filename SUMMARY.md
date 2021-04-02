@@ -31,12 +31,13 @@
       * [Monitoring](validators/poa/tooling/monitoring.md)
   * [PoS](validators/pos.md)
 
-## Token Migration
+## Help Center <a id="token-migration"></a>
 
-* [Token Migration Support](token-migration/migration-tutorial/README.md)
-  * [Token Migration Tutorial](token-migration/migration-tutorial/migration-tutorial.md)
-  * [Token Migration Status](token-migration/migration-tutorial/token-migration-status.md)
-  * [Wallets and Account Creation](token-migration/migration-tutorial/wallets-and-account-creation.md)
-  * [FAQ](token-migration/migration-tutorial/faq.md)
-  * [Migration Terms and Conditions](token-migration/migration-tutorial/migration-terms-and-conditions.md)
+* [Support Articles](token-migration/help-center/README.md)
+  * [Wallets and Account Creation](token-migration/help-center/wallets-and-account-creation.md)
+  * [Send Dock tokens from the mainnet portal](token-migration/help-center/send-dock-tokens-from-the-mainnet-portal.md)
+  * [Token Migration Tutorial](token-migration/help-center/migration-tutorial.md)
+  * [Check token migration status](token-migration/help-center/token-migration-status.md)
+  * [FAQ](token-migration/help-center/faq.md)
+  * [Migration Terms and Conditions](token-migration/help-center/migration-terms-and-conditions.md)
 
