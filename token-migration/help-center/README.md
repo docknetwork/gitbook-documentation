@@ -1,4 +1,4 @@
-# Help Center
+# Support Articles
 
 {% hint style="info" %}
 Dock has officially completed the token migration as of **March 31, 2021**. Any questions can be sent to [support@dock.io](mailto:support@dock.io).
