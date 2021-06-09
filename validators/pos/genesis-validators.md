@@ -107,5 +107,7 @@ The keys in the above example are as follows:
     Seed - _0xfb5046029fe9ba10ecb454b1ca4f4d629a61653da79bf84b36010c98cfdfdb55_   
     Public key - _0x00613e0b8e98ddc7f6ae94b64f240e61cda9cb9a619cc7b8e25d7465cf52a47a_
 
+Once the keys are inserted, restart the node.
+
 
 
