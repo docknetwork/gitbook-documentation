@@ -50,7 +50,7 @@ Following are some of the statuses you can see.  We have used dummy data in the 
 
 **If you have not opted for bonus and the migration is done. Notice the amount of token migrated, reamaining for vesting, and mainnet block hash.**
 
-![](../../.gitbook/assets/status-33%20%281%29.png)
+![](../../.gitbook/assets/status-33%20%282%29%20%281%29.png)
 
 
 

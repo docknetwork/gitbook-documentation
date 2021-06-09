@@ -29,7 +29,8 @@
       * [Key generation](validators/poa/tooling/key-generation.md)
       * [Deployment](validators/poa/tooling/deployment.md)
       * [Monitoring](validators/poa/tooling/monitoring.md)
-  * [PoS](validators/pos.md)
+  * [PoS](validators/pos/README.md)
+    * [Genesis validators](validators/pos/genesis-validators.md)
 
 ## Help Center
 

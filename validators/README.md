@@ -4,7 +4,7 @@ Validators are in charge of producing blocks \(processing transactions\) and val
 
 {% page-ref page="poa/" %}
 
-{% page-ref page="pos.md" %}
+{% page-ref page="pos/" %}
 
 
 
