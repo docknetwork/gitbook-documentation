@@ -4,11 +4,15 @@ description: These are the instructions for genesis validators only
 
 # Genesis validators
 
+### Overview
+
+Genesis validators need to generate keys as described below. We will then update the genesis file with those keys and publish the new genesis file which must be used to run the node. The genesis validators will then run a new node built with the PoS code and the new genesis file and then insert the keys to make the node start producing blocks.
+
 ### Generating keys
 
 For being a validator, 6 keypairs are needed. 
 
-1. Keypair for _stash_ account which receives staking rewards and locks its funds. This acount should be kept with maximum security like in cold storage. 
+1. Keypair for _stash_ account which receives staking rewards and locks its funds. This account should be kept with maximum security like in cold storage. 
 
 2. Keypair for _controller_ account to set validator preferences like session key, commission, etc. This account should have a sufficient balance to make transactions \(~300 tokens as of now\) 
 
