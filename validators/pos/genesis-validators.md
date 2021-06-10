@@ -109,5 +109,51 @@ The keys in the above example are as follows:
 
 Once the keys are inserted, restart the node.
 
+In case you generate accounts with seed phrases, you can use them in place of seed as shown below
 
+```text
+curl http://localhost:9933 -H "Content-Type:application/json;charset=utf-8" -d \
+  '[{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+      "babe",
+      "file upper fever fog achieve side catalog flash age bright mirror split",
+      "0x00613e0b8e98ddc7f6ae94b64f240e61cda9cb9a619cc7b8e25d7465cf52a47a"
+    ]
+  },
+  {
+    "jsonrpc":"2.0",
+    "id":2,
+    "method":"author_insertKey",
+    "params": [
+      "gran",
+      "file upper fever fog achieve side catalog flash age bright mirror split",
+      "0x9bdfcfce37814238ec638cb4c9cb5f7b8f1524a40678a1ac463ea7a8f33fbc97"
+    ]
+  },
+  {
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+      "imon",
+      "file upper fever fog achieve side catalog flash age bright mirror split",
+      "0x00613e0b8e98ddc7f6ae94b64f240e61cda9cb9a619cc7b8e25d7465cf52a47a"
+    ]
+  },
+  {
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+      "audi",
+      "file upper fever fog achieve side catalog flash age bright mirror split",
+      "0x00613e0b8e98ddc7f6ae94b64f240e61cda9cb9a619cc7b8e25d7465cf52a47a"
+    ]
+  }]'
+```
+
+The seed phrase above was "file upper fever fog achieve side catalog flash age bright mirror split"
 
