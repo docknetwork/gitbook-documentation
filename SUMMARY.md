@@ -31,6 +31,7 @@
       * [Monitoring](validators/poa/tooling/monitoring.md)
   * [PoS](validators/pos/README.md)
     * [Genesis validators](validators/pos/genesis-validators.md)
+    * [Becoming a validator](validators/pos/becoming-a-validator.md)
 
 ## Help Center
 
