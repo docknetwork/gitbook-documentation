@@ -24,5 +24,5 @@ docker run -d -p 9944:9944 -p 9933:9933 -p 30333:30333 docknetwork/dock-substrat
 
 There is an ansible script as well to deploy docker node on provisioned machine. [Here is the Readme](https://github.com/docknetwork/dock-substrate/tree/testnet/scripts/ansible) for that.
 
-Once the node is running and syncing, you need to bond tokens to become a validator which can be done through the polkadot-js apps UI for testnet which is [here](https://fe-staging.dock.io/#/explorer). Add Stash and Controller accounts with sufficient balance and then go to the [Staking tab](https://fe-staging.dock.io/#/staking) to set your session key and bond tokens.
+Once the node is running and syncing, you need to bond tokens to become a validator which can be done through the polkadot-js apps UI for testnet which is [here](https://fe-staging.dock.io/?rpc=wss%3A%2F%2Fknox-1.dock.io#/explorer). Add Stash and Controller accounts with sufficient balance and then go to the [Staking tab](https://fe-staging.dock.io/?rpc=wss%3A%2F%2Fknox-1.dock.io#/staking) to set your session key and bond tokens.
 
