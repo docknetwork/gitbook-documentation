@@ -24,7 +24,7 @@ Entities who verify the received presentations from the holder. These are genera
 
 ### Validators
 
-Entities who run a full node and are in charge of producing blocks and finalizing them. As the network will have a proof of authority consensus model in the initial stage, the validators will not stake any tokens and will be selected based on their testnet performance by the Governing Council. In the next stage, any token holder can become a validator by staking tokens.
+Entities who run a full node and are in charge of producing blocks and finalizing them. The Dock network has a Proof of Stake consensus which requires validators to stake Dock tokens in order to participate in validating the network and are rewarded for their efforts.
 
 ### Governing Council
 
