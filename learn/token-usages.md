@@ -14,10 +14,7 @@ Any write operation completed on-chain requires tokens. The amount of tokens var
 
 #### Revocation Registries
 
-* Creating a new revocation registry requires tokens. The number of
-
-  tokens will vary depending on the type of registry and the policy, i.e., how many DIDs control it and how many can revoke the registry.
-
+* Creating a new revocation registry requires tokens. The number of tokens will vary depending on the type of registry and the policy, i.e., how many DIDs control it and how many can revoke the registry.
 * Revoking credentials requires tokens. The number of tokens will vary depending on the number of credentials being revoked and the type and policy of the registry.
 * Undoing the revocation of credentials also requires tokens. The number of tokens will vary on the same criteria as revocations.
 
@@ -27,9 +24,9 @@ Any write operation completed on-chain requires tokens. The amount of tokens var
 
 ### 2. Validating and Staking
 
-The Dock token provides emission rewards to validators who support the infrastructure of the network and process transactions. During both the Proof of Authority \(PoA\) and Proof of Stake \(PoS\) phases, emission rewards are paid to validators as compensation for their services.
+The Dock token provides emission rewards to validators who support the infrastructure of the network and process transactions. Emission rewards are paid to validators as compensation for their services.
 
-In addition, the Dock token is also used to determine validators during the PoS phase.  To become a validator in the PoS network, the candidate needs to lock tokens \("stake"\) and can also invite other token holders to lock tokens on their behalf. The network selects validators based on the stake behind them.
+In addition, the Dock token is also used to determine validators.  To become a validator in the PoS network, the candidate needs to lock tokens \("stake"\) and can also invite other token holders to lock tokens on their behalf. The network selects validators based on the stake behind them.
 
 ### 3. Governance
 

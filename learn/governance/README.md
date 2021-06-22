@@ -2,19 +2,19 @@
 
 
 
-The Dock Governance Framework describes the combination of off-chain and on-chain rules that enable the Dock Association \(a Swiss non-profit\) to manage the ongoing development of the network in conjunction with Dock token holders. In the short term, during the PoA network phases, the Association will assume significant control over the network and governance decisions. It will gradually transfer an increasing amount of voting power to Dock token holders over time and thus decentralize governance of the network in the process. 
+The Dock Governance Framework describes the combination of off-chain and on-chain rules that enable the Dock Association \(a Swiss non-profit\) to manage the ongoing development of the network in conjunction with Dock token holders. This effort is completed with the assistance of two entities, the Association Council and the Technical Committee. The Council is the governing body of the network, responsible for reviewing and voting on any proposals from the community. The Technical Committee helps maintain the network and can fast-track the implementation of any urgent proposals.
 
-In the beginning, and in order to ensure the ongoing health of the network, the Dock Association may make changes to the network without inviting any proposals from token holders. As the network matures, token holders will be able to propose changes and vote on these proposals. The framework itself will evolve over time in a direction chosen by the Association and the token holders.
+Holders of the Dock token, as well as the Council members, can propose changes to the network. To prevent spam, any non-Council members making a proposal are required to lock 1,000 tokens, which will be returned after the proposal has been reviewed and voted on. The newly created proposal will join the proposal queue, from which the Council will consider one proposal every 20 days. The Council will have 15 days to vote on the proposal, and if approved by the Council, it will take effect in 2 days unless fast-tracked by the Technical Committee.
 
-The network is currently using a Proof of Authority \(PoA\) consensus but as it transitions to Proof of Stake \(during 2021\) consensus a different governance mechanism will be used. Both PoA and PoS governance will first be launched on a testnet before migrating to a mainnet. The Dock development team aspires to minimize protocol changes between testnet and mainnet with the only significant difference being the enhancement of tooling between the two networks.
+Dock token holders can also vote on proposed changes to the network \(including election of Council members\) by locking up their tokens.
 
-When fully implemented the governance framework will manage:
+In summary, Dock’s governance framework manages:
 
-1. Actors in the network and their eligibility criteria and tenure.
-2. Configuration parameters.
-3. Adding, removing or updating network functionality.
-4. Introducing and/or changing rewards and punishments for different actors in the network.
-5. Allocation of financial reserves of the network .i.e. the treasury.
+* Actors in the network and their eligibility criteria and tenure.
+* Configuration parameters.
+* Adding, removing or updating network functionality.
+* Introducing and/or changing rewards and punishments for different actors in the network.
+* Allocation of financial reserves for the network .i.e. the treasury.
 
 
 
