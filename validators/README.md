@@ -4,8 +4,6 @@
 The Dock Network will transition to a Proof of Stake consensus on **July 7 at 1pm GMT.** This will enable any token holder to participate in validating and staking on the Dock network according to the information in these docs.  [Learn more &gt;](https://blog.dock.io/docks-proof-of-stake-mainnet-will-launch-on-july-7th-2021/)
 {% endhint %}
 
-
-
 Validators are in charge of producing blocks \(processing transactions\) and validating blocks produced by other validators. Validators earn token rewards for participating in the network, these are described in the [token-economics section](../learn/token-economics/).
 
 The nodes currently running the mainnet can be seen at the Dock Network [telemetry](https://telemetry.polkadot.io/#list/Dock%20Mainnet). Our fork of the Polkadot-js apps showing block explorer and other tools is[ here](https://fe.dock.io/). The validators producing blocks in a round-robin fashion in the[ explorer](https://fe.dock.io/#/explorer).
