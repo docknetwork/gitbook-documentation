@@ -2,7 +2,7 @@
 
 The tokens released each year as emission rewards are fewer than the previous year and the total supply is expected to be in circulation within around 25 years. Each year, the network releases at most 25% of the circulating supply. 
 
-| Year | Tokens released | Tokens remaining to be released | Circulating supply |
+| Year | Tokens released | Tokens remaining to be released | Total Issuance |
 | :--- | :--- | :--- | :--- |
 | 1 | 36,652,688 | 109,958,063 | 890,041,937 |
 | 2 | 27,489,516 | 82,468,547 | 917,531,453 |
@@ -26,7 +26,7 @@ The rewards for each epoch consist of the transaction fees collected in the epoc
 * For each epoch, the emission rewards and the transaction fees are first credited to the Treasury which keeps 60% with the remaining 40% available for validators.
 * Dock uses Nominated Proof of Stake \(NPoS\) developed by the Web3 Foundation.
 * Anyone can register on-chain to be a validator by declaring their stake and commission levels.
-* The validators are then selected based on the stake behind them but their rewards depend on their performance in the network \(similar to PoA network\). These rewards are then distributed to the delegates proportionally.
+* The validators are then selected based on the stake behind them but their rewards depend on their performance in the network. These rewards are then distributed to the delegates proportionally.
 * The emission rate is kept such that it incentivizes 50% of the circulating supply to be liquid as NPoS increases the emission per epoch linearly \(next epoch will have more emission\) until the 50% level \(Chi\_ideal in NPoS doc\) is reached. Otherwise, emission rates per epoch decrease exponentially.
 * Should malicious behavior be detected, the validators and their nominators will be slashed, i.e. lose a fraction of their stake. The fraction depends on the severity of the malicious behavior:
   * Remaining unavailable \(not producing blocks or sending heartbeats\) has milder penalties.

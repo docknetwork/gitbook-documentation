@@ -27,14 +27,23 @@
     * [Deployment](validators/tooling/deployment.md)
     * [Monitoring](validators/tooling/monitoring.md)
     * [Becoming a validator](validators/tooling/becoming-a-validator.md)
+  * [Account Setup](validators/account-setup.md)
+  * [Identity Setup](validators/identity-setup/README.md)
+    * [Registrars](validators/identity-setup/registrars.md)
+    * [Judgements](validators/identity-setup/judgements.md)
+    * [Dock Registrar](validators/identity-setup/dock-registrar.md)
+  * [Bonding](validators/bonding.md)
+  * [Session Keys](validators/session-keys.md)
+  * [Operations](validators/operations.md)
 
 ## Help Center
 
 * [Help Center](help-center/help-center/README.md)
   * [Wallets and Account Creation](help-center/help-center/wallets-and-account-creation.md)
   * [Send Dock tokens from the mainnet portal](help-center/help-center/send-dock-tokens-from-the-mainnet-portal.md)
-  * [Token migration tutorial](help-center/help-center/migration-tutorial.md)
-  * [Check token migration status](help-center/help-center/token-migration-status.md)
-  * [FAQ](help-center/help-center/faq.md)
-  * [Migration Terms and Conditions](help-center/help-center/migration-terms-and-conditions.md)
+  * [Dock Token Migration](help-center/help-center/dock-token-migration/README.md)
+    * [Token migration tutorial](help-center/help-center/dock-token-migration/migration-tutorial.md)
+    * [Check token migration status](help-center/help-center/dock-token-migration/token-migration-status.md)
+    * [Migration FAQ](help-center/help-center/dock-token-migration/faq.md)
+    * [Migration Terms and Conditions](help-center/help-center/dock-token-migration/migration-terms-and-conditions.md)
 

@@ -27,6 +27,8 @@ Rewards are lazy - somebody must trigger a payout for a validator for rewards to
 
 One thing to keep in mind as a nominator is the validator's commission. The commission is the percentage of the validator reward which is taken by the validator before the rewards are split among the nominators. As a nominator, you may think that the lowest commission is best. However, this is not always true. Validators must be able to run at break-even in order to sustainably continue operation. Independent validators that rely on the commission to cover their server costs help to keep the network decentralized. Commission is just one piece of the puzzle that you should consider when picking validators to nominate.
 
+![](../.gitbook/assets/staking.png)
+
 As a nominator, if you only want to know the profit each validator made for each era, you can go to the Targets section under the staking page by inputting the number of tokens you would like to stake to check it. Then, nominate those who have a higher profit. However, that does not guarantee the right way to evaluate the validators' overall performance.
 
 Within the same page \(Targets\) you can filter prospective validators by the following traits to help narrow down your selection. The traits are:

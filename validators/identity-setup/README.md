@@ -1,0 +1,42 @@
+# Identity Setup
+
+Dock provides a naming system that allows participants to add personal information to their on-chain account and subsequently ask for verification of this information by registrars. It is strongly recommended that validators create identities for stash accounts.
+
+Users can set an identity by registering through default fields such as legal name, display name, website, Twitter handle, Riot handle, etc. along with some extra, custom fields for which they would like attestations \(see Judgements\).
+
+Users must reserve funds in a bond to store their information on chain: 20.258, and 0.066 per each field beyond the legal name. These funds are locked, not spent - they are returned when the identity is cleared. These amounts can also be extracted by querying constants through the Chain state constants tab on the [DOCK-JS App](https://fe-staging.dock.io/#/chainstate/constants).
+
+  
+1. Go to the Developer tab and select Chain state
+
+![Chain state](https://lh4.googleusercontent.com/ZW8kZ5Uu0kpp1cOsoWkA0F8QB7Tf4NlCAhcSUSHdlRKytYnL3ztCIGdismiZfQZ9vK6v8pgpeZK0N5pbdCJvaC_r8kZAEQVnQHzkGgEfmCZTZUiZso0UtbDrkVk7UBUoflWt-P6X)
+
+2. Next, select identity as the selected constant query.
+
+![](https://lh4.googleusercontent.com/m7Z3ltRU0uOpTXo5sxC4wz2bwGR8HCA2ET53egmJNu-Go83aVk9O2se0npSjulMc6LRJ0LjNrCn5-RrDaTUDgmO1V4MJbGCuEd6ydFauDzthx5sNxRL8nT9i2kxkqwIYHemQF-NA)
+
+3. Then on the right-hand side, you can select the constants that you would like to view and add them onto the webpage by clicking the "plus" icon at the end of the bar. Each field can store up to 32 bytes of information, so the data must be less than that.
+
+![](https://lh5.googleusercontent.com/v5h-vVhjHpgeyVJyRXlRIx2Kzm-VzlJlao-WtbTXQvMB1GP2QBkIfNuH2SjObYqJWNAp7miQ3eQhEeiQhGa6YN6qeKpU3-h5pQCNezf6Bu8JoLskEIKJFeWHZjcZBgsGNJ83RUdI)
+
+When inputting the data manually through the Extrinsics UI, a UTF8 to bytes converter can help. The easiest way to add the built-in fields is to click the three dot icon next to your account and select "Set on-chain identity".
+
+![](https://lh6.googleusercontent.com/6WHpKN6emrdOBdCcOwFENW0NHMIIcX5arfIUJJLjdytlOvyzFxHI4NoxdTLQQhyJ84eOBUnlIwoLxjrgit-1KDgitx4vMilMdh609bY5S9NLucl64OeW6W8NNMWkhmdxK_Vb--RF)
+
+4. A popup will appear, offering the default fields.
+
+![](https://lh4.googleusercontent.com/ofBQG5o_5GpAMQBHz1vGoI4Mt3pgtf_fBBD3Da0XmZaDX-J9ry5nM6A0jDYqWiww9g7-z_gObdn_oQVLS6WbCXhsDXqTou9fT0C6CsHXcFUNaNosDG30U2XlANm0WwBqaCyNUr-C)
+
+To add custom fields beyond the default ones, use the Extrinsics UI to submit a raw transaction by first clicking "Add Item" and adding any field name you like. The example below adds a field steam, which is a user's Steam username. The first value is the field name in bytes \("steam"\) and the second is the account name in bytes \("theswader"\). The display name also has to be provided, otherwise, the Identity pallet would consider it wiped if we submitted it with the "None" option still selected. That is to say, every time you make a change to your identity values, you need to re-submit the entire set of fields: the write operation is always "overwrite", never "append".
+
+![Setting a custom field](https://lh6.googleusercontent.com/OUth53YRlK9J-siS7o6WlsoYPhMdP-xoWI4_DVeu-FoQZfXQg5H5E4gW8O-2SO8yqf8vypk6YQeWoaLY0c0rpJ5FP6gnnyGbi4IOn_v9dxaAOG4YSQNjttX4_PCMCiOGfNh9ZYXq)
+
+Note that custom fields are not shown and  only show official fields for now. If you want to check that the values are still stored, use the Chain State UI to query the active account's identity info.
+
+![Raw values of custom fields are available on-chain](https://lh3.googleusercontent.com/Xzckx1daTp1pC1iyQjjturhjb9d3rWzoHvbVzKwRZK2pt0UMKLY9hlBB-j1HJBBjkwJcpZh9qq-TNV2ilYRaUmP_-FNpsgcciVvt-kLorGLE9hK1EEChN1OrWsXVwPb26A9krsp5)
+
+### **Format Caveat**
+
+Please note the following caveat: because the fields support different formats, from raw bytes to various hashes, a UI has no way of telling how to encode a given field it encounters. The Dock UI currently encodes the raw bytes it encounters as UTF8 strings, which makes these values readable on-screen. However, given that there are no restrictions on the values that can be placed into these fields, a different UI may interpret them as, for example, IPFS hashes or encoded bitmaps. This means any field stored as raw bytes will become unreadable by that specific UI. As field standards crystallize, things will become easier to use but for now, every custom implementation of displaying user information will likely have to make a conscious decision on the approach to take, or support multiple formats and then attempt multiple encodings until the output makes sense.  
+
+
