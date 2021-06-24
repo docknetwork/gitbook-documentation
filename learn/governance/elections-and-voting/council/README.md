@@ -10,7 +10,7 @@ The current Council members can be seen at URL [https://fe.dock.io/\#/council](h
 
 ### Council membership
 
-To add a new Council member, go to [http://fe.dock.io/\#/council/motions](http://fe.dock.io/#/council/motions) and click on **Propose motion** button. It will show a dialog box where you should select the `addMember` under `councilMembership` and select an account that you want to add to the Council. You need to ensure that the account being added is not already added to the Council else the proposal will be rejected; the UI does not prevent that. As shown below, Ferdie is being proposed to be added to the Council by existing member Charlie. Also, note that the `threshold` is set to 2 as there are only 3 Council members and 2 is &gt;50% of 3. Once the correct values have been set, click _Propose_ and then submit the transaction on the next screen.
+To add a new Council member, go to [http://fe.dock.io/\#/council/motions](http://fe.dock.io/#/council/motions) and click on the **Propose motion** button. It will show a dialog box where you should select the `addMember` under `councilMembership` and select an account that you want to add to the Council. You need to ensure that the account being added is not already added to the Council else the proposal will be rejected; the UI does not prevent that. As shown below, Ferdie is being proposed to be added to the Council by existing member Charlie. Also, note that the `threshold` is set to 2 as there are only 3 Council members and 2 is &gt;50% of 3. Once the correct values have been set, click _Propose_ and then submit the transaction on the next screen.
 
 ![A council proposal](../../../../.gitbook/assets/propose-council-add.png)
 
@@ -26,7 +26,7 @@ You can see the current votes, i.e. `Aye` vs `Nay` for each proposal and also th
 
 ![](../../../../.gitbook/assets/council-motion-aye.png)
 
-Now that the Motion has had the required `Aye`s, it can be executed by closing it. It is done by clicking on **Close** button. Closing can be done by any account and not just by Council members. The image below shows that a regular account "EVE" who is not a Council member is closing the proposal.
+Now that the Motion has had the required `Aye`s, it can be executed by closing it. It is done by clicking on the **Close** button. Closing can be done by any account and not just by Council members. The image below shows that a regular account "EVE" who is not a Council member is closing the proposal.
 
 ![](../../../../.gitbook/assets/council-add-close.png)
 

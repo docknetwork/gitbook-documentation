@@ -1,6 +1,6 @@
 # Technical Committee
 
-The technical committee can fast track governance proposals made by the Council. The current technical committee members can be seen at the URL [https://fe.dock.io/\#/techcomm](https://fe.dock.io/#/techcomm). The image shows 3 technical committee members Dave, Eve, and Ferdie. Note that the images are for illustratory purposes and the name, address, member count might not match the network.
+The technical committee can fast track governance proposals made by the Council. The current technical committee members can be seen at the URL [https://fe.dock.io/\#/techcomm](https://fe.dock.io/#/techcomm). The image shows 3 technical committee members Dave, Eve, and Ferdie. Note that the images are for illustrative purposes and the name, address, member count might not match the network.
 
 ![](../../../.gitbook/assets/tech-comm-member-list.png)
 
