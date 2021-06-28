@@ -8,7 +8,7 @@ This article is being provided ahead of the launch for informational purposes on
 
 Nominators play an important role on the Dock network by nominating validators to run and secure the Dock network. Token holders can participate in nominating by staking Dock tokens to various validators and, as a result, are eligible to receive token rewards.
 
-Follow the steps below to participate as a nominator and stake Dock tokens. If you have not yet created accounts for staking, you will need to do so by following the steps in the Account Setup article.
+Follow the steps below to participate as a nominator and stake Dock tokens. If you have not yet created accounts for staking, you will need to do so by following the steps in the [Account Setup](https://docs.dock.io/help-center/staking/staking-account-setup) article.
 
 ### Step 1: Bond your tokens
 
@@ -42,10 +42,10 @@ Click on "Nominate" on an account you've bonded and you will be presented with a
 
 Select them, confirm the transaction, and you're done - you are now nominating. Your nominations will become active in the next era. Eras last 24 hours on Dock - depending on when you do this, your nominations may become active almost immediately or you may have to wait almost the entire 24 hours before your nominations are active. You can check how far along Dock is in the current era on the [Staking page](https://fe.dock.io/#/staking).
 
-Assuming at least one of your nominations ends up in the active validator set, you will start to get rewards allocated to you. In order to claim them \(i.e., add them to your account\), you must manually claim them. See the [Claiming Rewards](https://wiki.polkadot.network/docs/en/learn-staking#claiming-rewards) section of the Staking docs for more details.
+Assuming at least one of your nominations ends up in the active validator set, you will start to get rewards allocated to you. In order to claim them \(i.e., add them to your account\), you must manually claim them. See the [Claiming Rewards](https://docs.dock.io/help-center/staking/how-to-claim-rewards) article for more details.
 
 ### Step 3: Stop nominating
 
-If you decide to stop nominating one or more validators, you will need to unbond your tokens. You may need to do this if for example you want to change who you are nominating or if you want to withdraw your tokens. Detailed instructions about how to unbond are available [here](https://wiki.polkadot.network/docs/en/maintain-guides-how-to-unbond).  
+If you decide to stop nominating one or more validators, you will need to unbond your tokens. You may need to do this if for example you want to change who you are nominating or if you want to withdraw your tokens. Detailed instructions about how to unbond are available [here](https://docs.dock.io/help-center/staking/how-to-unbond-and-rebond).  
 
 
