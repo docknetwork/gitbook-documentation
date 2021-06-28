@@ -38,7 +38,7 @@
 
 ## Help Center
 
-* [Help Center](help-center/help-center/README.md)
+* [General](help-center/help-center/README.md)
   * [Wallets and Account Creation](help-center/help-center/wallets-and-account-creation.md)
   * [Send Dock tokens from the mainnet portal](help-center/help-center/send-dock-tokens-from-the-mainnet-portal.md)
   * [Dock Token Migration](help-center/help-center/dock-token-migration/README.md)
@@ -46,4 +46,9 @@
     * [Check token migration status](help-center/help-center/dock-token-migration/token-migration-status.md)
     * [Migration FAQ](help-center/help-center/dock-token-migration/faq.md)
     * [Migration Terms and Conditions](help-center/help-center/dock-token-migration/migration-terms-and-conditions.md)
+* [Staking](help-center/staking/README.md)
+  * [Setup accounts for staking](help-center/staking/staking-account-setup.md)
+  * [How to nominate \(stake\) on Dock](help-center/staking/how-to-nominate-stake-on-dock.md)
+  * [How to unbond and rebond](help-center/staking/how-to-unbond-and-rebond.md)
+  * [How to claim rewards](help-center/staking/how-to-claim-rewards.md)
 
