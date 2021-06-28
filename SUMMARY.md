@@ -47,7 +47,7 @@
     * [Migration FAQ](help-center/help-center/dock-token-migration/faq.md)
     * [Migration Terms and Conditions](help-center/help-center/dock-token-migration/migration-terms-and-conditions.md)
 * [Staking](help-center/staking/README.md)
-  * [Setup accounts for staking](help-center/staking/staking-account-setup.md)
+  * [Accounts setup for staking](help-center/staking/staking-account-setup.md)
   * [How to nominate \(stake\) on Dock](help-center/staking/how-to-nominate-stake-on-dock.md)
   * [How to unbond and rebond](help-center/staking/how-to-unbond-and-rebond.md)
   * [How to claim rewards](help-center/staking/how-to-claim-rewards.md)
