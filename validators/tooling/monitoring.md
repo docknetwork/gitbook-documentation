@@ -1,6 +1,6 @@
 # Monitoring
 
-The nodes are by default sending telemetry data \(can be disabled while deploying node\) to Polkadot telemetry.
+The nodes don't send telemetry data to Polkadot telemetry by default. This can be enabled  by using the `--telemetry-url='wss://telemetry.polkadot.io/submit/ 0` command.
 
 Dock will be adding itself to [Polkascan](https://polkascan.io/) for the mainnet. For the testnet, Dock will host a custom [Polkascan explorer](https://github.com/polkascan).
 
