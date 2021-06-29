@@ -20,5 +20,9 @@ Dock provides the [Dock-JS UI](https://fe.dock.io/#/staking) for staking which c
 * The [**Targets**](https://fe.dock.io/#/staking/targets) subsection will help you estimate your earnings and where you can select your favorite validators.
 * The [**Waiting**](https://fe.dock.io/#/staking/waiting) subsection lists all pending validators that are awaiting more nominations to enter the active validator set. Validators will stay in the waiting queue until they have enough DOCK backing them. It is possible that a validator can remain in the queue for a long time if they never get enough backing.
 
+{% page-ref page="staking-account-setup.md" %}
+
+{% page-ref page="how-to-nominate-stake-on-dock.md" %}
+
 
 

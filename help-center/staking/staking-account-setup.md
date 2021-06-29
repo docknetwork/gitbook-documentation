@@ -1,4 +1,4 @@
-# Accounts setup for staking
+# Account setup for staking
 
 {% hint style="warning" %}
 Staking will launch on the Dock network on **July 7 at 1pm GMT**. 
