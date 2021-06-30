@@ -44,19 +44,19 @@ Proposals can also be supported, i.e. seconded by others by locking the same amo
 
 ### Becoming a referendum
 
-Once sufficient time has passed \(shown under "launch period" on the page\), the proposal becomes a referendum and is now ready to be voted upon by the Council. The image below shows how the proposal has moved under "referenda". It also shows the expiry of the referendum under "remaining" and also that note that no voting has yet been done on it. Also, the "0" is the referendum index and uniquely identifies the referendum.
+Once sufficient time has passed \(shown under "launch period" on the page\), the proposal becomes a referendum and is now ready to be voted upon by the token holders. The image below shows how the proposal has moved under "referenda". It also shows the expiry of the referendum under "remaining" and also that note that no voting has yet been done on it. Also, the "0" is the referendum index and uniquely identifies the referendum.
 
 ![](../../../.gitbook/assets/referendum.png)
 
 ### Voting
 
-Now the Council members can vote on the referendum by clicking on **Vote**. The images below show that both Charlie and Bob\_Stash approve the proposal by clicking on **Vote Aye** and submitting the transaction. Note that they are voting on referendum index 0.
+Now the token holders can vote on the referendum by clicking on **Vote**. The images below show that both Charlie and Bob\_Stash approve the proposal by clicking on **Vote Aye** and submitting the transaction. Note that they are voting on referendum index 0.
 
 ![](../../../.gitbook/assets/vote-1.png)
 
 ![](../../../.gitbook/assets/vote-2.png)
 
-Once &gt;50% of council members i.e. 2 out of 3 have approved the referendum, the referendum has a green tick meaning the referendum will now be executed but after some time. See the image below for an example
+Once &gt;=66% of council members i.e. 3 out of 4 have approved the referendum, the referendum has a green tick meaning the referendum will now be executed but after some time. See the image below for an example
 
 ![](../../../.gitbook/assets/referendum-2.png)
 
