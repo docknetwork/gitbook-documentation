@@ -50,7 +50,7 @@ Once sufficient time has passed \(shown under "launch period" on the page\), the
 
 ### Voting
 
-Now the token holders can vote on the referendum by clicking on **Vote**. The images below show that both Charlie and Bob\_Stash approve the proposal by clicking on **Vote Aye** and submitting the transaction. Note that they are voting on referendum index 0.
+Now the token holders can vote on the referendum by clicking on **Vote** with the balance they intend to support the vote with. The images below show that both Charlie and Bob\_Stash approve the proposal by clicking on **Vote Aye** and submitting the transaction. Note that they are voting on referendum index 0.
 
 ![](../../../.gitbook/assets/vote-1.png)
 
