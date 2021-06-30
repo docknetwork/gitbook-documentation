@@ -66,6 +66,8 @@ The validator is deployed assuming a host called `validator` defined in the `hos
 
 **Deploy sentry** 
 
+_Note: Sentry nodes aren't supposed to give ultimate protection and are thus not required. Your validator may still be succesptible to denial of service attacks._  
+  
 The sentry is deployed assuming a host called `sentry` defined in the `hosts` file with host variables similar to the ones in the sample hosts file
 
 1. The following will deploy a sentry with name `MySentry`, the libp2p key `0x8d72875f3c6a0612ce67fe1cfa6f0e46deb6b2c0ac6d8f3eb6b51af3e67f851f` for the validator running at `/ip4/44.231.55.99/tcp/30333/p2p/QmaAARGgiUyGfqi87ZscaDRKknyw9jX9jJqsBwFi9jocYg`. The sentry node, however, allows connections from all nodes
