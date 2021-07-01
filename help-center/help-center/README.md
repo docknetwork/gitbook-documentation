@@ -8,5 +8,5 @@
 
 ### **Community Support**
 
-Our team is available to help throughout the token migration and can be contacted at [support@dock.io](mailto:support@dock.io) or on our [Telegram channel](https://t.me/dockio).
+Our team is available to help and can be contacted by email at [support@dock.io](mailto:support@dock.io) or on our [Telegram channel](https://t.me/dockio) and [Discord channel](https://discord.gg/bsefW8Y4).
 
