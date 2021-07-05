@@ -18,7 +18,7 @@ For being a validator, 6 keypairs are needed.
 
 3-6. The remaining 4 keys are for _Babe_, _Grandpa_, _ImOnline_**,** and _Authority Discovery_. These are not accounts in the usual sense and they don't need to have a balance but are used by the validator to sign blocks, vote on blocks, health check, etc and thus their private keys must be present on the validator machine; the process is described later. The 4 keys are together called the _session key_.
 
-The genesis validators should share the 6 above-mentioned keys \(accounts\) with us so that we can prepare the genesis spec. We recommend using the current validator account as stash but if you need to use another account, ensure that 1000 tokens. Controller account can be created by going to the accounts page [here](https://fe.dock.io/?rpc=wss%3A%2F%2Fdanforth-1.dock.io#/accounts). The remaining 4 accounts should also be created from the accounts page but those must be of specific types. Keys for Babe, ImOnline, and Authority Discovery **must** be of type _Schnorrkel \(Sr25519\)_ and Grandpa **must** be of type _ed25519_. Check the screenshots below for reference.
+The genesis validators should share the 6 above-mentioned keys \(accounts\) with us so that we can prepare the genesis spec. We recommend using the current validator account as stash but if you need to use another account, ensure that 1000 tokens. Controller account can be created by going to the accounts page [here](https://fe.dock.io/#/explorer). The remaining 4 accounts should also be created from the accounts page but those must be of specific types. Keys for Babe, ImOnline, and Authority Discovery **must** be of type _Schnorrkel \(Sr25519\)_ and Grandpa **must** be of type _ed25519_. Check the screenshots below for reference.
 
 ![For generating Babe, ImOnline and Authority Discovery keys ](../.gitbook/assets/seed-schnorkel.png)
 
@@ -109,7 +109,7 @@ The keys in the above example are as follows:
 
 Once the keys are inserted, restart the node.
 
-In case you generate accounts with seed phrases, you can use them in place of seed as shown below
+In case you generate accounts with seed phrases, you can use them in place of hex seed as shown below
 
 ```text
 curl http://localhost:9933 -H "Content-Type:application/json;charset=utf-8" -d \
