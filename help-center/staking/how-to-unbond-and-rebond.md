@@ -36,9 +36,11 @@ If successful, your balance will show as "unbonding" with an indicator of how ma
 
 Once this process is complete, you will have to issue another, final transaction: Withdraw Unbonded.
 
-You can also check how long you have to wait in order to withdraw your stake in the [Accounts](https://fe.dock.io/#/accounts) page by expanding your account balance. There is a tiny icon beside the word "unbonding" that will eventually become an unlock icon once the remaining blocks get passed.
+You can check how long you have to wait in order to withdraw your stake in the [Accounts](https://fe.dock.io/#/accounts) page by expanding your account balance. There is a tiny icon beside the word "unbonding" that will eventually become an unlock icon once the remaining blocks get passed.
 
-Then, you can click that icon directly to submit the withdraw transaction. Finally, your transferrable balance will increase by the amount of tokens you've just fully unbonded.
+![](../../.gitbook/assets/unbond.png)
+
+Clicking that icon directly to submit the withdraw transaction. Finally, your transferrable balance will increase by the amount of tokens you've just fully unbonded.
 
 ### Rebonding before the end of the unbonding period
 
