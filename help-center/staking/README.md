@@ -14,7 +14,7 @@ Nominators take a more passive role than the validators who actively engage in t
 
 Dock provides the [Dock-JS UI](https://fe.dock.io/#/staking) for staking which can be found **Staking** tab \(within the **Network** menu\).
 
-* The [**Staking Overview**](https://fe.dock.io/#/staking/) subsection will show you all the active validators and their information - their identities, the amount of DOCK that is staking for them, amount that is their own stake,  their commission, the era points they've earned in the current era, and the last block number that they produced. If you click on the chart button it will take you to the **Validator Stats** subsection which allows you to query a validator's stash address and see historical charts on era points, elected stake, rewards, and slashes
+* The [**Staking Overview**](https://fe.dock.io/#/staking/) subsection will show you all the active validators and their information - their identities, the amount of DOCK that is staking for them, amount that is their own stake,  their commission, the era points they've earned in the current era, and the last block number that they produced. If you click on the chart button it will take you to the **Validator Stats** subsection which allows you to query a validator's stash address and see historical charts on era points, elected stake, rewards, and slashes.
 * The [**Account actions**](https://fe.dock.io/#/staking/actions) subsection allows you to stake and nominate.
 * The [**Payouts**](https://fe.dock.io/#/staking/payout) subsection allows you to claim rewards from staking.
 * The [**Targets**](https://fe.dock.io/#/staking/targets) subsection will help you estimate your earnings and where you can select your favorite validators.
