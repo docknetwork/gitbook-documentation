@@ -4,9 +4,7 @@ description: Electing members to the council
 
 # Council Membership
 
-Council members can be added or removed through voting by token holders or by other council members. A simple majority \(over 50%\) accepting votes are required to change Council membership.
-
-Below we show how you can see the current Council members and also change Council membership along with screenshots. Note that the screenshots are for illustrative purposes only, and the actual data \(addresses, names, amounts, durations can be different\).The current Council members can be seen at [https://fe.dock.io/\#/council](https://fe.dock.io/#/council) as shown below.
+Council members can be added or removed through voting by token holders or by other Council members. A simple majority \(over 50%\) accepting votes are required to change Council membership. Below we show how you can see the current Council members and the steps to change Council members. Note that the screenshots are for illustrative purposes only, and the actual data \(addresses, names, amounts, durations can be different\).The current Council members can be seen at [https://fe.dock.io/\#/council](https://fe.dock.io/#/council) as shown below.
 
 ![Council members](../../../.gitbook/assets/council-member-list.png)
 
@@ -16,7 +14,7 @@ To add a new Council member, go to [http://fe.dock.io/\#/council/motions](http:/
 
 ![A council proposal](../../../.gitbook/assets/propose-council-add.png)
 
-Now you should the proposal as a motion. You can see the `votes` in addition to other data and also see there is 1 `Aye` \(positive vote\) already. This is because the proposer is assumed to accept the proposal. Below is an expanded view of the proposal showing exactly what was proposed which is the addition of Ferdie to the Council.
+Now you should set the proposal as a motion. You can see the `votes` in addition to other data and also see there is 1 `Aye` \(positive vote\) already. This is because the proposer is assumed to accept the proposal. Below is an expanded view of the proposal showing exactly what was proposed which is the addition of Ferdie to the Council.
 
 ![Council motions](../../../.gitbook/assets/council-add-motion.png)
 
