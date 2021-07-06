@@ -14,13 +14,13 @@ Current proposals will be publicly [here](https://fe.dock.io/#/democracy) and an
 
 ### Preparing a proposal
 
-To create a proposal, we need to know its hash. For that navigate to [https://fe.dock.io/\#/master-proposals/create](https://fe.dock.io/#/master-proposals/create). Now select the change you want to propose and note down the "Proposal hash". The image below shows a proposal being created to increase the maximum allowed validators to be 18. You can ignore the proposal URL.
+To create a proposal, we need to know its hash. For that navigate to the **Proposals** tab and select [**Proposal creation**](https://fe.dock.io/#/master-proposals/create). Now select the change you want to propose and note down the "Proposal hash". The image below shows a proposal being created to increase the maximum allowed validators to be 18. You can ignore the proposal URL.
 
 ![](../../../.gitbook/assets/proposal-creation.png)
 
 ### Submitting a proposal
 
-Now go to [https://fe.dock.io/\#/democracy](https://fe.dock.io/#/democracy) and click on **Submit proposal**. In the dialog box that appears, enter the proposal hash in the "preimage hash" field and enter a lockup amount greater than or equal to 1,000 tokens. The image below shows Ferdie using the previously generated proposal hash to make a proposal.
+Now go to the [**Democracy**](https://fe.dock.io/#/democracy) tab and click on **Submit proposal**. In the dialog box that appears, enter the proposal hash in the "preimage hash" field and enter a lockup amount greater than or equal to 1,000 tokens. The image below shows Ferdie using the previously generated proposal hash to make a proposal.
 
 ![](../../../.gitbook/assets/public-proposal.png)
 
@@ -42,7 +42,7 @@ Proposals can also be supported, i.e. seconded by others by locking the same amo
 
 ### Becoming a referendum
 
-Once sufficient time has passed \(shown under "launch period" on the page\), the proposal becomes a referendum and is now ready to be voted upon by the token holders. The image below shows how the proposal has moved under "referenda". It also shows the expiry of the referendum under "remaining" and also that note that no voting has yet been done on it. Also, the "0" is the referendum index and uniquely identifies the referendum.
+Once sufficient time has passed \(shown under "launch period" on the page\), the proposal becomes a referendum and is now ready to be voted upon by the token holders. The image below shows how the proposal has moved under "referenda". It also shows the expiry of the referendum under "remaining" and also a note that no voting has yet been done on the proposal. Also, the "0" is the referendum index and uniquely identifies the referendum.
 
 ![](../../../.gitbook/assets/referendum.png)
 
@@ -54,7 +54,7 @@ Now the token holders can vote on the referendum by clicking on **Vote** with th
 
 ![](../../../.gitbook/assets/vote-2.png)
 
-Once &gt;=66% of council members i.e. 3 out of 4 have approved the referendum, the referendum has a green tick meaning the referendum will now be executed but after some time. See the image below for an example
+Once at least 66% of council members have approved the referendum, the referendum has a green tick meaning the referendum will now be executed after some time. See the image below for an example.
 
 ![](../../../.gitbook/assets/referendum-2.png)
 
@@ -66,5 +66,5 @@ Once the voting period has passed, the accepted referendum moves to the dispatch
 
 
 
-**Note:** The time to launch referendum, do voting, enact passed referendum, etc have been shown in minutes and seconds according to the example images but in practice, these will be on the order of days. Similarly, for the minimum deposit, it is shown 10,000 but it can change over time.
+**Note:** The time to launch referendum, vote, enact passed referendum, etc., have been shown in minutes and seconds in the images for example purposes. In practice, these will be on the order of days. Similarly, for the minimum deposit, it is shown as 1,000 but can change over time.
 
