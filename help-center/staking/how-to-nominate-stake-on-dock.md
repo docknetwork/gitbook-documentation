@@ -38,7 +38,7 @@ Click on "Nominate" on an account you've bonded and you will be presented with a
 
 ![](https://lh3.googleusercontent.com/1NBrJfhNrUqLOe-2fsf0xV1bLKSEDJUoKIN6OLu64bYzkuICX87Kg9i-Vc457HeWR398OrvEPD7hysjf2oTfmSbYXZBPLmV2nIkpemzr0kYPviBuSgLyc348_NghZGGkk9PAr3Ln)
 
-Select them, confirm the transaction, and you're done - you are now nominating. Your nominations will become active in the next era. Eras last 24 hours on Dock - depending on when you do this, your nominations may become active almost immediately or you may have to wait almost the entire 24 hours before your nominations are active. You can check how far along Dock is in the current era on the [Staking page](https://fe.dock.io/#/staking).
+Select them, confirm the transaction, and you're done - you are now nominating. Your nominations will become active in the next era. Eras last 12 hours on Dock - depending on when you do this, your nominations may become active almost immediately or you may have to wait almost the entire 12 hours before your nominations are active. You can check how far along Dock is in the current era on the [Staking page](https://fe.dock.io/#/staking).
 
 Assuming at least one of your nominations ends up in the active validator set, you will start to get rewards allocated to you. In order to claim them \(i.e., add them to your account\), you must manually claim them. See the [Claiming Rewards](https://docs.dock.io/help-center/staking/how-to-claim-rewards) article for more details.
 
