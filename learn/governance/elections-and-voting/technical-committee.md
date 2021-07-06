@@ -4,8 +4,6 @@ The technical committee can fast track governance proposals made by the Council.
 
 ![](../../../.gitbook/assets/tech-comm-member-list.png)
 
-
-
 Council members can add new or remove existing technical committee members through simple majority voting, in the same way they do for Council members with a slight but important difference \(described below\). To look at the process, visit the Council section.
 
 ![](../../../.gitbook/assets/propose-techcomm-add.png)
