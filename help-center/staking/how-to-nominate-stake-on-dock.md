@@ -12,9 +12,11 @@ Follow the steps below to participate as a nominator and stake Dock tokens. If y
 
 ### Step 1: Bond your tokens
 
-Navigate to the Staking section on the [DockJS App](https://fe.dock.io/#/staking) and select Account actions, then click the **+ Nominator** button.
+In the [DockJS App](https://fe.dock.io/#/staking), navigate to the **Staking tab &gt;** [**Account Actions**](https://fe.dock.io/#/staking/actions) and click on **+ Nominator**.
 
-You will see a modal window to add your information for nominating. 
+![](https://lh3.googleusercontent.com/XdxHpr4wY1EnXOxXBclRgKvUmGONUKmda425O6J8uXc2j5fkwYwyL6cVSqshKew7lK_8ZvYZNHA-QvCdqjSxKfcubIm93j6wpYCCEuEfp52G4-J33x9qYIO1z0meOMXrXXBHio8h)
+
+You will see a modal window to add your information for nominating. Select the accounts that you would like as your Stash and Controller accounts, as well as the amount of tokens \(stash\) you would like to bond.
 
 ![](https://lh3.googleusercontent.com/pQCSLzyKI0Ul3_BzpXr_Xl5N9p-2RkRgnDp7Iec6x3Yxtud4cLd5tZ1WH1iHqEB-MDKHI1KMCsOTpShrv39fqXA2FDmcrjV-ypcpgrRd7BaelP92ezkECjIEjSAcynEaXQGXuzR5)
 
@@ -24,11 +26,7 @@ Also be mindful of the reaping threshold - the amount that must remain in an acc
 
 Choose whatever payment destination that makes sense to you. If you are unsure, you can choose "Stash account \(increase amount at stake\)" to simply accrue the rewards into the amount you are staking and earn compound interest.
 
-Navigate to the **Staking tab &gt;** [**Account Actions**](https://fe-staging.dock.io/#/staking/actions) and click on **+ Nominator**
 
-![](https://lh3.googleusercontent.com/XdxHpr4wY1EnXOxXBclRgKvUmGONUKmda425O6J8uXc2j5fkwYwyL6cVSqshKew7lK_8ZvYZNHA-QvCdqjSxKfcubIm93j6wpYCCEuEfp52G4-J33x9qYIO1z0meOMXrXXBHio8h)
-
-Next, select the accounts that you would like as your Stash and Controller accounts, as well as the amount of tokens \(stash\) you would like to bond.
 
 ![](https://lh5.googleusercontent.com/XR-3Zwx08_-2eIFMLisxYp_sUf_CFzTFB8tmy8R9v4DzDHgUkeI-PjaLZXmL84WVZ0rsgimi2LBZbe-lcCEvNd5XPSJ76gX_b1aPGzL7yt4fVYdsrCCKH--zdsjT4f-WwDmZpg6s)
 
