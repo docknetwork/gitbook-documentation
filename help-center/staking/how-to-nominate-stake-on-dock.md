@@ -1,11 +1,5 @@
 # How to nominate \(stake\) on Dock
 
-{% hint style="warning" %}
-Staking will launch on the Dock network on **July 7 at 1pm GMT**. 
-
-This article is being provided ahead of the launch for informational purposes only, you will not be able to stake until that time.
-{% endhint %}
-
 Nominators play an important role on the Dock network by nominating validators to run and secure the Dock network. Token holders can participate in nominating by staking Dock tokens to various validators and, as a result, are eligible to receive token rewards.
 
 Follow the steps below to participate as a nominator and stake Dock tokens. If you have not yet created accounts for staking, you will need to do so by following the steps in the [Account Setup](https://docs.dock.io/help-center/staking/staking-account-setup) article.

@@ -1,11 +1,5 @@
 # How to claim rewards
 
-{% hint style="warning" %}
-Staking will launch on the Dock network on **July 7 at 1pm GMT**. 
-
-This article is being provided for informational purposes only ahead of the launch, you will not be able to stake until that time.
-{% endhint %}
-
 Dock stores up to 84 eras of reward information so rewards will not be claimable more than 84 eras after they were earned. This means that all rewards must be claimed within 84 eras.
 
 Reward payouts for backing a validator can be initiated by any account. This means that as soon as a validator or nominator requests a payout for an era, all the nominators for that validator will be rewarded. Each user does not need to claim individually and the suggestion is that validators should claim rewards for everybody as soon as an era ends.

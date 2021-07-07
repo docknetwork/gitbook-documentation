@@ -1,11 +1,5 @@
 # How to unbond and rebond
 
-{% hint style="warning" %}
-Staking will launch on the Dock network on **July 7 at 1pm GMT**. 
-
-This article is being provided for informational purposes only ahead of the launch, you will not be able to stake until that time.
-{% endhint %}
-
 The following describes how to stop nominating or validating and retrieve your tokens. Please note that all networks on which you can nominate have a delayed exit period, called the unbonding period, which serves as a cooldown. You will not be able to transfer your tokens before this period has elapsed, and you will not receive any staking rewards during this period \(as you are not nominating any validators\).
 
 ### Step 1: Stop Nominating

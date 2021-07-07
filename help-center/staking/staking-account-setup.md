@@ -1,11 +1,5 @@
 # Account setup for staking
 
-{% hint style="warning" %}
-Staking will launch on the Dock network on **July 7 at 1pm GMT**. 
-
-This article is being provided ahead of the launch for informational purposes only, you will not be able to stake until that time.
-{% endhint %}
-
 Nominators are recommended to set up separate stash and controller accounts. Explanation and reasoning for generating distinct accounts for this purpose is elaborated in the keys section of these docs.
 
 Payouts can go to any custom address, so you are able to redirect payments to an account that is neither the controller nor the stash account. Note that it is extremely unsafe to set an exchange address as the recipient of the staking rewards.
