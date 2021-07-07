@@ -10,6 +10,10 @@ Nominators play an important role on the Dock network by nominating validators t
 
 Follow the steps below to participate as a nominator and stake Dock tokens. If you have not yet created accounts for staking, you will need to do so by following the steps in the [Account Setup](https://docs.dock.io/help-center/staking/staking-account-setup) article.
 
+{% hint style="info" %}
+Step-by-step instructions for staking are also available in this [video tutorial](https://www.youtube.com/watch?v=EEneqw92rJU&ab_channel=Dock).
+{% endhint %}
+
 ### Step 1: Bond your tokens
 
 In the [DockJS App](https://fe.dock.io/#/staking), navigate to the **Staking tab &gt;** [**Account Actions**](https://fe.dock.io/#/staking/actions) and click on **+ Nominator**.
