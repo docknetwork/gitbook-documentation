@@ -4,10 +4,10 @@ description: For validators not part of genesis
 
 # Becoming a validator
 
-To become a validator, you need to run a full node that can be built from [our source code](https://github.com/docknetwork/dock-substrate) at Github. Make sure to checkout the correct tag. For testnet, checkout the tag `testnet`, you would reach the code [here](https://github.com/docknetwork/dock-substrate/tree/testnet). Another thing to note is that we have only built the node on Ubuntu 20.04 and RHEL 8. The chain spec for testnet is called `knox_raw.json` and can be seen in Github over [here](https://github.com/docknetwork/dock-substrate/blob/testnet/cspec/knox_raw.json). To build a testnet node, run
+To become a validator, you need to run a full node that can be built from [our source code](https://github.com/docknetwork/dock-substrate) at Github. Make sure to checkout the correct tag. For mainnet, checkout the tag `mainnet` for testnet checkout tag `testnet` . Another thing to note is that we have only built the node on Ubuntu 20.04 and RHEL 8. The chain spec for mainnet is called `knox_raw.json` and can be seen in Github over [here](https://github.com/docknetwork/dock-substrate/blob/master/cspec/knox_raw.json?raw=true). To build a mainnet node, run
 
 ```text
-cargo build --release --features testnet
+cargo build --release --features mainnet
 ```
 
 Once the node is built you can run it as below. 
@@ -18,13 +18,13 @@ Once the node is built you can run it as below.
 
 _Note the flag_ `--validator` _Anyone running a validator node must use that flag else the node will not act as a validator._
 
-You can also use a docker image from [here](https://hub.docker.com/r/docknetwork/dock-substrate). For testnet download image with tag `testnet`. When running the container, pass the chain spec
+You can also use a docker image from [here](https://hub.docker.com/r/docknetwork/dock-substrate). For mainnet download image with tag `mainnet` , for testnet image with tag `testnet`. When running the container, pass the chain spec
 
 ```text
-docker run -d -p 9944:9944 -p 9933:9933 -p 30333:30333 docknetwork/dock-substrate:testnet --chain=./cspec/knox_raw.json --validator ... and any other arguments
+docker run -d -p 9944:9944 -p 9933:9933 -p 30333:30333 docknetwork/dock-substrate:mainnet --chain=./cspec/knox_raw.json --validator ... and any other arguments
 ```
 
-Similarly for mainnet, use the tag `mainnet` or `latest`.
+Similarly for testnet, use the tag `testnet`.
 
 There is an ansible script as well to deploy docker node on provisioned machine. [Here is the Readme](https://github.com/docknetwork/dock-substrate/tree/testnet/scripts/ansible) for that.
 
