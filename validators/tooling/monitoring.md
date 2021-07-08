@@ -1,8 +1,8 @@
 # Monitoring
 
-The nodes don't send telemetry data to Polkadot telemetry by default. This can be enabled  by using the `--telemetry-url='wss://telemetry.polkadot.io/submit/ 0` command.
+The nodes don't send telemetry data to Polkadot telemetry by default. This can be enabled  by using the `--telemetry-url='wss://telemetry.polkadot.io/submit/ 0'` command.
 
-Dock will be adding itself to [Polkascan](https://polkascan.io/) for the mainnet. For the testnet, Dock will host a custom [Polkascan explorer](https://github.com/polkascan).
+You can also check our mainnet explorer at [Subscan](https://dock.subscan.io/).
 
 To monitor other data such as network usage, CPU usage, disk usage, block production, number of connected peers, etc., [Prometheus](https://prometheus.io/) is used. Nodes by default make this data available at 127.0.0.1:9615 \(but can be overwritten with `allowPrometheusExt`\) and thus Prometheus interface can be configured to listen to that. Prometheus can be downloaded from [here](https://prometheus.io/download/). Once Prometheus is running, configure as follows:
 

@@ -10,17 +10,21 @@ To become a validator, you need to run a full node that can be built from [our s
 cargo build --release --features testnet
 ```
 
-Once the node is built you can run it as
+Once the node is built you can run it as below. 
 
 ```text
 ./target/release/dock-node --chain-spec=./cspec/knox_raw.json --validator .... and any other arguments
 ```
 
-You can also use a docker image from [here](https://hub.docker.com/r/docknetwork/dock-substrate). For tesnet download image with tag `testnet`. When running the container, pass the chain spec
+_Note the flag_ `--validator` _Anyone running a validator node must use that flag else the node will not act as a validator._
+
+You can also use a docker image from [here](https://hub.docker.com/r/docknetwork/dock-substrate). For testnet download image with tag `testnet`. When running the container, pass the chain spec
 
 ```text
 docker run -d -p 9944:9944 -p 9933:9933 -p 30333:30333 docknetwork/dock-substrate:testnet --chain=./cspec/knox_raw.json --validator ... and any other arguments
 ```
+
+Similarly for mainnet, use the tag `mainnet` or `latest`.
 
 There is an ansible script as well to deploy docker node on provisioned machine. [Here is the Readme](https://github.com/docknetwork/dock-substrate/tree/testnet/scripts/ansible) for that.
 
