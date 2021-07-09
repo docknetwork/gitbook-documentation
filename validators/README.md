@@ -10,6 +10,19 @@ The nodes currently running the mainnet can be seen at the Dock Network [telemet
 
 ![](https://lh5.googleusercontent.com/YIWtkIq09uYTcCXJ-wUKLakXWV1EeOmjAfJvpNBVxGzy0QNGT47wpS9HYMgnE7Va__iavD1NRPNhbibtKWMjyW2AEqqXiqhxVB36dpbPLP6b8XHQF5EuUJX3dXCXGOL0Ge5E35Qy)
 
+Any cloud provider can be used to run a Dock node cost at minimal expense.
+
+Specifically, the following are required:
+
+1. 1 or 2 publicly accessible machines
+2. At least 4 GB of RAM
+3. At least 50 GB of SSD
+4. Bandwidth of 10 Mbps over WAN
+
+Some familiarity with provisioning machines \(either cloud or on-prem\) and some familiarity with Linux command line is needed to run the provided scripts to generate keys and deploy node. Dock currently supports Ubuntu 18.04.
+
+
+
 There are different requirements to become a validator in the PoS network. More information is available in the following sections:
 
 {% page-ref page="genesis-validators.md" %}
