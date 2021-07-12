@@ -22,9 +22,11 @@ We _recommend_ having a 3 tiered deployment where the 1st tier which is a valida
 
 ## Using the Ansible playbook to deploy a node
 
-The playbook [poa-1-node.yml](https://github.com/docknetwork/dock-substrate/blob/master/scripts/ansible/poa-1-node.yml) has been tested on remotes running Ubuntu 18.04 and RHEL 8.2 with Ansible version 2.9.6 with python 3.8 and we recommend at least that version. It requires python3 to be installed on the host \(where node will run\) as well and sudo access to the remote. The playbook will accept the hostname and access credentials of the machine and deploy a full node on the machine and in a Docker container with the node data in a docker volume called `chain-data`.  
-The node listens at Substrate's default ports for various kinds of traffic, i.e. for libp2p traffic, port 30333, RPC through TCP at port 9933 and RPC through Websockets at port 9944 and these ports of the container are bound to the host at the same port numbers so make sure that at least port 30333 is open. Whether the node allows RPC traffic from external traffic, depends on the value of the playbook flag `allow_ext_rpc`.  
-The playbook accepts a few arguments like 
+The playbook [run-node.yml](https://github.com/docknetwork/dock-substrate/blob/master/scripts/ansible/run-node.yml) has been tested on remotes running Ubuntu 18.04 and RHEL 8.2 with Ansible version 2.9.6 with python 3.8 and we recommend at least that version. It requires python3 to be installed on the host \(where node will run\) as well and sudo access to the remote. The playbook will accept the hostname and access credentials of the machine and deploy a full node on the machine and in a Docker container with the node data in a docker volume called `chain-data`.  
+The node listens at Substrate's default ports for various kinds of traffic, i.e. for libp2p traffic, port 30333, RPC through TCP at port 9933 and RPC through Websockets at port 9944 and these ports of the container are bound to the host at the same port numbers so make sure that at least port 30333 is open. Whether the node allows RPC traffic from external traffic, depends on the value of the playbook flag `allow_ext_rpc`.
+
+  
+The playbook accepts a few arguments like \(for more upto date documentation, check the [Readme](https://github.com/docknetwork/dock-substrate/blob/master/scripts/ansible/README.md)\)
 
 1. path to python interpreter on remote `ansible_python_interpreter`
 2. node name as `node_name`
