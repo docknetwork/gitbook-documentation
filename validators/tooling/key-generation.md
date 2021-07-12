@@ -50,6 +50,23 @@ The browser UI can be used to restore the account generated with the script abov
 
 ## Generating session key
 
+### Using curl from the command line
+
+Log into the machine running the node. If you are running a docker container, ssh into the container with `docker exec -it /bin/bash`. Now run the following curl command to send the RPC call to the node \(assuming node is running at  localhost:9933\)
+
+```text
+$ curl http://localhost:9933 -H "Content-Type:application/json;charset=utf-8" -d \
+    '{
+        "jsonrpc":"2.0",
+        "id":1,
+        "method":"author_rotateKeys",
+        "params":[]
+    }'
+
+```
+
+The above command will generate new keypairs, insert them into your keystore and output the session key \(which is a concatenation of public keys\). 
+
 ### Using script
 
 The script [rotate\_session\_key](https://github.com/docknetwork/dock-substrate/blob/master/scripts/rotate_session_key) is used to generate a new session key, which is a pair of public keys, of a running node, insert the corresponding private keys in the node's keystore, and return the session key.  It optionally accepts an argument of the node's RPC endpoint and if not given, assumes the node running at http://localhost:9933. 
