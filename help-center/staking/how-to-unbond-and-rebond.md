@@ -40,7 +40,7 @@ Clicking that icon directly to submit the withdraw transaction. Finally, your tr
 
 If you want to rebond your tokens before the unbonding period is over you can do this by issuing a rebond extrinsic. This allows you to bond your tokens that are still locked without waiting until the end of the unbonding period.
 
-In order to do this you will need to issue an extrinsic manually from [Dock-JS Apps](https://fe-staging.dock.io/#/staking).
+In order to do this you will need to issue an extrinsic manually from [Dock-JS Apps](https://fe.dock.io/#/staking).
 
 Go to the **Extrinsics** option that's located in the **Developer** dropdown in the top menu.
 

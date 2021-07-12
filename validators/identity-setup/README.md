@@ -4,7 +4,7 @@ Dock provides a naming system that allows participants to add personal informati
 
 Users can set an identity by registering through default fields such as legal name, display name, website, Twitter handle, Riot handle, etc. along with some extra, custom fields for which they would like attestations \(see Judgements\).
 
-Users must reserve funds in a bond to store their information on chain: 20.258, and 0.066 per each field beyond the legal name. These funds are locked, not spent - they are returned when the identity is cleared. These amounts can also be extracted by querying constants through the Chain state constants tab on the [DOCK-JS App](https://fe-staging.dock.io/#/chainstate/constants).
+Users must reserve funds in a bond to store their information on chain: 20.258, and 0.066 per each field beyond the legal name. These funds are locked, not spent - they are returned when the identity is cleared. These amounts can also be extracted by querying constants through the Chain state constants tab on the [DOCK-JS App](https://fe.dock.io/#/chainstate/constants).
 
   
 1. Go to the Developer tab and select Chain state
