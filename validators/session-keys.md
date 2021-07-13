@@ -4,7 +4,7 @@ You need to tell the chain your Session keys by signing and submitting an extrin
 
 **Option 1: DockJS APP**
 
-You can generate your Session keys in the client via http://fe.dock.io/. If you are doing this, make sure that you have the DockJS-Apps explorer attached to your validator node. You can configure the apps dashboard to connect to the endpoint of your validator in the Settings tab. If you are connected to a default endpoint hosted by Dock Labs, you will not be able to use this method since making RPC requests to this node would effect the local keystore hosted on a public node and you want to make sure you are interacting with the keystore for your node.
+You can generate your Session keys in the client via the [DockJS App](http://fe.dock.io/). If you are doing this, make sure that you have the DockJS-Apps explorer attached to your validator node. You can configure the apps dashboard to connect to the endpoint of your validator in the Settings tab. If you are connected to a default endpoint hosted by Dock Labs, you will not be able to use this method since making RPC requests to this node would effect the local keystore hosted on a public node and you want to make sure you are interacting with the keystore for your node.
 
 Once you have connected to your node, the easiest way to set session keys for your node is by calling the author\_rotateKeys RPC request to create new keys in your validator's keystore. Navigate to Toolbox tab and select RPC Calls then select the author &gt; rotateKeys\(\) option and remember to save the output that you get back for a later step.  
 
