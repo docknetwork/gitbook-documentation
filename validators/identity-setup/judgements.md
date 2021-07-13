@@ -19,7 +19,7 @@ To be judged after submitting your identity information, go to the [Extrinsics U
 
 If you don't know which registrar to pick, first check the available registrars by going to the [Chain State UI](https://fe.dock.io/#/chainstate/constants) and selecting identity.registrars\(\) to get the full list.
 
-The registrar index is the position of each registrar in the list of registrars, i.e. 1st position will be index 0, 2nd position will be index 1, etc. The list can be viewed by going to [https://fe.dock.io/\#/chainstate](https://fe-staging.dock.io/#/chainstate) and querying "identity" &gt; "registrars".
+The registrar index is the position of each registrar in the list of registrars, i.e. 1st position will be index 0, 2nd position will be index 1, etc. The list can be viewed by going to the [Chain State UI](https://fe.dock.io/#/chainstate) and querying "identity" &gt; "registrars".
 
 ![](https://lh6.googleusercontent.com/X3Gup751j0ggAEAR7kMRCd_EgC00MWUPSLDR5yOtwDepMdSW4ZiVCqvr7_bvoQhVMhu9tvjeHsUbXNdUMFvTBrj0Ro92doPaORWcdDdYn2Tszc4DcbC1C6QKLgiqHnSrCWyHs7KW)
 
