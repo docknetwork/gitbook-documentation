@@ -6,7 +6,11 @@ Users can set an identity by registering through default fields such as legal na
 
 Users must reserve funds in a bond to store their information on chain: 20.258, and 0.066 per each field beyond the legal name. These funds are locked, not spent - they are returned when the identity is cleared. These amounts can also be extracted by querying constants through the Chain state constants tab on the [DOCK-JS App](https://fe.dock.io/#/chainstate/constants).
 
-  
+The easiest way to add the built-in fields is to click the three dot icon next to your account and select "Set on-chain identity".
+
+![](../../.gitbook/assets/onchain-identity.png)
+
+The other options is to follow the steps below:  
 1. Go to the Developer tab and select Chain state
 
 ![Chain state](https://lh4.googleusercontent.com/ZW8kZ5Uu0kpp1cOsoWkA0F8QB7Tf4NlCAhcSUSHdlRKytYnL3ztCIGdismiZfQZ9vK6v8pgpeZK0N5pbdCJvaC_r8kZAEQVnQHzkGgEfmCZTZUiZso0UtbDrkVk7UBUoflWt-P6X)
@@ -19,7 +23,7 @@ Users must reserve funds in a bond to store their information on chain: 20.258, 
 
 ![](https://lh5.googleusercontent.com/v5h-vVhjHpgeyVJyRXlRIx2Kzm-VzlJlao-WtbTXQvMB1GP2QBkIfNuH2SjObYqJWNAp7miQ3eQhEeiQhGa6YN6qeKpU3-h5pQCNezf6Bu8JoLskEIKJFeWHZjcZBgsGNJ83RUdI)
 
-When inputting the data manually through the Extrinsics UI, a UTF8 to bytes converter can help. The easiest way to add the built-in fields is to click the three dot icon next to your account and select "Set on-chain identity".
+When inputting the data manually through the Extrinsics UI, a UTF8 to bytes converter can help. 
 
 ![](https://lh6.googleusercontent.com/6WHpKN6emrdOBdCcOwFENW0NHMIIcX5arfIUJJLjdytlOvyzFxHI4NoxdTLQQhyJ84eOBUnlIwoLxjrgit-1KDgitx4vMilMdh609bY5S9NLucl64OeW6W8NNMWkhmdxK_Vb--RF)
 
