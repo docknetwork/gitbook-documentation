@@ -1,6 +1,10 @@
 # Dock Registrar
 
-There is currently one Registrar provided by Dock: 3B2UdCG1V67DqqyukyKUkAHr9tzNHu4kkP3zMzhpQhJC4phU![](https://lh4.googleusercontent.com/ISekYe4kqR164xQDNVq-fy40lRMPJr1PpdqPxNl9FLoKzKJ53qrE1xKXIwkX7qJcJK1rzpPeQV1ViHYM7CbFrvHG3R8OevRSKs_R7ea6xxokqI2Crk42i3WU-SlfpsKfUao440FQ)
+There is currently one Registrar provided by Dock: 
+
+3EpgfUS2x744ZTFccNdkpRRSW1efbYyqNyw81x9eHqy7JuAS
+
+![](../../.gitbook/assets/dockregistrar.png)
 
 To find out how to contact the registrar after the application for judgement or to learn who they are, we can check their identity by adding them to our Address Book. Their identity will be automatically loaded.
 
