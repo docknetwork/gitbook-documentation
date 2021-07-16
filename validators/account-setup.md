@@ -18,3 +18,5 @@ Since the Stash key is kept offline, it designates a Controller account to make 
 Set the Stash and Controller accounts by going to [https://fe.dock.io/\#/staking/actions](https://fe.dock.io/#/staking/actions).  
 
 
+
+

@@ -1,6 +1,22 @@
 # Judgements
 
-After a user injects their information on-chain, they can request judgement from a registrar. Users declare a maximum fee that they are willing to pay for judgement, and registrars whose fee is below that amount can provide a judgement.
+After a user injects their information on-chain, they can request judgement from a registrar which verifies their on-chain identity. This is highly recommend for validators to gain credibility in the Dock network. The identity fields that can be submitted for judgement include legal name, email, website, Twitter handle and Riot handle.
+
+### Submitting a judgement
+
+Prior to submitting a judgement, you will need to complete your identity setup by following the steps [here](https://docs.dock.io/validators/identity-setup).
+
+Once your identity details are added on-chain, go to the [Extrinsics UI](https://fe.dock.io/#/extrinsics) and select the identity pallet, then requestJudgement. For the reg\_index put the index of the registrar you want to be judged by, and for the max\_fee put the maximum you're willing to pay for these confirmations.
+
+![](../../.gitbook/assets/requestjudgement.png)
+
+The registrar index is the position of each registrar in the list of registrars, i.e. 1st position will be index 0, 2nd position will be index 1, etc. The list can be viewed by going to the [Chain State UI](https://fe.dock.io/#/chainstate) and querying "identity" &gt; "registrars".
+
+![](../../.gitbook/assets/registrar.png)
+
+
+
+Declare a maximum fee that they are willing to pay for judgement, and registrars whose fee is below that amount can provide a judgement.
 
 When a registrar provides judgement, they can select up to six levels of confidence in their attestation:
 
@@ -12,16 +28,6 @@ When a registrar provides judgement, they can select up to six levels of confide
 * **Erroneous**: The information is erroneous and may indicate malicious intent.
 
 A seventh state, "fee paid", is for when a user has requested judgement and it is in progress. Information that is in this state or "erroneous" is "sticky" and cannot be modified; it can only be removed by complete removal of the identity.
-
-Registrars gain trust by performing proper due diligence and would presumably be replaced for issuing faulty judgements.
-
-To be judged after submitting your identity information, go to the [Extrinsics UI](https://fe.dock.io/#/extrinsics) and select the identity pallet, then requestJudgement. For the reg\_index put the index of the registrar you want to be judged by, and for the max\_fee put the maximum you're willing to pay for these confirmations.
-
-If you don't know which registrar to pick, first check the available registrars by going to the [Chain State UI](https://fe.dock.io/#/chainstate/constants) and selecting identity.registrars\(\) to get the full list.
-
-The registrar index is the position of each registrar in the list of registrars, i.e. 1st position will be index 0, 2nd position will be index 1, etc. The list can be viewed by going to the [Chain State UI](https://fe.dock.io/#/chainstate) and querying "identity" &gt; "registrars".
-
-![](https://lh6.googleusercontent.com/X3Gup751j0ggAEAR7kMRCd_EgC00MWUPSLDR5yOtwDepMdSW4ZiVCqvr7_bvoQhVMhu9tvjeHsUbXNdUMFvTBrj0Ro92doPaORWcdDdYn2Tszc4DcbC1C6QKLgiqHnSrCWyHs7KW)
 
 ### Cancelling Judgements
 
