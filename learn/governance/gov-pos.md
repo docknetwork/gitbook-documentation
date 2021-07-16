@@ -16,3 +16,5 @@ However, validators are removed from the current validator set and barred from p
 
 Reversing any slash requires at least a simple majority of Council votes. As the slashing amount increases, more Council votes are needed to reverse the slash.
 
+Once a validator gets slashed, it goes into the state as an "unapplied slash" \(these are viewable by all, the apps UI shows it per validator and then all the affected parties along with the amounts\) while unapplied, a proposal can be made to reverse it after this grace period, the slashes are applied.
+
