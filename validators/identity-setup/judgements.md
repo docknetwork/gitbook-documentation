@@ -6,7 +6,7 @@ After a user injects their information on-chain, they can request judgement from
 
 Prior to submitting a judgement, you will need to complete your identity setup by following the steps [here](https://docs.dock.io/validators/identity-setup).
 
-Once your identity details are added on-chain, go to the [Extrinsics UI](https://fe.dock.io/#/extrinsics) and select the identity pallet, then requestJudgement. For the reg\_index put the index of the registrar you want to be judged by, and for the max\_fee put the maximum you're willing to pay for these confirmations.
+1. Once your identity details are added on-chain, go to the [Extrinsics UI](https://fe.dock.io/#/extrinsics) and select the identity pallet, then requestJudgement. For the reg\_index put the index of the registrar you want to be judged by, and for the max\_fee put the maximum you're willing to pay for these confirmations.
 
 ![](../../.gitbook/assets/requestjudgement.png)
 
@@ -14,9 +14,15 @@ The registrar index is the position of each registrar in the list of registrars,
 
 ![](../../.gitbook/assets/registrar.png)
 
+2. Declare a maximum fee that they are willing to pay for judgement, and registrars whose fee is below that amount can provide a judgement.
+
+3. Contact the Registrar. To find out how to contact the registrar after the application for judgement or to learn who they are, you can check their identity by adding them to our Address Book. Their identity will be automatically loaded.
+
+![](https://lh6.googleusercontent.com/RdV1UX_7cz727DobMHOQ0plGf7f4v7WZt0Pt0HIKURh6JILB7MlYmkLpJbV2IShY5Xw4qO3VpRyv94OG0un9Zis5XtSkQ3OLJAmQc8GFkvGMNpSB_AK1WVYsjbhzUf-zcrcpM7Jj)
 
 
-Declare a maximum fee that they are willing to pay for judgement, and registrars whose fee is below that amount can provide a judgement.
+
+### **Judgement responses**
 
 When a registrar provides judgement, they can select up to six levels of confidence in their attestation:
 
