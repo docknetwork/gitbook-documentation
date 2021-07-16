@@ -1,6 +1,6 @@
 # Validators
 
-Validators are in charge of producing blocks \(processing transactions\) and validating blocks produced by other validators. Validators earn token rewards for participating in the network, these are described in the [token-economics section](../learn/token-economics/).
+Validators are in charge of producing blocks \(processing transactions\) and validating blocks produced by other validators. Validators earn token rewards for participating in the network, these are described in the [token-economics](../learn/token-economics/) section.
 
 The nodes currently running the mainnet can be seen at the Dock Network [telemetry](https://telemetry.polkadot.io/#list/Dock%20PoS%20Mainnet). Our fork of the Polkadot-js apps showing block explorer and other tools is[ here](https://fe.dock.io/). You can also check our explorer at [Subscan](https://dock.subscan.io/).
 
@@ -16,8 +16,6 @@ Specifically, the following are required:
 4. Bandwidth of 10 Mbps over WAN
 
 Some familiarity with provisioning machines \(either cloud or on-prem\) and some familiarity with Linux command line is needed to run the provided scripts to generate keys and deploy node. Dock currently supports Ubuntu 18.04.
-
-
 
 There are different requirements to become a validator in the PoS network. More information is available in the following sections:
 

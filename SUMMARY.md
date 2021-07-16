@@ -34,6 +34,11 @@
   * [Bonding](validators/bonding.md)
   * [Session Keys](validators/session-keys.md)
   * [Operations](validators/operations.md)
+* [Staking](staking/README.md)
+  * [Account setup for staking](staking/staking-account-setup.md)
+  * [How to nominate \(stake\) on Dock](staking/how-to-nominate-stake-on-dock.md)
+  * [How to unbond and rebond](staking/how-to-unbond-and-rebond.md)
+  * [How to claim rewards](staking/how-to-claim-rewards.md)
 
 ## Help Center
 
@@ -45,9 +50,4 @@
     * [Check token migration status](help-center/help-center/dock-token-migration/token-migration-status.md)
     * [Migration FAQ](help-center/help-center/dock-token-migration/faq.md)
     * [Migration Terms and Conditions](help-center/help-center/dock-token-migration/migration-terms-and-conditions.md)
-* [Staking](help-center/staking/README.md)
-  * [Account setup for staking](help-center/staking/staking-account-setup.md)
-  * [How to nominate \(stake\) on Dock](help-center/staking/how-to-nominate-stake-on-dock.md)
-  * [How to unbond and rebond](help-center/staking/how-to-unbond-and-rebond.md)
-  * [How to claim rewards](help-center/staking/how-to-claim-rewards.md)
 
