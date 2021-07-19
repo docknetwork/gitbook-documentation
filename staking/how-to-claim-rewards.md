@@ -1,8 +1,8 @@
-# How to claim rewards
-
-Dock stores up to 84 eras of reward information so rewards will not be claimable more than 84 eras after they were earned. This means that all rewards must be claimed within 84 eras.
+# How to claim staking rewards
 
 Reward payouts for backing a validator can be initiated by any account. This means that as soon as a validator or nominator requests a payout for an era, all the nominators for that validator will be rewarded. Each user does not need to claim individually and the suggestion is that validators should claim rewards for everybody as soon as an era ends.
+
+Dock stores up to 84 eras of reward information so rewards will not be claimable more than 84 eras after they were earned. This means that all rewards must be claimed within 84 eras.
 
 If you have not claimed rewards after the end of the era, the validator is in the active set and you are seeing no rewards, this would mean that the reward payout transaction was made by another account on your behalf. Always check your favorite explorer to see any historic payouts made to your accounts.
 
