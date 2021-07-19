@@ -20,7 +20,7 @@ The registrar index is the position of each registrar in the list of registrars,
 
 ![](https://lh6.googleusercontent.com/RdV1UX_7cz727DobMHOQ0plGf7f4v7WZt0Pt0HIKURh6JILB7MlYmkLpJbV2IShY5Xw4qO3VpRyv94OG0un9Zis5XtSkQ3OLJAmQc8GFkvGMNpSB_AK1WVYsjbhzUf-zcrcpM7Jj)
 
-
+**To receive judgement from the Dock Registrar -** submit the [Judgement](https://docs.dock.io/validators/identity-setup/judgements) on-chain then contact our team at **support@dock.io** with the subject "Registrar Judgement" and include your account address in the email. Our team will be in touch with steps to verify your identity.
 
 ### **Judgement responses**
 
@@ -45,4 +45,12 @@ To do this, first, go to the [Extrinsics UI](https://fe.dock.io/#/extrinsics) an
 
 Submit the transaction, and the requested judgement will be cancelled.  
 
+
+![](../../.gitbook/assets/dockregistrar.png)
+
+
+
+
+
+To receive judgement from the Dock Registrar, submit the [Judgement](https://docs.dock.io/validators/identity-setup/judgements) on-chain then contact our team at support@dock.io with the subject "Registrar Judgement" and include your account address in the email. Our team will be in touch with steps to verify your identity.
 
