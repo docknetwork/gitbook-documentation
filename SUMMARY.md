@@ -20,7 +20,6 @@
     * [Emission Rewards](learn/token-economics/econ-pos.md)
   * [Staking & Nominating](learn/staking-and-nominating.md)
 * [Validators](validators/README.md)
-  * [Genesis validators](validators/genesis-validators.md)
   * [Tooling](validators/tooling/README.md)
     * [Key generation](validators/tooling/key-generation.md)
     * [Deployment](validators/tooling/deployment.md)

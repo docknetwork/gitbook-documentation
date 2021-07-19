@@ -19,8 +19,6 @@ Some familiarity with provisioning machines \(either cloud or on-prem\) and some
 
 There are different requirements to become a validator in the PoS network. More information is available in the following sections:
 
-{% page-ref page="genesis-validators.md" %}
-
 {% page-ref page="tooling/" %}
 
 
