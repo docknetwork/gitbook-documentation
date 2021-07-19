@@ -43,6 +43,7 @@
 
 * [General](help-center/help-center/README.md)
   * [Wallets and Account Creation](help-center/help-center/wallets-and-account-creation.md)
+  * [Sub Accounts & Killing an Identity](help-center/help-center/sub-accounts-and-killing-an-identity.md)
   * [Send Dock tokens from the mainnet portal](help-center/help-center/send-dock-tokens-from-the-mainnet-portal.md)
   * [Dock Token Migration](help-center/help-center/dock-token-migration/README.md)
     * [Token migration tutorial](help-center/help-center/dock-token-migration/migration-tutorial.md)

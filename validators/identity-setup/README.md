@@ -45,6 +45,18 @@ Note that custom fields are not displayed, only official fields for displayed no
 
 ### **Format Caveat**
 
-Please note the following caveat: because the fields support different formats, from raw bytes to various hashes, a UI has no way of telling how to encode a given field it encounters. The Dock UI currently encodes the raw bytes it encounters as UTF8 strings, which makes these values readable on-screen. However, given that there are no restrictions on the values that can be placed into these fields, a different UI may interpret them as, for example, IPFS hashes or encoded bitmaps. This means any field stored as raw bytes will become unreadable by that specific UI. As field standards are adopted, this will become easier to use, but for now, every custom implementation of displaying user information will likely have to make a conscious decision on the approach to take or support multiple formats and then attempt multiple encodings until the output makes sense.  
+Please note the following caveat: because the fields support different formats, from raw bytes to various hashes, a UI has no way of telling how to encode a given field it encounters. The Dock UI currently encodes the raw bytes it encounters as UTF8 strings, which makes these values readable on-screen. However, given that there are no restrictions on the values that can be placed into these fields, a different UI may interpret them as, for example, IPFS hashes or encoded bitmaps. This means any field stored as raw bytes will become unreadable by that specific UI. As field standards are adopted, this will become easier to use, but for now, every custom implementation of displaying user information will likely have to make a conscious decision on the approach to take or support multiple formats and then attempt multiple encodings until the output makes sense.
+
+### **Clearing and Killing an Identity**
+
+Clearing: Users can clear their identity information and have their deposit returned. Clearing an identity also clears all sub accounts and returns their deposits.
+
+To clear an identity:
+
+1. Navigate to the [Accounts UI](https://fe.dock.io/#/accounts).
+2. Click the three dots corresponding to the account you want to clear and select 'Set on-chain identity'.
+3. Select 'Clear Identity', and sign and submit the transaction.
+
+Killing: The Council can kill an identity that it deems erroneous. This results in a slash of the deposit.  
 
 
