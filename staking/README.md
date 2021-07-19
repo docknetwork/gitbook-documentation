@@ -1,8 +1,6 @@
 # Staking
 
-Nominators in the Dock ecosystem are responsible for staking Dock tokens in support of the validators running the network. By appointing their stake, nominators play an important role in securing the network by helping select the active set of validators and share in the emission rewards that are paid out.
-
-Nominators take a more passive role than the validators who actively engage in the block production and finality mechanisms. Being a nominator does not require running a node of your own or worrying about online uptime. However, a good nominator performs due diligence on the validators that they elect. When looking for validators to nominate, a nominator should pay attention to their own reward percentage for nominating a specific validator - as well as their risk of being slashed if the validator gets slashed.
+Token holders in Dock ecosystem play an important role in securing the network by helping select the active set of validators and share in the emission rewards that are paid out. Being a nominator does not require running a node of your own or worrying about online uptime. However, a good nominator performs due diligence on the validators that they elect. When looking for validators to nominate, a nominator should pay attention to their own reward percentage for nominating a specific validator as well as their risk of being slashed if the validator gets slashed.
 
 ### **Staking on the Dock-JS UI**
 
