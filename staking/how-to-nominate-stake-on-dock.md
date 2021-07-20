@@ -20,7 +20,7 @@ You will see a modal window to add your information for nominating. Select the a
 
 Enter the amount of Dock tokens that you would like to bond \(stake\). Select an amount that is less than the total amount of DOCK you have, so you have some left over to pay transaction fees. Transaction fees are currently around 2.045 DOCK, but they are dynamic based on a variety of factors including the load of recent blocks.
 
-Also be mindful of the reaping threshold - the amount that must remain in an account for it to remain active. That amount is 1 DOCK on Dock, so it's recommended to keep at least 1.5 DOCK in your account to be on the safe side.
+**Tip**: be mindful of the reaping threshold - the amount that must remain in an account for it to remain active. That amount is 1 DOCK on Dock, so it's recommended to keep at least 1.5 DOCK in your account to be on the safe side.
 
 Choose your payment destination, which should typically be the Stash account. The "Stash account \(increase amount at stake\)" option enables you to simply accrue the rewards into the amount you are staking and earn compound interest.
 
@@ -34,7 +34,7 @@ Click on "Nominate" on an account you've bonded and you will be presented with a
 
 ![](https://lh3.googleusercontent.com/1NBrJfhNrUqLOe-2fsf0xV1bLKSEDJUoKIN6OLu64bYzkuICX87Kg9i-Vc457HeWR398OrvEPD7hysjf2oTfmSbYXZBPLmV2nIkpemzr0kYPviBuSgLyc348_NghZGGkk9PAr3Ln)
 
-Select you validators, confirm the transaction, and you're done - you are now nominating! Your nominations will become active in two eras, for example nominating in era 10 will take effect in era 12. Eras last 12 hours on Dock and you can check how far along Dock is in the current era on the [Staking page](https://fe.dock.io/#/staking).
+Select your validators, confirm the transaction, and you're done - you are now nominating! Your nominations will become active in two eras, you can check how far along Dock is in the current era on the [Staking page](https://fe.dock.io/#/staking).
 
 Assuming at least one of your nominations ends up in the active validator set, you will start to receive staking rewards. Rewards must be manually transferred to your account, see the [Claiming Rewards](https://docs.dock.io/help-center/staking/how-to-claim-rewards) article for more details.
 
