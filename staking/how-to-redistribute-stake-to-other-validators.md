@@ -20,7 +20,7 @@ _**\(nominators only\)**_
 
 ### Option 2: Unbond and transfer stake to other validators
 
-_**\(Nominators and Validators\)**_
+_**\(nominators and validators\)**_
 
 1. Go to the [Account actions](https://fe.dock.io/#/staking/actions) page and select 3-dots for your nominator and select the **Unbond funds** option.
 2. On the modal that opens, select the amount you want to unbond. Note that it will take 7 days for the funds to unbond. 
