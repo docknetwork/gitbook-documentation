@@ -37,6 +37,7 @@
   * [Account setup for staking](staking/staking-account-setup.md)
   * [How to nominate \(stake\) on Dock](staking/how-to-nominate-stake-on-dock.md)
   * [How to unbond and rebond](staking/how-to-unbond-and-rebond.md)
+  * [How to redistribute stake to other validators](staking/how-to-redistribute-stake-to-other-validators.md)
   * [How to claim staking rewards](staking/how-to-claim-rewards.md)
 
 ## Help Center
