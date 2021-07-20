@@ -2,11 +2,7 @@
 
 This article explains the process to redistribute stake after a validator or a nominator has already staked their tokens. A step-by-step process is provided for each scenario depending on if you are a validator \(running a node\) or nominator \(staking tokens on behalf of validators\) in the Dock network.
 
-**How to redistribute my stake after I’ve already nominated?**
-
-* There are two ways to redistribute stake by either 1\) changing the nominated validators or 2\) unbonding funds and transferring to a different validator set.
-
-
+There are two ways to redistribute stake by either 1\) changing the nominated validators or 2\) unbonding funds and transferring to a different validator set.
 
 ### Option 1: Change nominated validators 
 
