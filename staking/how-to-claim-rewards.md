@@ -1,6 +1,6 @@
 # How to claim staking rewards
 
-Staking rewards are allocated to validators and nominators each era, but there is a manually step that needs to occur in order to receive the rewards, the reward payouts need to be initiated for each validator pool in each era. As soon as a validator or nominator requests a payout for an era, all the nominators for that validator will be rewarded. Each user does not need to claim individually and the suggestion is that validators should claim rewards for everybody as soon as an era ends. Reward payouts for backing a validator can be initiated by any account. 
+Staking rewards are allocated to validators and nominators each era, but there is a manually step that needs to occur in order to receive the rewards, the reward payouts need to be initiated for each validator in each era. As soon as a validator or nominator requests a payout for an era, all the nominators for that validator will be rewarded. Each user does not need to claim individually and the suggestion is that validators should claim rewards for everybody as soon as an era ends. Reward payouts for backing a validator can be initiated by any account. 
 
 Dock stores up to 84 eras of reward information so rewards will not be claimable more than 84 eras after they were earned. This means that all rewards must be claimed within 84 eras.
 
