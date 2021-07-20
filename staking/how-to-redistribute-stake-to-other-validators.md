@@ -33,7 +33,7 @@ _**\(nominators and validators\)**_
 
 ![](../.gitbook/assets/1%20%287%29.png)
 
-**Tip:** Hover over the clock icon to see exactly how long until your stake will be unbonded.  
+**Tip:** Hover over the clock icon to see exactly how long until your stake will be unbonded as shown below.  
 
 
 ![](../.gitbook/assets/1%20%283%29.png)
