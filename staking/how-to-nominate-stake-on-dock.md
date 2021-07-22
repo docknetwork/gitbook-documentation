@@ -1,6 +1,6 @@
-# How to nominate \(stake\) on Dock
+# How to stake on Dock
 
-Token holders play an important role on the Dock network by nominating validators to run and secure the Dock network and, as a result, are eligible to receive token rewards. Follow the steps below to participate as a nominator and stake Dock tokens. If you have not yet created accounts for staking, you will need to do so by following the steps in the [Account Setup](https://docs.dock.io/help-center/staking/staking-account-setup) article.
+Token holders play an important role on the Dock network by selecting validators to run and secure the Dock network and, as a result, are eligible to receive token rewards. Follow the steps below to participate as a staker on Dock. If you have not yet created accounts for staking, you will need to do so by following the steps in the [Account Setup](https://docs.dock.io/help-center/staking/staking-account-setup) article.
 
 {% hint style="info" %}
 Step-by-step instructions for staking are also available in this [video tutorial](https://www.youtube.com/watch?v=EEneqw92rJU&ab_channel=Dock).
