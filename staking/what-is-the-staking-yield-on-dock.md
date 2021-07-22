@@ -10,7 +10,7 @@ The Dock network utilizes a proof-of-stake consensus which enables token holders
 
 ![Network reward distribution for each era](../.gitbook/assets/image.png)
 
-### Network Rewards
+### Network Returns
 
 The total network returns can be viewed in the [Staking Dashboard](https://fe.dock.io/#/staking/targets) under the Targets tab. It’s important to remember that this will show the total rewards for the network and the amount of rewards an individual receives fluctuates based on the factors mentioned above.
 
