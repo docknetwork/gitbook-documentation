@@ -39,6 +39,7 @@
   * [How to unbond and rebond](staking/how-to-unbond-and-rebond.md)
   * [How to redistribute stake to other validators](staking/how-to-redistribute-stake-to-other-validators.md)
   * [How to claim staking rewards](staking/how-to-claim-rewards.md)
+  * [What is the staking yield on Dock?](staking/what-is-the-staking-yield-on-dock.md)
 
 ## Help Center
 
