@@ -9,7 +9,7 @@ The [session key](https://www.substrate.io/kb/learn-substrate/session-keys) repr
 
 ### Using script
 
-The script [gen\_keys\_poa\_validator](https://github.com/docknetwork/dock-substrate/blob/master/scripts/gen_keys_poa_validator) is used to generate account and libp2p keypair and is present in the Substrate node's [scripts](https://github.com/docknetwork/dock-substrate/tree/poa-1/scripts) directory. This script internally uses [subkey](https://www.substrate.io/kb/integrate/subkey) and requires it to be installed. It requires 2 mandatory arguments, i.e. the account type and an account password and 1 optional argument for the network, which defaults to mainnet.
+The script [gen\_keys\_poa\_validator](https://github.com/docknetwork/dock-substrate/blob/master/scripts/gen_keys_poa_validator) is used to generate account and libp2p keypair and is present in the Substrate node's [scripts](https://github.com/docknetwork/dock-substrate/tree/poa-1/scripts) directory. This script internally uses [subkey](https://substrate.dev/docs/en/knowledgebase/integrate/subkey) and requires it to be installed. It requires 2 mandatory arguments, i.e. the account type and an account password and 1 optional argument for the network, which defaults to mainnet.
 
 * The account type can have one of the three values: `ed25519`, `sr25519` and `ecdsa` to generate the type of account private key.
 * The account password is used to protect the account secret phrase.
