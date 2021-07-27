@@ -18,7 +18,7 @@
       * [Technical Committee](learn/governance/elections-and-voting/technical-committee.md)
   * [Token Economics](learn/token-economics/README.md)
     * [Emission Rewards](learn/token-economics/econ-pos.md)
-  * [Staking & Nominating](learn/staking-and-nominating.md)
+  * [Staking](learn/staking-and-nominating.md)
 * [Validators](validators/README.md)
   * [Tooling](validators/tooling/README.md)
     * [Key generation](validators/tooling/key-generation.md)
