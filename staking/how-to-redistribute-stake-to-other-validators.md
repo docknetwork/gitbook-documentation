@@ -1,10 +1,10 @@
 # How to redistribute stake to other validators
 
-This article explains the process to redistribute stake after a validator or a nominator has already staked their tokens. A step-by-step process is provided for each scenario depending on if you are a validator \(running a node\) or nominator \(staking tokens on behalf of validators\) in the Dock network.
+This article explains the process to redistribute stake after you have already staked on the network. A step-by-step process is provided for each scenario depending on if you are a validator \(running a node\) or staker \(staking tokens on behalf of validators\) in the Dock network.
 
-There are two ways to redistribute stake by either 1\) changing the nominated validators or 2\) unbonding funds and transferring to a different validator set.
+There are two ways to redistribute stake by either 1\) changing the selected validators or 2\) unbonding funds and transferring to a different validator set.
 
-### Option 1: Change nominated validators 
+### Option 1: Change validator selection
 
 _**\(nominators only\)**_
 
@@ -12,7 +12,7 @@ _**\(nominators only\)**_
 
 ![](../.gitbook/assets/1%20%285%29.png)
 
-2. Then add or remove nominees from the modal that appears.
+2. Then add or remove validators from the modal that appears.
 
 ![](../.gitbook/assets/1%20%284%29.png)
 
@@ -20,14 +20,14 @@ _**\(nominators only\)**_
 
 ### Option 2: Unbond and transfer stake to other validators
 
-_**\(nominators and validators\)**_
+_**\(stakers and validators\)**_
 
-1. Go to the [Account actions](https://fe.dock.io/#/staking/actions) page and select 3-dots for your nominator and select the **Unbond funds** option.
+1. Go to the [Account actions](https://fe.dock.io/#/staking/actions) page, select 3-dots for your stake and select the **Unbond funds** option.
 2. On the modal that opens, select the amount you want to unbond. Note that it will take 7 days for the funds to unbond. 
 
 ![](../.gitbook/assets/1%20%286%29.png)
 
-3. After 7 days, revisit this same page, select the 3-dots for your nominator and select the **Withdraw unboned** option. If this option is disabled, then it means 7 days have not happened and try after some time.
+3. After 7 days, revisit this same page, select the 3-dots for your stake and select the **Withdraw unboned** option. If this option is disabled, then it means 7 full days have not yet passed.
 
 
 
@@ -40,7 +40,7 @@ _**\(nominators and validators\)**_
 
   
   
-4. Withdraw the amount and transfer it to another of your stash accounts to [nominate a new set of validators](https://docs.dock.io/staking/how-to-nominate-stake-on-dock). Each stash account can only nominate one set of validators.  
+4. Withdraw the amount and transfer it to another of your stash accounts to [stake a new set of validators](https://docs.dock.io/staking/how-to-nominate-stake-on-dock). Each stash account can only stake for one set of validators.  
 
 
 {% hint style="warning" %}
