@@ -14,7 +14,7 @@ In the [DockJS App](https://fe.dock.io/#/staking), navigate to the **Staking tab
 
 ![](https://lh3.googleusercontent.com/XdxHpr4wY1EnXOxXBclRgKvUmGONUKmda425O6J8uXc2j5fkwYwyL6cVSqshKew7lK_8ZvYZNHA-QvCdqjSxKfcubIm93j6wpYCCEuEfp52G4-J33x9qYIO1z0meOMXrXXBHio8h)
 
-You will see a modal window to add your information for nominating. Select the accounts that you would like as your Stash and Controller accounts, as well as the amount of tokens \(stash\) you would like to bond.
+You will see a modal window to add your information for staking. Select the accounts that you would like as your Stash and Controller accounts, as well as the amount of tokens \(stash\) you would like to bond.
 
 ![](https://lh3.googleusercontent.com/pQCSLzyKI0Ul3_BzpXr_Xl5N9p-2RkRgnDp7Iec6x3Yxtud4cLd5tZ1WH1iHqEB-MDKHI1KMCsOTpShrv39fqXA2FDmcrjV-ypcpgrRd7BaelP92ezkECjIEjSAcynEaXQGXuzR5)
 
@@ -26,20 +26,20 @@ Choose your payment destination, which should typically be the Stash account. Th
 
 ![](https://lh5.googleusercontent.com/XR-3Zwx08_-2eIFMLisxYp_sUf_CFzTFB8tmy8R9v4DzDHgUkeI-PjaLZXmL84WVZ0rsgimi2LBZbe-lcCEvNd5XPSJ76gX_b1aPGzL7yt4fVYdsrCCKH--zdsjT4f-WwDmZpg6s)
 
-### Step 2: Nominate a validator
+### Step 2: Selecting validators
 
-You are now bonded which means your tokens are locked and could be [slashed](https://docs.dock.io/slashing) if the validators you nominate misbehave. Be careful about the validators you choose since you will be slashed if your validator commits an offense.
+You are now bonded which means your tokens are locked and could be [slashed](https://docs.dock.io/slashing) if the validators you stake misbehave. Be careful about the validators you choose since you will be slashed if your validator commits an offense.
 
 Click on "Nominate" on an account you've bonded and you will be presented with another popup asking you to select up to 16 validators. Although you may choose up to 16 validators, due to the [Phragmén](https://wiki.polkadot.network/docs/en/learn-phragmen) election algorithm your stake may be dispersed in different proportions to any subset or all of the validators you choose.
 
 ![](https://lh3.googleusercontent.com/1NBrJfhNrUqLOe-2fsf0xV1bLKSEDJUoKIN6OLu64bYzkuICX87Kg9i-Vc457HeWR398OrvEPD7hysjf2oTfmSbYXZBPLmV2nIkpemzr0kYPviBuSgLyc348_NghZGGkk9PAr3Ln)
 
-Select your validators, confirm the transaction, and you're done - you are now nominating! Your nominations will become active in two eras, you can check how far along Dock is in the current era on the [Staking page](https://fe.dock.io/#/staking).
+Select your validators, confirm the transaction, and you're done - you are now staking! Your stake will become active in two eras, you can check how far along Dock is in the current era on the [Staking page](https://fe.dock.io/#/staking).
 
-Assuming at least one of your nominations ends up in the active validator set, you will start to receive staking rewards. Rewards must be manually transferred to your account, see the [Claiming Rewards](https://docs.dock.io/help-center/staking/how-to-claim-rewards) article for more details.
+Assuming at least one of the validators you selected is in the active validator set, you will receive staking rewards. Rewards must be manually transferred to your account, see the [Claiming Rewards](https://docs.dock.io/help-center/staking/how-to-claim-rewards) article for more details.
 
-### Step 3: Stop nominating
+### Step 3: Stop staking
 
-If you decide to stop nominating one or more validators, you will need to unbond your tokens. You may need to do this if for example you want to change who you are nominating or if you want to withdraw your tokens. Detailed instructions about how to unbond are available [here](https://docs.dock.io/help-center/staking/how-to-unbond-and-rebond).  
+If you decide to stop staking one or more validators, you will need to unbond your tokens. You may need to do this if for example you want to change which validators you are staking or if you want to withdraw your tokens. Detailed instructions about how to unbond are available [here](https://docs.dock.io/help-center/staking/how-to-unbond-and-rebond).  
 
 
