@@ -1,6 +1,6 @@
 # Account Setup
 
-Substrate's staking pallet introduces account abstractions that help keep funds as secure as possible. A key pair can represent an account and control funds, like normal accounts that you would expect from other blockchains. In the context of Substrate's Balances pallet, these accounts must have a minimum amount \(an "existential deposit"\) to exist in storage. These abstractions are Stash, Controller, and Session:
+Substrate's staking pallet introduces account abstractions that help keep funds as secure as possible. A key pair can represent an account and control funds, like normal accounts that you would expect from other blockchains. In the context of Substrate's Balances pallet, these accounts must have a minimum amount \(a "minimal balance"\) to exist in storage. These abstractions are Stash, Controller, and Session:
 
 **Stash Keys**: a Stash account is meant to hold large amounts of funds. Its private key should be as secure as possible in a cold wallet. The Stash keys are the public/private key pair that defines a Stash account.
 
