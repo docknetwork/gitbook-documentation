@@ -17,7 +17,7 @@ Transfer only to wallets and exchanges that are already supporting the mainnet D
 ![](https://lh6.googleusercontent.com/iytDbRdO6C-3zPtNCVf_vihZNNzMcghE9YXWrJcdlfjlxDEQxXI88eypc3iuNjwai1CFi24BkA8KcQmnMoJi-s8u5aXIz0IwGrMXgXwvZ-ey0_DEVLBdqPBfBT3v17B2DeI4-f6Y)
 
 * Note: although there is a drop down in the “Amount” field, DCK is the default unit.
-* Existential Deposit  is the minimum amount of Dock tokens that your account should hold to not be removed due to a low balance. Also, the transaction won't process if the Existential Deposit is left empty. 
+* Minimal deposit  is the minimum amount of Dock tokens that your account should hold to not be removed due to a low balance. Also, the transaction won't process if the Minimal Deposit is left empty. 
 
 
 
