@@ -7,31 +7,9 @@ description: >-
 
 # Wallets and Account Creation
 
-{% hint style="info" %}
-Dock has officially completed the token migration as of **March 31, 2021**. Any questions can be sent to [support@dock.io](mailto:support@dock.io).
-{% endhint %}
-
-## Dock Polkadot-JS App
-
-Dock has forked and customized the well-tested, browser-based wallet that is also used for Polkadot. This is a browser-based application, so it is not as secure as using an offline option.
-
-1. Go to [https://fe.dock.io/\#/accounts](https://fe.dock.io/#/accounts) and check the top left corner that you are on Dock’s mainnet. If not, then click on the network name, click on **Live Networks &gt; Dock**, and click **Switch**. 
-
-![](../../.gitbook/assets/1.png)
-
-2. Click on **+ Add Account** and complete the name and password fields, then click Next and Save. 
-
-**Important:** save the mnemonic seed in a safe, offline place. This is required to restore access to your account.
-
-![](../../.gitbook/assets/2.png)
-
-3. To view your Dock token address, go to the Accounts page and click on the name of the account. Your token address will appear on the right side of the page.
-
-![](../../.gitbook/assets/3%20%281%29.png)
-
 ## Polkadot Browser Extension
 
-A browser extension that manages accounts and allows signing of transactions, it cannot be used for sending funds. The extension works alongside polkadot applications similar to Metamask’s browser extension for Ethereum. More information about the extension can be found [here](https://github.com/polkadot-js/extension).
+Polkadot provides browser extension that manages accounts and allows signing of transactions, it cannot be used for sending funds. The extension works alongside polkadot applications similar to Metamask’s browser extension for Ethereum. More information about the extension can be found [here](https://github.com/polkadot-js/extension).
 
 1. Download the app for your browser via [Chrome web store](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd) or [Firefox add-ons](https://addons.mozilla.org/en-US/firefox/addon/polkadot-js-extension/).
 2. Once the app is installed, go to the app in your browser and click the + icon to add your account, then follow the steps to set up your account.
@@ -47,6 +25,30 @@ A browser extension that manages accounts and allows signing of transactions, it
 4. Once setup is complete, you will be able to view your account address in the browser extension app.
 
 ![](../../.gitbook/assets/extension-1.png)
+
+
+
+## Dock Polkadot-JS App
+
+Dock has forked and customized the well-tested, browser-based wallet that is also used for Polkadot. This is a browser-based application, so it is not as secure as using an offline option.
+
+{% hint style="warning" %}
+Consider storing your account in a signer such as the Polkadot browser extension or the Parity wallet for optimal account security. Future versions of this web app will only support these external sources.
+{% endhint %}
+
+1. Go to [https://fe.dock.io/\#/accounts](https://fe.dock.io/#/accounts) and check the top left corner that you are on Dock’s mainnet. If not, then click on the network name, click on **Live Networks &gt; Dock**, and click **Switch**. 
+
+![](../../.gitbook/assets/1.png)
+
+2. Click on **+ Add Account** and complete the name and password fields, then click Next and Save. 
+
+**Important:** save the mnemonic seed in a safe, offline place. This is required to restore access to your account.
+
+![](../../.gitbook/assets/2.png)
+
+3. To view your Dock token address, go to the Accounts page and click on the name of the account. Your token address will appear on the right side of the page.
+
+![](../../.gitbook/assets/3%20%281%29.png)
 
 ## Parity Signer
 
