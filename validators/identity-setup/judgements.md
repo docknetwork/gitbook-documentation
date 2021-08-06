@@ -1,56 +1,24 @@
-# Judgements
+# Judgements - Dock Registrar
 
-After a user injects their information on-chain, they can request judgement from a registrar which verifies their on-chain identity. This is highly recommend for validators to gain credibility in the Dock network. The identity fields that can be submitted for judgement include legal name, email, website, Twitter handle and Riot handle.
+After updating your identity on the Dock blockchain, you can request judgement from a registrar which verifies your on-chain identity. This is highly recommend for validators to gain credibility in the Dock network. The identity fields that can be submitted for judgement include legal name, email, website, Twitter handle and Riot handle.
 
-### Submitting a judgement
+### Submitting a judgement to the Dock registrar
 
 Prior to submitting a judgement, you will need to complete your identity setup by following the steps [here](https://docs.dock.io/validators/identity-setup).
 
-1. Once your identity details are added on-chain, go to the [Extrinsics UI](https://fe.dock.io/#/extrinsics) and select the identity pallet, then requestJudgement. For the reg\_index put the index of the registrar you want to be judged by, and for the max\_fee put the maximum you're willing to pay for these confirmations.
+Once your identity details are added on-chain, go to the [Extrinsics UI](https://fe.dock.io/#/extrinsics) and select the identity pallet, then requestJudgement. For the reg\_index put the index of the registrar you want to be judged by, which is "0" for the Dock registrar, and for the max\_fee put the maximum you're willing to pay for these confirmations.
+
+There is currently one Registrar provided by Dock: `account: 3EpgfUS2x744ZTFccNdkpRRSW1efbYyqNyw81x9eHqy7JuAS`
+
+`fee: 50 DOCK`
+
+`reg_index: 0`
 
 ![](../../.gitbook/assets/requestjudgement.png)
 
-The registrar index is the position of each registrar in the list of registrars, i.e. 1st position will be index 0, 2nd position will be index 1, etc. The list can be viewed by going to the [Chain State UI](https://fe.dock.io/#/chainstate) and querying "identity" &gt; "registrars".
+Once you submit the transaction, contact our team at **support@dock.io** with the subject "Registrar Judgement" and include your account address in the email. Our team will be in touch with steps to verify your identity.
 
-![](../../.gitbook/assets/registrar.png)
+Once the judgement has been completed, you will see a green check mark next to your account confirming that your information has been verified by the registrar.
 
-2. Declare a maximum fee that they are willing to pay for judgement, and registrars whose fee is below that amount can provide a judgement.
-
-3. Contact the Registrar. To find out how to contact the registrar after the application for judgement or to learn who they are, you can check their identity by adding them to our Address Book. Their identity will be automatically loaded.
-
-![](https://lh6.googleusercontent.com/RdV1UX_7cz727DobMHOQ0plGf7f4v7WZt0Pt0HIKURh6JILB7MlYmkLpJbV2IShY5Xw4qO3VpRyv94OG0un9Zis5XtSkQ3OLJAmQc8GFkvGMNpSB_AK1WVYsjbhzUf-zcrcpM7Jj)
-
-**To receive judgement from the Dock Registrar -** submit the [Judgement](https://docs.dock.io/validators/identity-setup/judgements) on-chain then contact our team at **support@dock.io** with the subject "Registrar Judgement" and include your account address in the email. Our team will be in touch with steps to verify your identity.
-
-### **Judgement responses**
-
-When a registrar provides judgement, they can select up to six levels of confidence in their attestation:
-
-* **Unknown**: The default value, no judgement made yet.
-* **Reasonable**: The data appears reasonable, but no in-depth checks \(e.g. formal KYC process\) were performed.
-* **Known Good**: The registrar has certified that the information is correct.
-* **Out of Date**: The information used to be good, but is now out of date.
-* **Low Quality**: The information is low quality or imprecise, but can be fixed with an update.
-* **Erroneous**: The information is erroneous and may indicate malicious intent.
-
-A seventh state, "fee paid", is for when a user has requested judgement and it is in progress. Information that is in this state or "erroneous" is "sticky" and cannot be modified; it can only be removed by complete removal of the identity.
-
-### Cancelling Judgements
-
-You may decide that you do not want to be judged by a registrar \(for instance, because you realize you entered incorrect data or selected the wrong registrar\). In this case, after submitting the request for judgement but before your identity has been judged, you can issue a call to cancel the judgement using an extrinsic.
-
-![Cancel Registrar](https://lh6.googleusercontent.com/gjIJCyIcVqSygTAyyqyPpLR_5TbQ3Kk0odX8ZkNSdw-VqRB2cIqYo9E-dqaHP9kH36fNbP3RpMyvUpMxxm8h4FAIQW9J-gNlR6bDHc_IThjdt4tuydjQbp-FefDkvjDVlzn79kHh)
-
-To do this, first, go to the [Extrinsics UI](https://fe.dock.io/#/extrinsics) and select the identity pallet, then cancelRequest. Ensure that you are calling this from the correct account \(the one for which you initially requested judgement\). For the reg\_index, put the index of the registrar from which you requested judgement.
-
-Submit the transaction, and the requested judgement will be cancelled.  
-
-
-![](../../.gitbook/assets/dockregistrar.png)
-
-
-
-
-
-To receive judgement from the Dock Registrar, submit the [Judgement](https://docs.dock.io/validators/identity-setup/judgements) on-chain then contact our team at support@dock.io with the subject "Registrar Judgement" and include your account address in the email. Our team will be in touch with steps to verify your identity.
+### \*\*\*\*
 
