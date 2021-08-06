@@ -27,7 +27,7 @@
     * [Becoming a validator](validators/tooling/becoming-a-validator.md)
   * [Account Setup](validators/account-setup.md)
   * [Identity Setup](validators/identity-setup/README.md)
-    * [Judgements - Dock Registrar](validators/identity-setup/judgements.md)
+    * [Identity verification](validators/identity-setup/judgements.md)
     * [Registrars](validators/identity-setup/registrars.md)
   * [Bonding](validators/bonding.md)
   * [Session Keys](validators/session-keys.md)

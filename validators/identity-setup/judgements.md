@@ -1,8 +1,12 @@
-# Judgements - Dock Registrar
+# Identity verification
 
-After updating your identity on the Dock blockchain, you can request judgement from a registrar which verifies your on-chain identity. This is highly recommend for validators to gain credibility in the Dock network. The identity fields that can be submitted for judgement include legal name, email, website, Twitter handle and Riot handle.
+After updating your identity on the Dock blockchain, you can verify your on-chain identity by submitting a request, called a judgement, to the Dock registrar. This is highly recommend for validators to gain credibility in the network. The identity fields that can be submitted for judgement include legal name, email, website, Twitter handle and Riot handle. Once verified, your account name will show a green check mark next to it.
 
-### Submitting a judgement to the Dock registrar
+![Verified accounts will appear with a green check mark](../../.gitbook/assets/image-2021-08-06-at-3.15.46-pm.png)
+
+### 
+
+### How to submit a request for identity verification
 
 Prior to submitting a judgement, you will need to complete your identity setup by following the steps [here](https://docs.dock.io/validators/identity-setup).
 
@@ -16,9 +20,9 @@ There is currently one Registrar provided by Dock: `account: 3EpgfUS2x744ZTFccNd
 
 ![](../../.gitbook/assets/requestjudgement.png)
 
-Once you submit the transaction, contact our team at **support@dock.io** with the subject "Registrar Judgement" and include your account address in the email. Our team will be in touch with steps to verify your identity.
+2. Submit the transaction and contact our team at **support@dock.io** with the subject "Registrar Judgement" and include your account address in the email. Our team will be in touch with steps to verify your identity.
 
-Once the judgement has been completed, you will see a green check mark next to your account confirming that your information has been verified by the registrar.
+3. The Dock team will submit the judgement to the Dock network and you will see a green check mark next to your account confirming that your information has been verified by the registrar.
 
 ### \*\*\*\*
 
