@@ -27,7 +27,7 @@ The rewards for each era consist of the transaction fees collected in the era an
 * Dock uses [Nominated Proof of Stake \(NPoS\)](https://w3f-research.readthedocs.io/en/latest/polkadot/overview/2-token-economics.html) developed by the Web3 Foundation.
 * Anyone can register on-chain to be a validator by declaring their stake and commission levels.
 * The validators are selected based on the stake behind them, but their rewards depend on their performance in the network. These rewards are then distributed to the nominators proportionally.
-* The emission rate is kept such that it incentivizes 75% of the circulating supply to be liquid as NPoS increases the emission per era linearly \(next era will have more emission\) until the 75% level \(`Chi_ideal` in NPoS doc\) is reached. Otherwise, emission rates per era decrease exponentially.
+* The emission rate is kept such that it incentivizes 40% of the circulating supply to be liquid as NPoS increases the emission per era linearly \(next era will have more emission\) until the 40% level \(`Chi_ideal` in NPoS doc\) is reached. Otherwise, emission rates per era decrease exponentially.
 * Should malicious behavior be detected, the validators and their nominators will be slashed, i.e. lose a fraction of their stake. The fraction depends on the severity of the malicious behavior:
   * Remaining unavailable \(not producing blocks or sending heartbeats\) has milder penalties.
   * Producing a block out of turn comes with harsher penalties.
