@@ -2,6 +2,10 @@
 
 Validators are in charge of producing blocks \(processing transactions\) and validating blocks produced by other validators. Validators earn token rewards for participating in the network, these are described in the [token-economics](../learn/token-economics/) section.
 
+{% hint style="info" %}
+Join Dock's [Validator Discord channel](https://discord.gg/kV9ZfsskGy) for additional support and to connect with other Dock validators
+{% endhint %}
+
 The nodes currently running the mainnet can be seen at the Dock Network [telemetry](https://telemetry.polkadot.io/#list/Dock%20PoS%20Mainnet). Our fork of the Polkadot-js apps showing block explorer and other tools is[ here](https://fe.dock.io/). You can also check our explorer at [Subscan](https://dock.subscan.io/).
 
 ![](https://lh5.googleusercontent.com/YIWtkIq09uYTcCXJ-wUKLakXWV1EeOmjAfJvpNBVxGzy0QNGT47wpS9HYMgnE7Va__iavD1NRPNhbibtKWMjyW2AEqqXiqhxVB36dpbPLP6b8XHQF5EuUJX3dXCXGOL0Ge5E35Qy)
