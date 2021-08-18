@@ -29,15 +29,3 @@ The Dock Association has committed 150M \(15% of total supply\) to emission rewa
 
 {% page-ref page="econ-pos.md" %}
 
-| Parameter | Value |
-| :--- | :---: |
-| Total supply | 1B |
-| Circulating supply\* | 600M |
-| Association controls | 400M |
-| Token migration incentives | 50M |
-| Association's commitment to emission rewards | 150M |
-| Estimated release for PoA phase | 2M |
-| Estimated release for PoS phase | 198M |
-
-\*_The circulating supply of 600M is as shown on Coinmarketcap and is a measure of tokens being held by the general public._
-
