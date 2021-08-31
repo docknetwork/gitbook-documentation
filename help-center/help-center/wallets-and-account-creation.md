@@ -18,15 +18,15 @@ Polkadot provides browser extension that manages accounts and allows signing of 
 
 ![](../../.gitbook/assets/8.png)
 
-3. Next click on the three dots next to your account and select Dock Mainnet in the dropdown.
+3. Next click on the three dots next to your account and select Dock PoS Mainnet in the dropdown.
 
-![](../../.gitbook/assets/extension.png)
+![](../../.gitbook/assets/extension%20%282%29.png)
+
+
 
 4. Once setup is complete, you will be able to view your account address in the browser extension app.
 
-![](../../.gitbook/assets/extension-1.png)
-
-
+![](../../.gitbook/assets/2021-08-17_14-39-34%20%281%29.png)
 
 ## Dock Polkadot-JS App
 
