@@ -16,7 +16,7 @@ Specifically, the following are required:
 
 1. 1 or 2 publicly accessible machines
 2. At least 4 GB of RAM
-3. At least 50 GB of SSD
+3. At least 100 GB of SSD. But keep in mind that the chain is always growing and the validators need to keep the whole chain, thus disk usage should be periodically reviewed and increased if needed. 
 4. Bandwidth of 10 Mbps over WAN
 
 Some familiarity with provisioning machines \(either cloud or on-prem\) and some familiarity with Linux command line is needed to run the provided scripts to generate keys and deploy node. Dock currently supports Ubuntu 18.04.
