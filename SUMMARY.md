@@ -52,3 +52,6 @@
     * [Migration FAQ](help-center/help-center/dock-token-migration/faq.md)
     * [Migration Terms and Conditions](help-center/help-center/dock-token-migration/migration-terms-and-conditions.md)
 
+***
+
+* [Grant Program Terms & Conditions](grant-program-terms-and-conditions.md)
