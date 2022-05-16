@@ -8,7 +8,7 @@ Entities who have an on-chain [DID](https://www.w3.org/TR/did-core/). The DID (D
 
 ### Issuers
 
-Entities who issue credentials using the Dock network. **** The issuers can be organizations, developers, companies, or government entities that provide credential. **** The issuers do not need to have a DID on Dock (or on any chain) to issue as long as their public key is reliably accessible (or embedded in the credential) as the issuers sign the credential during issuance.
+Entities who issue credentials using the Dock network. **** The issuers can be organizations, developers, companies, or government entities that provide credentials. **** The issuers sign the credential during issuance and thus their public key needs to be known for signature verification. We strongly recommend having a [DID](https://www.w3.org/TR/did-core/) with which their public key is associated but its not mandatory long as their public key is reliably accessible (or embedded in the credential) as shown [here](https://www.w3.org/TR/vc-data-model/#issuer).
 
 ### Holders
 
