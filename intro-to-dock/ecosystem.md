@@ -24,11 +24,8 @@ Entities who run a full node on the Dock network and are in charge of producing 
 
 ### Governing Council
 
-A group of individuals who are elected using Dock's open governance to make and implement proposals such as determining base fees for operations or block reward distribution by controlling which (source code) upgrades are allowed on the network. They work with the Dock Association, a Swiss non-profit whose remit is to govern the network and manage its ongoing development while driving adoption.
+A group of individuals who are elected using Dock's open governance to make and implement proposals such as determining base fees for operations or block reward distribution by controlling which (source code) upgrades is allowed on the network. They work with the Dock Association, a Swiss non-profit whose remit is to govern the network and manage its ongoing development while driving adoption.
 
 ### Revocation authorities
 
 Entities who are allowed to revoke (or undo the revocation in some cases) issued credentials. The issuer can choose one or more revocation authorities for a credential or decide to be the authority himself. Each credential specifies its revocation authorities. As the revocation registry is maintained on-chain, the revocation authorities must have an on-chain identity, which is their DID.
-
-###
-

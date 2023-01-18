@@ -4,7 +4,7 @@ After updating your identity on the Dock blockchain, you can verify your on-chai
 
 ![Verified accounts will appear with a green check mark](../../.gitbook/assets/image-2021-08-06-at-3.15.46-pm.png)
 
-### 
+###
 
 ### How to submit a request for identity verification
 
@@ -20,9 +20,8 @@ There is currently one Registrar provided by Dock: `account: 3EpgfUS2x744ZTFccNd
 
 ![](../../.gitbook/assets/requestjudgement.png)
 
-2. Submit the transaction and contact our team at **support@dock.io** with the subject "Registrar Judgement" and include your account address in the email. Our team will be in touch with steps to verify your identity.
+2\. Submit the transaction and contact our team at **support@dock.io** with the subject "Registrar Judgement" and include your account address in the email. Our team will be in touch with steps to verify your identity.
 
-3. The Dock team will submit the judgement to the Dock network and you will see a green check mark next to your account confirming that your information has been verified by the registrar.
+3\. The Dock team will submit the judgement to the Dock network and you will see a green check mark next to your account confirming that your information has been verified by the registrar.
 
-### \*\*\*\*
-
+### ****

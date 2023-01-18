@@ -7,6 +7,4 @@ Token holders who want to stake on the Dock network are recommended to set up se
 
 You can have multiple Stash and Controller accounts for participating in staking. If you have not created Dock accounts already, follow the steps in the [Wallets and Account](https://docs.dock.io/help-center/help-center/wallets-and-account-creation) creation article to create at least two accounts for staking using any of the recommended methods.
 
-Next, fund the stash wallet with the tokens you would like to stake and the controller account with a small amount of tokens to cover transaction fees. Once these accounts are ready, you can begin [staking on the Dock network](https://docs.dock.io/staking/how-to-nominate-stake-on-dock).  
-
-
+Next, fund the stash wallet with the tokens you would like to stake and the controller account with a small amount of tokens to cover transaction fees. Once these accounts are ready, you can begin [staking on the Dock network](https://docs.dock.io/staking/how-to-nominate-stake-on-dock).\

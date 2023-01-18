@@ -1,28 +1,15 @@
-# Dock
+# Intro to Dock
 
-Dock provides a range of tools incorporating blockchain technology that enables businesses and developers to create verifiable credentials[.    
-](https://www.dock.io/#Getting-started)
+[Certs API](https://docs.api.dock.io/) enables developers to instantly and conveniently issue, verify, manage, and revoke Verifiable Credentials from their existing system. The Certs API is easy to integrate, scalable, and allows faster deployment.
 
-To start building using the Dock's blockchain node and SDK, go to the **Build** section:
+Dock integrates the industry-leading World Wide Web Consortium (W3C) and [Verifiable Credential Data Model standards](https://www.w3.org/TR/vc-data-model/) which allows the system to interoperate with other open-source technologies.&#x20;
 
-{% page-ref page="build/" %}
+**Key features:**
 
-To learn more about the Dock network, such as token economics, consensus, and governance, visit the **Learn** section:
+* ​​Create and manage decentralized identitifier (DIDs)
+* Create and assign schemas to credentials for compliance
+* Work seamlessly across platforms with Dock’s standards-compliant, interoperable solutions
+* Drop anchors on the blockchain for better validation and security
+* Harness the security of the Dock blockchain
 
-{% page-ref page="learn/" %}
-
-To learn how to become a validator, rewards and technical requirements go to the **Validators** section:
-
-{% page-ref page="validators/" %}
-
-## Connect with us
-
-1. [Blog](https://blog.dock.io/)
-2. [Twitter](https://twitter.com/docknetwork)
-3. [Element chat for the general public](https://riot.im/app/#/room/#!KpPIERdKQjLTTwsOkn:matrix.org)
-4. [Element chat for potential validators](https://riot.im/app/#/room/!JJIgSJFKgMAuxFYkTs:matrix.org)
-
-## Contributing to this documentation
-
-This documentation syncs with this [Github repo](https://github.com/docknetwork/gitbook-documentation). To contribute to this documentation, submit a pull request [here](https://github.com/docknetwork/gitbook-documentation/pulls) for the master branch. To report any errors or ask clarifications, raise an [issue](https://github.com/docknetwork/gitbook-documentation/issues).
-
+We have a variety of open-source software on [GitHub](https://github.com/docknetwork) that can be used alongside the API.

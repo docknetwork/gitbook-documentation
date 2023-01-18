@@ -23,13 +23,13 @@ You will need to create a Dock account using an application or wallet that suppo
 
 Use any ERC20 compatible wallet such as [metamask](https://metamask.io/) or [mycrypto](http://mycrypto.com/) to send your Dock tokens to the vault address: **0x0cf75F808479C9e7D61C78F65E997b605160B0AA**
 
-The vault address is also posted on the Dock [website](https://www.dock.io/token-migration) \(step 2\) and on our official [Twitter](https://twitter.com/docknetwork). _**Double-check you are sending to the correct address, if you send your tokens to another address then we will not be able to recover them.**_
+The vault address is also posted on the Dock [website](https://www.dock.io/token-migration) (step 2) and on our official [Twitter](https://twitter.com/docknetwork). _**Double-check you are sending to the correct address, if you send your tokens to another address then we will not be able to recover them.**_
 
-\*\*\*\*
+****
 
 Save the transaction hash or use [etherscan](https://etherscan.io/) to find it by looking up your wallet address.
 
-![](../../../.gitbook/assets/4%20%281%29.png)
+![](<../../../.gitbook/assets/4 (1).png>)
 
 ### Step 3: Sign message with Ethereum address
 
@@ -41,17 +41,17 @@ Then enter the Ethereum transaction hash provided when sending your tokens in St
 
 ![](../../../.gitbook/assets/swap-step2.png)
 
-You will then receive a code \(series of characters\) to use for signing. Go to [My Crypto](https://mycrypto.com/) and click on Tools &gt; Sign & Verify Message. After unlocking your Ethereum wallet, enter the code for signing into the Message box and click Sign Message. Then copy the “sig” value from the Signature box, this is what you will need for the next step.
+You will then receive a code (series of characters) to use for signing. Go to [My Crypto](https://mycrypto.com/) and click on Tools > Sign & Verify Message. After unlocking your Ethereum wallet, enter the code for signing into the Message box and click Sign Message. Then copy the “sig” value from the Signature box, this is what you will need for the next step.
 
-![Message signing with MyCrypto](../../../.gitbook/assets/mycrypto1%20%282%29.png)
+![Message signing with MyCrypto](<../../../.gitbook/assets/mycrypto1 (2).png>)
 
-You can also use [MyEtherWallet](https://www.myetherwallet.com/) \(MEW\) to sign the code. After connecting your wallet like Ledger, Metamask, etc, go to the [sign message page](https://www.myetherwallet.com/interface/sign-message) and paste the code in the "Message" box as shown below
+You can also use [MyEtherWallet](https://www.myetherwallet.com/) (MEW) to sign the code. After connecting your wallet like Ledger, Metamask, etc, go to the [sign message page](https://www.myetherwallet.com/interface/sign-message) and paste the code in the "Message" box as shown below
 
 ![](../../../.gitbook/assets/mew-sign.png)
 
 ### Step 4: Migrate your tokens
 
- Go back to the Token Migration page and paste the "sig" code under Signature, then click Submit. If successful, you will see a message in green that the migration is being processed.
+&#x20;Go back to the Token Migration page and paste the "sig" code under Signature, then click Submit. If successful, you will see a message in green that the migration is being processed.
 
 ![](../../../.gitbook/assets/swap-step3.png)
 
@@ -59,5 +59,6 @@ You can also use [MyEtherWallet](https://www.myetherwallet.com/) \(MEW\) to sign
 
 Our team is available to help throughout the token migration and can be contacted at [support@dock.io](mailto:support@dock.io) or on our [Telegram channel](https://t.me/dockio).
 
-{% page-ref page="token-migration-status.md" %}
-
+{% content-ref url="token-migration-status.md" %}
+[token-migration-status.md](token-migration-status.md)
+{% endcontent-ref %}
